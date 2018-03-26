@@ -1,0 +1,59 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import '../../@theme/styles/themes';
+
+@include nb-install-component {
+    *:not('i'){
+        font-family: "Avenir" !important;
+    }
+    /deep/ nb-card-header {
+        font-family: "Avenir" !important;
+    }
+
+    /deep/ nb-card {
+        font-family: "Avenir" !important;
+        
+    }
+
+    /deep/ .input-group-addon,
+    /deep/ .form-control {
+        font-family: "Avenir" !important;
+    }
+
+    /deep/ .btn {
+        font-family: "Avenir" !important;
+    }
+    /deep/ .mat-card-actions {
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+    }
+    .tagbutton.smaller {
+        padding: 3px 6px;
+        font-size: 7px;
+        margin: 1px;
+    }
+        
+}
+.noti-card {
+    height: 250px;
+}
+.header-table{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .header-table > div{
+  width: 50%;
+  text-align: center;
+  padding: 1.25rem;
+  cursor: pointer;
+  border: 1px solid #f3f3f3;
+  background: white;
+  color: #2a2a2a;
+  font-size: 18px;
+  }
+  .active-item{
+    font-weight: bold;
+  }

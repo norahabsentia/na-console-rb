@@ -1,0 +1,139 @@
+{
+  "country": [
+    {
+      "value": "India",
+      "churned": 11388,
+      "retained": 11404
+    },
+    {
+      "value": "United Arab Emirates",
+      "churned": 2,
+      "retained": 8
+    },
+    {
+      "value": "United States",
+      "churned": 3,
+      "retained": 5
+    },
+    {
+      "value": "Qatar",
+      "churned": 0,
+      "retained": 7
+    },
+    {
+      "value": "Nepal",
+      "churned": 3,
+      "retained": 2
+    },
+    {
+      "value": "Bangladesh",
+      "churned": 3,
+      "retained": 1
+    },
+    {
+      "value": "Pakistan",
+      "churned": 2,
+      "retained": 2
+    },
+    {
+      "value": "France",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "China",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "Kuwait",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "Thailand",
+      "churned": 0,
+      "retained": 3
+    },
+    {
+      "value": "Oman",
+      "churned": 0,
+      "retained": 3
+    },
+    {
+      "value": "Saudi Arabia",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "United Kingdom",
+      "churned": 3,
+      "retained": 0
+    },
+    {
+      "value": "Sri Lanka",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "Canada",
+      "churned": 1,
+      "retained": 1
+    },
+    {
+      "value": "Singapore",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Malaysia",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Germany",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Afghanistan",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Finland",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Myanmar (Burma)",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Switzerland",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Kyrgyzstan",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Japan",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "New Zealand",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Mauritius",
+      "churned": 0,
+      "retained": 1
+    }
+  ]
+}

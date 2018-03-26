@@ -1,0 +1,230 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  ngx-chartjs-pie-smart-pricing,
+  ngx-chartjs-bar-smart-pricing,
+  ngx-chartjs-line-smart-pricing,
+  ngx-chartjs-multiple-xaxis,
+  ngx-chartjs-bar-horizontal,
+  ng2-smart-table,
+  ngx-echarts-line-smart-pricing,
+  ngx-echarts-bar-smart-pricing,
+  ngx-echarts-pie-smart-pricing,
+  ngx-country-chart-smart-pricing,
+  ngx-chartjs-radar-smart-pricing {
+    display: block;
+    height: nb-theme(card-height-medium);
+    width: 100%;
+
+    /deep/ chart {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+nb-card {
+  nb-card-body {
+    height: 470px;
+  }
+}
+
+.select-items-wrap {
+  position: absolute;
+  z-index: 11;
+  width: 300px;
+  bottom: 42px;
+  left: 37px;
+}
+
+.select-items {
+  position: absolute;
+  bottom: 1px;
+  background: #d6d4d4;
+  width: 91%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.select-item {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.select-item:hover {
+  color: white;
+  background: #40dc7e;
+  cursor: pointer;
+}
+
+.item-icon {
+  cursor: pointer;
+}
+
+nb-card-footer{
+  padding: 0;
+  border-top: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.container-risk{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.box{
+  padding: 35px;
+  border: 1px solid rgb(189, 189, 189);
+  padding-bottom: 35px;
+  padding-top: 7px;
+}
+.user-active{
+  text-align: center;
+  color: rgba(89, 89, 89, 1);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.caption-risk{
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+.users{
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
+}
+.lable{
+  color: rgba(141, 141, 141, 1);
+  margin-right: 15px;
+  font-size: 19px;
+  padding-top: 6px;
+}
+.right-content-select{
+  display: flex;
+  justify-content: space-between;
+}
+.select-wrap{
+  width: 100%;
+  position: relative;
+
+}
+.select{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  border: 1px solid rgba(214, 214, 214, 1);
+  border-radius: 5px;
+  outline: none;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 10px;
+  color: rgba(95, 95, 95, 1);
+  font-size: 18px;
+}
+  i{
+      color: rgba(147, 147, 147, 1);
+  }
+.dropdawn {
+  top: 34px;
+  background: white;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+}
+.list-location{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 0 0 5px 5px;
+  border-top: 0;
+}
+  li{
+      padding: 0;
+      margin: 0;
+  }
+      a{
+          text-decoration: none;
+          width: 100%;
+          display: block;
+          padding: 6px;
+          padding-left: 20px;
+          padding-right: 10px;
+          color: rgba(166, 166, 166, 1) !important;
+          font-size: 17px;
+          border-top: 1px solid rgba(205, 205, 205, 1);
+      }
+      a:hover{
+          background: rgb(247, 247, 247);
+      }
+.page-button-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+  button{
+      display: flex;
+      background: none;
+      border: none;
+      outline: none;
+      color: rgb(104, 104, 104);
+      font-size: 18px;
+      font-weight: 500;
+  }
+      span{
+
+      }
+.download-wrap{
+  width: 155px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.select-download{
+  background: rgba(74, 163, 223, 1);
+  color: white;
+  z-index: 3000;
+  padding: 8px;
+  padding-right: 20px;
+  padding-left: 17px;
+}
+.dropdawn-download{
+  background: none;
+  top: 38px;
+}
+.list-download{
+  border: 0;
+  border-radius:  0;
+  border-top: 0;
+}
+  li{
+
+  }
+.download-button{
+  border: 1px solid #ebebeb;
+  border: 1px solid rgba(189, 189, 189, 1);
+  border-top: 0;
+  border-radius: 4px;
+}
+.ion-arrow-down-b{
+  color: rgb(148, 148, 148);
+}
+// .download-button:hover{
+//     background: none;
+// }
+.label-top{
+font-size: 25px;
+}
+
+.list-location li a {
+cursor: pointer;
+}
+.dropdawn-wrap-outer{
+  position: absolute;
+  z-index: 10;
+  right: 5px;
+  top: 7px;
+  width: 50%;
+}

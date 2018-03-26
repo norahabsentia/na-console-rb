@@ -1,0 +1,8 @@
+{
+  "Total time in game": [{"value": "Very High", "High_Risk": 643, "Medium_Risk": 7841, "Low_Risk": 9069} ,
+  {"value": "High", "High_Risk": 692, "Medium_Risk": 7078, "Low_Risk": 9498} ,
+  {"value": "Medium", "High_Risk": 818, "Medium_Risk": 7435, "Low_Risk": 9524} ,
+  {"value": "Low", "High_Risk": 616, "Medium_Risk": 8415, "Low_Risk": 9724} ,
+  {"value": "very Low", "High_Risk": 716, "Medium_Risk": 7415, "Low_Risk": 9378}
+ ]
+}

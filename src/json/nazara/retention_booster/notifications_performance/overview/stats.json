@@ -1,0 +1,10 @@
+{
+	"total_notifications_sent": 53461,
+	"total_notifications_open": 2949,
+	"total_users": 22872,
+	"users_opened": 1248,
+	"average_notifications_sent_per_user": 2.34,
+	"average_notifications_open_per_user": 0.13,
+	"average_notifications_sent_per_churner": 2.93,
+	"average_notifications_open_per_churner": 0.08
+}

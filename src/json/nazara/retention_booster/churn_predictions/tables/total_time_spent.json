@@ -1,0 +1,35 @@
+{
+  "total_time_spent": [
+     {
+      "value": "very low",
+      "Low_Risk": 1400,
+      "Medium_Risk": 1752,
+      "High_Risk": 5567
+    },
+    {
+      "value": "low",
+      "Low_Risk": 1000,
+      "Medium_Risk": 2000,
+      "High_Risk": 500
+    },
+    {
+      "value": "medium",
+      "Low_Risk": 1166,
+      "Medium_Risk": 1754,
+      "High_Risk": 2847
+    },
+    {
+      "value": "high",
+      "Low_Risk": 726,
+      "Medium_Risk": 433,
+      "High_Risk": 2000
+    },
+    {
+      "value": "very high",
+      "Low_Risk": 226,
+      "Medium_Risk": 1000,
+      "High_Risk": 527
+    }
+    
+  ]
+}

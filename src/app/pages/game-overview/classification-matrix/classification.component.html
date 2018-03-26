@@ -1,0 +1,73 @@
+<nb-card *ngIf="data">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6 br-1">
+                <div class="row">
+                    <div class="col-sm-12 bb-1">
+                        <div class="title header-title-left">Classification Matrix</div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 br-1">
+                        <div class="title body-left-text">Predicted Churn</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 bb-1">
+                                <div class="title body-right-text">Positive</div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="title body-right-text">Negative</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 b-2">
+                <div class="row">
+                    <div class="col-sm-12 pt-2 pb-2 bb-1">
+                        <div class="title">Observed Churn</div>
+                    </div>
+                    <div class="col-sm-6 pt-2 pb-2 bb-1 br-1">
+                        <div class="title">Positive</div>
+                    </div>
+                    <div class="col-sm-6 pt-2 pb-2 bb-1">
+                        <div class="title">Negative</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row bb-1">
+                            <div class="col-sm-6 br-1">
+                                <div class="value">
+                                    {{data.predicted_churned}}
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value">
+                                    {{data.predicted_not_churned}}
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 br-1">
+                                <div class="value">
+                                    {{data.not_predicted_churned}}
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value">
+                                    {{data.not_predicted_not_churned}}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nb-card>

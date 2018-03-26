@@ -1,0 +1,86 @@
+@import '../../../@theme/styles/themes';
+@import '~@nebular/theme/styles/global/bootstrap/buttons';
+@import '~@nebular/theme/styles/core/_mixins';
+
+$yellow-main: #ffcb83;
+$yellow-middle: mix(btn-hero-gradient-left($yellow-main), $yellow-main);
+$yellow-gradient: btn-hero-light-gradient(btn-hero-gradient-left($yellow-main), $yellow-main);
+$yellow-bevel: btn-hero-bevel($yellow-middle);
+$yellow-glow: btn-hero-glow($yellow-middle);
+
+@include nb-install-component() {
+  
+
+  .btn {
+    border-radius: nb-theme(btn-round-border-radius);
+    margin: 0 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  .btn-hero-yellow {
+    @include btn-hero-info;
+    @include btn-hero-text;
+    @include btn-hero-hover($yellow-gradient);
+    @include btn-hero-focus($yellow-gradient);
+    @include btn-hero-active($yellow-gradient);
+    @include nb-right-gradient(btn-hero-gradient-left($yellow-main), $yellow-main);
+    @include btn-hero-bevel-glow-shadow($yellow-bevel, $yellow-glow, 'none');
+    box-shadow: none;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  /deep/ {
+    & .text-input-highlight-container textarea.form-control, & .title-input {
+      background-color: transparent;
+      resize: none;
+    }
+    .text-highlight-element {
+      color: #2a2a2a;
+      background-color: #ffffff;
+      border: 2px solid #dadfe6;
+      border-radius: 0.375rem;
+      left: 15px;
+    }
+    .danger {
+      color: #ffffff;
+      background-color: btn-hero-danger-middle-color();
+    }
+    .info {
+      color: #ffffff;
+      background-color: btn-hero-info-middle-color();
+    }
+    .success {
+      color: #ffffff;
+      background-color: btn-hero-success-middle-color();
+    }
+    .primary {
+      color: #ffffff;
+      background-color: btn-hero-primary-middle-color();
+    }
+    .yellow {
+      color: #ffffff;
+      background-color: $yellow-middle;
+    }
+
+
+
+    @include hover-focus-active() {
+      & .text-input-highlight-container textarea.form-control, & .title-input {
+        background-color: transparent;
+      }
+    };
+  }
+}
+.tagbutton{padding: 5px 10px;border-radius: 25px;color: #fff;font-size: 14px;font-weight: bolder;display: inline-block;margin: 8px;}
+.display{z-index: 1111111 !important;position: absolute;box-shadow: none;}
+
+

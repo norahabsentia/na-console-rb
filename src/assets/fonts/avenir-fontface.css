@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('./Avenir-Regular.eot?#iefix') format('embedded-opentype'),  url('./Avenir-Regular.woff') format('woff'), url('./Avenir-Regular.ttf')  format('truetype'), url('./Avenir-Regular.svg#./Avenir') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('./Avenir-Bold.woff') format('woff'), url('./Avenir-Bold.ttf')  format('truetype'), url('./Avenir-Bold.svg#./Avenir') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }

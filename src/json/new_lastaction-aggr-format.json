@@ -1,0 +1,17 @@
+{
+  "LastAction": [
+    {"value": "game_start", "percentage": 44.99961104, "pop": 179966, "pop_churned": 80984, "pop_predicted": 57589, "pop_predicted_churned": 47807, "pop_predicted_notchurned": 33177, "pop_notpredicted_churned": 9782} ,
+{"value": "game_pause", "percentage": 36.9998895, "pop": 171464, "pop_churned": 54868, "pop_predicted": 82302, "pop_predicted_churned": 50752, "pop_predicted_notchurned": 4116, "pop_notpredicted_churned": 31550} ,
+{"value": "no_internet_connection", "percentage": 46.99993554, "pop": 160873, "pop_churned": 53088, "pop_predicted": 54696, "pop_predicted_churned": 33413, "pop_predicted_notchurned": 19675, "pop_notpredicted_churned": 21283} ,
+{"value": "ad_opened", "percentage": 46.99921091, "pop": 155130, "pop_churned": 72911, "pop_predicted": 60500, "pop_predicted_churned": 40690, "pop_predicted_notchurned": 32221, "pop_notpredicted_churned": 19810} ,
+{"value": "ad_closed", "percentage": 31.99972006, "pop": 155130, "pop_churned": 72911, "pop_predicted": 60500, "pop_predicted_churned": 40690, "pop_predicted_notchurned": 32221, "pop_notpredicted_churned": 19810} ,
+{"value": "game_end", "percentage": 31.99946144, "pop": 153841, "pop_churned": 56921, "pop_predicted": 67690, "pop_predicted_churned": 37383, "pop_predicted_notchurned": 19538, "pop_notpredicted_churned": 30307} ,
+{"value": "connection_timedout", "percentage": 36.99968457, "pop": 153841, "pop_churned": 56921, "pop_predicted": 67690, "pop_predicted_churned": 37383, "pop_predicted_notchurned": 19538, "pop_notpredicted_churned": 30307} ,
+{"value": "connection_failed", "percentage": 34.99989952, "pop": 149289, "pop_churned": 52251, "pop_predicted": 47772, "pop_predicted_churned": 40008, "pop_predicted_notchurned": 12243, "pop_notpredicted_churned": 7764} ,
+{"value": "game_over", "percentage": 29.99964138, "pop": 141118, "pop_churned": 45157, "pop_predicted": 59269, "pop_predicted_churned": 37071, "pop_predicted_notchurned": 8086, "pop_notpredicted_churned": 22198} ,
+{"value": "connection_interupted", "percentage": 47.99923835, "pop": 117301, "pop_churned": 43401, "pop_predicted": 57477, "pop_predicted_churned": 39846, "pop_predicted_notchurned": 3555, "pop_notpredicted_churned": 17631} ,
+{"value": ">10%", "percentage": 31.99972006, "pop": 111538, "pop_churned": 33461, "pop_predicted": 50192, "pop_predicted_churned": 28859, "pop_predicted_notchurned": 4602, "pop_notpredicted_churned": 21333} ,
+{"value": "5%-10%", "percentage": 31.99946144, "pop": 105035, "pop_churned": 50416, "pop_predicted": 35711, "pop_predicted_churned": 28852, "pop_predicted_notchurned": 21564, "pop_notpredicted_churned": 6859} ,
+{"value": "<5%", "percentage": 36.99968457, "pop": 88710, "pop_churned": 41693, "pop_predicted": 26613, "pop_predicted_churned": 25273, "pop_predicted_notchurned": 16420, "pop_notpredicted_churned": 1340}
+  ]
+}

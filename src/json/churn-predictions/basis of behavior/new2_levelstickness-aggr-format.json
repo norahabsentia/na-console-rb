@@ -1,0 +1,7 @@
+{
+  "Levelstickness": [
+  {"value": "High", "High_Risk": 675, "Medium_Risk": 8522, "Low_Risk": 9789} ,
+  {"value": "Medium", "High_Risk": 959, "Medium_Risk": 7767, "Low_Risk": 9868} ,
+  {"value": "Low", "High_Risk": 974, "Medium_Risk": 7860, "Low_Risk": 9282}
+ ]
+}

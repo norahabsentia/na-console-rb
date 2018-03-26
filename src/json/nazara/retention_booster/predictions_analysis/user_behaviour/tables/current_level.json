@@ -1,0 +1,265 @@
+{
+	"current_level": [{
+			"value": "1",
+			"churned": 46,
+			"retained": 26
+		},
+		{
+			"value": "2",
+			"churned": 236,
+			"retained": 39
+
+		},
+		{
+			"value": "3",
+			"churned": 141,
+			"retained": 30
+
+		},
+		{
+			"value": "4",
+			"churned": 107,
+			"retained": 42
+		},
+		{
+			"value": "5",
+			"churned": 84,
+			"retained": 28
+		},
+		{
+			"value": "6",
+			"churned": 144,
+			"retained": 46
+
+		},
+		{
+			"value": "7",
+			"churned": 74,
+			"retained": 42
+		},
+
+		{
+			"value": "8",
+			"churned": 80,
+			"retained": 46
+		},
+		{
+			"value": "9",
+			"churned": 83,
+			"retained": 60
+		},
+		{
+			"value": "10",
+			"churned": 65,
+			"retained": 37
+		},
+		{
+			"value": "11",
+			"churned": 33,
+			"retained": 20
+		},
+		{
+			"value": "12",
+			"churned": 33,
+			"retained": 21
+		},
+		{
+			"value": "13",
+			"churned": 41,
+			"retained": 31
+		},
+		{
+			"value": "14",
+			"churned": 30,
+			"retained": 32
+		},
+
+		{
+			"value": "15",
+			"churned": 38,
+			"retained": 34
+		},
+		{
+			"value": "16",
+			"churned": 39,
+			"retained": 39
+		},
+		{
+			"value": "17",
+			"churned": 39,
+			"retained": 39
+		},
+		{
+			"value": "18",
+			"churned": 54,
+			"retained": 51
+		},
+		{
+			"value": "19",
+			"churned": 34,
+			"retained": 37
+		},
+		{
+			"value": "20",
+			"churned": 41,
+			"retained": 35
+		},
+		{
+			"value": "21",
+			"churned": 62,
+			"retained": 75
+		},
+		{
+			"value": "22",
+			"churned": 35,
+			"retained": 35
+		},
+		{
+			"value": "23",
+			"churned": 34,
+			"retained": 28
+		},
+		{
+			"value": "24",
+			"churned": 39,
+			"retained": 63
+		},
+		{
+			"value": "25",
+			"churned": 32,
+			"retained": 43
+		},
+		{
+			"value": "26",
+			"churned": 53,
+			"retained": 63
+		},
+		{
+			"value": "27",
+			"churned": 31,
+			"retained": 55
+		},
+		{
+			"value": "28",
+			"churned": 38,
+			"retained": 53
+		},
+		{
+			"value": "29",
+			"churned": 25,
+			"retained": 46
+		},
+
+		{
+			"value": "30",
+			"churned": 33,
+			"retained": 77
+		},
+
+		{
+			"value": "31",
+			"churned": 94,
+			"retained": 161
+
+		},
+		{
+			"value": "32",
+			"churned": 68,
+			"retained": 127
+
+		},
+		{
+			"value": "33",
+			"churned": 52,
+			"retained": 75
+		},
+		{
+			"value": "34",
+			"churned": 42,
+			"retained": 73
+		},
+
+		{
+			"value": "35",
+			"churned": 52,
+			"retained": 122
+
+		},
+
+		{
+			"value": "36",
+			"churned": 52,
+			"retained": 104
+		},
+		{
+			"value": "37",
+			"churned": 33,
+			"retained": 83
+		},
+		{
+			"value": "38",
+			"churned": 41,
+			"retained": 99
+		},
+		{
+			"value": "39",
+			"churned": 61,
+			"retained": 132
+
+		},
+
+		{
+			"value": "40",
+			"churned": 24,
+			"retained": 66
+		},
+		{
+			"value": "41",
+			"churned": 108,
+			"retained": 217
+
+		},
+		{
+			"value": "42",
+			"churned": 125,
+			"retained": 347
+
+		},
+		{
+			"value": "43",
+			"churned": 56,
+			"retained": 97
+		},
+		{
+			"value": "44",
+			"churned": 22,
+			"retained": 64
+		},
+		{
+			"value": "45",
+			"churned": 158,
+			"retained": 226
+
+		},
+		{
+			"value": "46",
+			"churned": 20,
+			"retained": 57
+		},
+		{
+			"value": "47",
+			"churned": 19,
+			"retained": 60
+		},
+		{
+			"value": "48",
+			"churned": 15,
+			"retained": 55
+		},
+		{
+			"value": "49",
+			"churned": 50,
+			"retained": 65
+		}
+	]
+}

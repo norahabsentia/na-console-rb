@@ -1,0 +1,22 @@
+{
+  "out_of_lives": [
+    {
+      "value": "low",
+      "churned": 11030,
+      "retained": 9709
+
+    },
+    {
+      "value": "medium",
+      "churned": 361,
+      "retained": 1522
+
+    },
+    {
+      "value": "high",
+      "churned": 26,
+      "retained": 224
+  }
+
+  ]
+}

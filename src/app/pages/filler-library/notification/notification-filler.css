@@ -1,0 +1,39 @@
+
+.filletTooltip-main{
+	border:1px solid black !important;
+	background-color:#000000 !important;
+	color:#fff !important;
+	border-radius: 10px;
+}
+.filletTooltip-container{min-width: 100px;}
+.filletTooltip-fullwidth{
+	width:100%
+}
+.filletTooltip-cont{
+	padding:8px;
+}
+.filletTooltip-def{
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+}
+
+.filletTooltip-icon{
+	font-size: 32px;
+}
+
+.filletTooltip-border-right{
+	border-right: 1px solid grey;
+}
+
+.filletTooltip-border-bottom{
+	border-bottom: 1px solid grey;
+}
+
+.filletTooltip-main .qtip-content{
+	padding: 0;
+}
+
+.clickable{
+	cursor: pointer;
+}

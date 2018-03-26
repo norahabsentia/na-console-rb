@@ -1,0 +1,7 @@
+{
+  "Platform": [
+  {"value": "Andriod", "High_Risk": 823, "Medium_Risk": 6121, "Low_Risk": 9266} ,
+  {"value": "IOS", "High_Risk": 813, "Medium_Risk": 6868, "Low_Risk": 9428} ,
+  {"value": "Windows", "High_Risk": 952, "Medium_Risk": 7070, "Low_Risk": 9397}
+ ]
+}

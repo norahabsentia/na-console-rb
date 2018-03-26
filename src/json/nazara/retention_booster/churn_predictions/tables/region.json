@@ -1,0 +1,382 @@
+{
+  "region": [
+    {
+      "value": "Maharashtra",
+      "Low_Risk": 758,
+      "Medium_Risk": 1094,
+      "High_Risk": 1898
+    },
+    {
+      "value": "Delhi",
+      "Low_Risk": 456,
+      "Medium_Risk": 688,
+      "High_Risk": 1134
+    },
+    {
+      "value": "Uttar Pradesh",
+      "Low_Risk": 410,
+      "Medium_Risk": 686,
+      "High_Risk": 1069
+    },
+    {
+      "value": "Gujarat",
+      "Low_Risk": 438,
+      "Medium_Risk": 685,
+      "High_Risk": 1030
+    },
+    {
+      "value": "Karnataka",
+      "Low_Risk": 337,
+      "Medium_Risk": 538,
+      "High_Risk": 879
+    },
+    {
+      "value": "Telangana",
+      "Low_Risk": 308,
+      "Medium_Risk": 467,
+      "High_Risk": 837
+    },
+    {
+      "value": "Tamil Nadu",
+      "Low_Risk": 333,
+      "Medium_Risk": 454,
+      "High_Risk": 788
+    },
+    {
+      "value": "Madhya Pradesh",
+      "Low_Risk": 243,
+      "Medium_Risk": 463,
+      "High_Risk": 687
+    },
+    {
+      "value": "Bihar",
+      "Low_Risk": 248,
+      "Medium_Risk": 371,
+      "High_Risk": 647
+    },
+    {
+      "value": "Rajasthan",
+      "Low_Risk": 259,
+      "Medium_Risk": 381,
+      "High_Risk": 581
+    },
+    {
+      "value": "West Bengal",
+      "Low_Risk": 186,
+      "Medium_Risk": 307,
+      "High_Risk": 508
+    },
+    {
+      "value": "Chandigarh",
+      "Low_Risk": 153,
+      "Medium_Risk": 214,
+      "High_Risk": 398
+    },
+    {
+      "value": "Haryana",
+      "Low_Risk": 81,
+      "Medium_Risk": 132,
+      "High_Risk": 241
+    },
+    {
+      "value": "Odisha",
+      "Low_Risk": 84,
+      "Medium_Risk": 113,
+      "High_Risk": 181
+    },
+    {
+      "value": "Kerala",
+      "Low_Risk": 50,
+      "Medium_Risk": 68,
+      "High_Risk": 148
+    },
+    {
+      "value": "Assam",
+      "Low_Risk": 49,
+      "Medium_Risk": 79,
+      "High_Risk": 103
+    },
+    {
+      "value": "Jammu and Kashmir",
+      "Low_Risk": 32,
+      "Medium_Risk": 51,
+      "High_Risk": 87
+    },
+    {
+      "value": "Punjab",
+      "Low_Risk": 8,
+      "Medium_Risk": 47,
+      "High_Risk": 49
+    },
+    {
+      "value": "Himachal Pradesh",
+      "Low_Risk": 20,
+      "Medium_Risk": 18,
+      "High_Risk": 62
+    },
+    {
+      "value": "Andhra Pradesh",
+      "Low_Risk": 14,
+      "Medium_Risk": 33,
+      "High_Risk": 46
+    },
+    {
+      "value": "Uttarakhand",
+      "Low_Risk": 8,
+      "Medium_Risk": 5,
+      "High_Risk": 9
+    },
+    {
+      "value": "Jharkhand",
+      "Low_Risk": 2,
+      "Medium_Risk": 2,
+      "High_Risk": 8
+    },
+    {
+      "value": "Chhattisgarh",
+      "Low_Risk": 0,
+      "Medium_Risk": 7,
+      "High_Risk": 3
+    },
+    {
+      "value": "Goa",
+      "Low_Risk": 3,
+      "Medium_Risk": 3,
+      "High_Risk": 3
+    },
+    {
+      "value": "Puducherry",
+      "Low_Risk": 0,
+      "Medium_Risk": 5,
+      "High_Risk": 4
+    },
+    {
+      "value": "Doha",
+      "Low_Risk": 2,
+      "Medium_Risk": 3,
+      "High_Risk": 2
+    },
+    {
+      "value": "Dubai",
+      "Low_Risk": 1,
+      "Medium_Risk": 3,
+      "High_Risk": 3
+    },
+    {
+      "value": "Central Development Region",
+      "Low_Risk": 0,
+      "Medium_Risk": 3,
+      "High_Risk": 2
+    },
+    {
+      "value": "Dhaka Division",
+      "Low_Risk": 2,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Muscat Governorate",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 3
+    },
+    {
+      "value": "England",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 3
+    },
+    {
+      "value": "Sindh",
+      "Low_Risk": 2,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Al Asimah Governate",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Western Province",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Ontario",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 2
+    },
+    {
+      "value": "Abu Dhabi",
+      "Low_Risk": 0,
+      "Medium_Risk": 2,
+      "High_Risk": 0
+    },
+    {
+      "value": "Bangkok",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Guangdong",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Riyadh Province",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Auckland",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Osh Region",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Ajman",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Manipur",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Bavaria",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Heilongjiang",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Yangon Region",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Khyber Pakhtunkhwa",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Hawalli Governorate",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Hauts-de-France",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Jiangxi",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Zurich",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Chon Buri",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Johor",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Eastern Province",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Georgia",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Rangpur Division",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Sikkim",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Makkah Province",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Port Louis District",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Osaka Prefecture",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Indiana",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Ile-de-France",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "New York",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    }
+  ]
+}

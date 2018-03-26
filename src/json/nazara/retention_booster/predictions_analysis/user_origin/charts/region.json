@@ -1,0 +1,54 @@
+{
+  "region": [
+    {
+      "value": "Maharashtra",
+      "churned": 1824,
+      "retained": 1926
+    },
+    {
+      "value": "Delhi",
+      "churned": 1154,
+      "retained": 1124
+    },
+    {
+      "value": "Uttar Pradesh",
+      "churned": 1115,
+      "retained": 1050
+    },
+    {
+      "value": "Gujarat",
+      "churned": 1021,
+      "retained": 1132
+    },
+    {
+      "value": "Karnataka",
+      "churned": 827,
+      "retained": 927
+    },
+    {
+      "value": "Telangana",
+      "churned": 801,
+      "retained": 811
+    },
+    {
+      "value": "Tamil Nadu",
+      "churned": 755,
+      "retained": 820
+    },
+    {
+      "value": "Madhya Pradesh",
+      "churned": 717,
+      "retained": 676
+    },
+    {
+      "value": "Bihar",
+      "churned": 700,
+      "retained": 566
+    },
+    {
+      "value": "Rajasthan",
+      "churned": 654,
+      "retained": 567
+    }
+  ]
+}

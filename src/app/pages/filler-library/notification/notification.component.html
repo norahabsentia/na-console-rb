@@ -1,0 +1,177 @@
+<div class="fillerTooltip1 ">
+  <div class="filletTooltip-container">
+    <div (click)="showFiller()" class="filletTooltip-def filletTooltip-cont clickable filletTooltip-fullwidth filletTooltip-border-bottom">
+      <i *ngIf="!isCurrentSelectionFiller" class="control-icon nb-plus float-left"></i>
+      <span style="padding: 3px;" class="float-left">
+        {{isCurrentSelectionFiller?selectedText:'ADD'}}
+        <!-- {{selectedText}} -->
+      </span>
+    </div>
+    <div>
+      <div (click)="showFiller()" style="width:46%" class="clickable filletTooltip-def filletTooltip-icon filletTooltip-border-right">
+        <i class="control-icon nb-edit"></i>
+      </div>
+      <div style="width:46%" class="clickable filletTooltip-def  filletTooltip-icon" (click)="removeFiller()">
+        <i class="control-icon nb-close"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="fillerTooltip2">
+  <div class="filletTooltip-container">
+    <div (click)="showFiller()" class="filletTooltip-def filletTooltip-cont clickable filletTooltip-fullwidth filletTooltip-border-bottom">
+      <i *ngIf="!isCurrentSelectionFiller" class="control-icon nb-plus float-left"></i>
+      <span style="padding: 3px;" class="float-left">
+        {{isCurrentSelectionFiller?selectedText:'ADD'}}
+        <!-- {{selectedText}} -->
+      </span>
+    </div>
+    <div>
+      <div (click)="showFiller()" style="width:46%" class="clickable filletTooltip-def filletTooltip-icon filletTooltip-border-right">
+        <i class="control-icon nb-edit"></i>
+      </div>
+      <div style="width:46%" class="clickable filletTooltip-def  filletTooltip-icon" (click)="removeFiller()">
+        <i class="control-icon nb-close"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-backdrop fade show" *ngIf="showFillerStatus"></div>
+<nb-card class="noti_nb_card1 {{showFillerStatus?'display':''}}">
+
+  <nb-card-header class="noti_nb_header1">
+    <div *ngIf="selectedNotification" class="float-left clickable" (click)="backToNotificationManager()">
+      <i class="nb-arrow-thin-left"></i>
+    </div>
+
+    Filler Library
+
+    <span class="float-right clickable" *ngIf="showFillerStatus" (click)="closeFiller()">
+      <i class="control-icon nb-close"></i>
+    </span>
+    <div class="float-right">
+      <button (click)="addNewFillerBtnClick()" class="btn btn-round noti_nb_header2_span">
+        <i class="control-icon nb-plus"></i>ADD FILLER</button>
+    </div>
+
+  </nb-card-header>
+
+  <nb-card-body class="noti_nb_body1">
+    <div class="tag_list">
+      <div *ngIf="fillArr">
+        <span class="tagbutton clickable" (click)="addThisFiller(filler)" [ngStyle]="{'background-color': getColor(i)}" *ngFor="let filler of fillArr; let i = index">
+
+          <span>{{filler.tag_name}}</span>
+          <span>{{countNotification(filler.value_segments)}}</span>
+
+        </span>
+      </div>
+      <form (ngSubmit)="createNewFiller()">
+        <input class="form-control ng-valid" type="text" id="newFillerBtn" name="newFillerBtn" *ngIf="showAddNewFiller" [(ngModel)]="newFillerVal"
+          (click)="resetNewFillerVal()" (blur)="createNewFiller()" />
+      </form>      
+    </div>
+
+
+  </nb-card-body>
+
+</nb-card>
+
+<nb-card [hidden]="notificationService.editFillerSection == 1">
+  <nb-card-header class="noti_nb_header2">
+    <span *ngIf="notificationService.showHide == 0">
+      <span>Notification Manager</span>
+      <button class="btn noti_nb_header2_span" (click)="showTemplate(1)">Choose from templates</button>
+    </span>
+    <span *ngIf="notificationService.showHide==1">
+      <span>Notification Template</span>
+      <button class="btn noti_nb_header2_span" (click)=showTemplate(0)>Back</button>
+    </span>
+  </nb-card-header>
+  <nb-card-body>
+    <div [hidden]="notificationService.showHide==1">
+      <form #notificationForm="ngForm" (ngSubmit)="onSubmit(notificationForm)">
+        <input type="hidden" name="noti_ID" #noti_ID="ngModel" [(ngModel)]="notificationService.selectedNotification.noti_ID">
+        <div class="row">
+          <div class="col-lg-12 input-group ">
+            <input _ngcontent-c45="" class="form-control qtip-enabled" placeholder="Title" type="text" name="title" #title="ngModel"
+              [(ngModel)]="notificationService.selectedNotification.title" id="title" (select)="textSelect('title',$event)"
+              (click)="fillerEnabledTitleInputsClick('title',$event)" autocomplete="off">
+          </div>
+
+        </div>
+        <div class="row">
+          <div mwlTextInputHighlightContainer class="col-lg-12 input-group">
+            <textarea name="body" #body="ngModel" [(ngModel)]="notificationService.selectedNotification.body" mwlTextInputElement placeholder="Body"
+              rows="1" class="form-control qtip-enabled" id="body" required (select)="textSelect('body',$event)" (click)="fillerEnabledTitleInputsClick('body',$event)"
+              autocomplete="off"></textarea>
+
+          </div>
+          <div class="setbody"></div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-5">
+            <nb-card size="small" style="height: 17em;">
+              <nb-card-header class="noti_nb_card_header3">
+                TARGET CUSTOMER SEGMENTS
+              </nb-card-header>
+              <nb-card-body class="noti_nb_body2">
+                <select multiple class="form-control noti_nb_select">
+                  <option *ngFor="let item of notificationService.itemArray | orderBy: orderId" (click)="selectChangeHandler(item.name)" [value]="item.name">{{item.name}}</option>
+                </select>
+
+              </nb-card-body>
+            </nb-card>
+
+          </div>
+          <div class="col-lg-7">
+            <div>
+              <div style="min-height: 8em; padding: 1em;">
+
+                <button class="noti_nb_button1" *ngFor="let item of notificationService.rightArray; let i = index" (click)="buttonChangeHandler(i)">{{item.name}}</button>
+
+              </div>
+              <div class="input-group input-group-fill-only">
+                <input _ngcontent-c45="" class="form-control" placeholder="Deep Link (optional)" type="text" name="deeplink" #deeplink="ngModel"
+                  [(ngModel)]="notificationService.selectedNotification.deeplink">
+              </div>
+            </div>
+
+
+            <div style=" float: right;  margin-right: 2em;margin-top: 3em;">
+              <button class="btn btn-default noti_nb_button2" type="submit" [disabled]="!notificationForm.valid">
+                <img style="padding-right: 1em;" src="../../../assets/images/save1.png" alt="">
+              </button>
+
+              <img style="padding-right: 1em;" src="../../../assets/images/cancel1.png" alt="" (click)="resetForm(notificationForm)">
+              <img style="padding-right: 1em;" src="../../../assets/images/reset1.png" alt="" (click)="resetEditForm()">
+              <img src="../../../assets/images/enter1.png" alt="">
+
+            </div>
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <div [hidden]="notificationService.showHide == 0">
+      <notification-template *ngIf="notificationService.showHide == 1"></notification-template>
+    </div>
+  </nb-card-body>
+</nb-card>
+<nb-card *ngIf="notificationService.editFillerSection == 1">
+  <nb-card-header class="noti_nb_header2">
+    <span *ngIf="notificationService.showHide == 0">
+      <span>Edit Filler</span>
+      <button class="btn noti_nb_header2_span" (click)="showEditFillerTemplate(0)">Back</button>
+    </span>
+  </nb-card-header>
+  <nb-card-body>
+    <edit-filler [curfiller]="currentFiller"></edit-filler>
+  </nb-card-body>
+</nb-card>

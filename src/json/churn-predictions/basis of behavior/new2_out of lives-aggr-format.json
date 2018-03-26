@@ -1,0 +1,7 @@
+{
+"Out of lives": [
+  {"value": "High", "High_Risk": 708, "Medium_Risk": 6687, "Low_Risk": 9223} ,
+  {"value": "Medium", "High_Risk": 940, "Medium_Risk": 6481, "Low_Risk": 9646} ,
+  {"value": "Low", "High_Risk": 673, "Medium_Risk": 8601, "Low_Risk": 9388}
+   ]
+}

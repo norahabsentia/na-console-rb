@@ -1,0 +1,157 @@
+
+<nb-card>
+        <div *ngIf="showModal" class="modal-wrap">
+                <div class="modal-wrap-second">
+                  <div class="modal-wrap-iside">
+                        <div class="heared-modal">
+                                Product ID Prise Tiers
+                                <button (click)="showModal = !true" class="close-icon-wrap">
+                                <!-- <i class="material-icons icon-close">close</i> -->
+                                        <i class="ion-close-round"></i>
+                                </button>
+                            </div>
+                            <div class="main-content-wrap">
+                                <div class="prew-button">
+                                    <!-- <i class="material-icons">keyboard_arrow_right</i> -->
+                                    <button>
+                                        <i class="ion-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="main-content chart-modal">
+                                  <chart id="stackbar" *ngIf="dataBar1 " type="bar" [data]="dataBar1" [options]="optionsBar"></chart>
+                                </div>
+                                <div class="next-button">
+                                    <!-- <i class="material-icons">keyboard_arrow_right</i> -->
+                                    <button>
+                                        <i class="ion-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                  </div>
+                </div>
+        </div>
+    <nb-card-header class="header-smart-table">
+        <div class="system-wrap">
+            <button>
+                Android
+            </button>
+            <button>
+                IOS
+            </button>
+        </div>
+        <div class="dropdown dropdown-smart-table" ngbDropdown>
+            Currency &nbsp;
+            <!-- <button class="btn btn-primary setwidth" type="button" ngbDropdownToggle>
+        Dropdown
+      </button>
+      <ul  class="dropdown-menu dropdownset" ngbDropdownMenu>
+        <li *ngFor="let item of tabledata" class="dropdown-item">{{item.currency}}</li>
+
+      </ul> -->
+            <select>
+        <option (change)="changeonddl()"  *ngFor="let item of tabledata" value="{{item.currency}}">{{item.currency}}</option>
+
+      </select>
+
+        <!-- <button (click)="showModal = true">ClicK</button> -->
+        </div>
+
+        <!-- <button class="btn btn-hero-success btn-demo icon-setting" (click)="onClick()"><i class="nb-loop"></i></button> -->
+    </nb-card-header>
+
+    <nb-card-body class="smart-table-body">
+        <div class="table-smart">
+            <div class="header-table-smart">
+                <div class="column center-alingh" style="border-left: 0;">
+                    <div>
+                        Product ID
+                    </div>
+                </div>
+                <div class="column center-alingh small-cell">
+                        <div>
+                            Base Price
+                        </div>
+                    </div>
+                <div class="column column-range big-cell-range">
+                    <div class="range-header ">
+                        Recommended Prise Range
+                    </div>
+                    <div class="prise-range">
+                        <div class="min-range">
+                            Min
+                        </div>
+                        <div class="max-range">
+                            Max
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-range big-cell-range">
+                    <div class="range-header">
+                        Custom Prise Range
+                    </div>
+                    <div class="prise-range">
+                        <div class="min-range">
+                            Min
+                        </div>
+                        <div class="max-range">
+                            Max
+                        </div>
+                    </div>
+                </div>
+                <div class="column center-alingh small-cell-icon">
+                    <div>
+                        Actions
+                    </div>
+                </div>
+            </div>
+            <div class="tbody-smart">
+                <div *ngFor="let item of dataTCopy; let i = index" class="row-table-smart">
+                    <div class="row-table-item" style="border-left: 0;">
+                        <div class="row-table-item-iside text-hiden">
+                            {{item.ProductID}}
+                        </div>
+                    </div>
+                    <div class="row-table-item small-cell">
+                        <div class="row-table-item-iside text-hiden">{{item.BasePrice}}</div>
+                    </div>
+                    <div class="row-table-item big-cell-range" style="border:0;">
+                        <div class="row-table-item"  style="width: calc(50% - -1px);">
+                            <div class="row-table-item-iside text-hiden">{{item.RPRMin}}</div>
+                        </div>
+                        <div class="row-table-item" style="width: calc(50% + 1px);">
+                            <div class="row-table-item-iside text-hiden">{{item.RPRMax}}</div>
+                            <i (click)="showModal = true" class="ion-stats-bars icon-position"></i>
+                        </div>
+                    </div>
+                    <div class="row-table-item big-cell-range" style="border:0;">
+                        <div class="row-table-item" style="width: calc(50%);">
+                            <div *ngIf="!option[i]" class="row-table-item-iside text-hiden">{{item.CPRMin}}</div>
+                            <input *ngIf="option[i]" class="input-smart-table" type="text" [(ngModel)]="item.CPRMin" placeholder="">
+                        </div>
+                        <div class="row-table-item" style="width: calc(50%);">
+                            <div *ngIf="!option[i]" class="row-table-item-iside text-hiden">{{item.CPRMax}}</div>
+                            <input *ngIf="option[i]" class="input-smart-table" type="text" [(ngModel)]="item.CPRMax" placeholder="">
+                            <i (click)="showModal = true" class="ion-stats-bars icon-position"></i>
+                        </div>
+                    </div>
+                    <div class="row-table-item small-cell-icon">
+                        <div class="row-table-item-iside icon-wrap-smart-table">
+                            <i *ngIf="option[i]" (click)="option[i] = false" class="fa fa fa-save"></i>
+                            <i *ngIf="!option[i]" (click)="option[i] = true" class="ion-edit"></i>
+                            <i (click)="remove(i)" class="ion-trash-b"></i>
+                            <i (click)="refresh(i)" class="ion-loop"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)" reset>
+        </ng2-smart-table>
+        <div class="container-btn rightposition">
+            <button class="btn btn-hero-primary btn-demo">Export For Android</button>&nbsp;
+            <button class="btn btn-hero-primary btn-demo">Export For IOS</button>
+        </div> -->
+
+    </nb-card-body>
+</nb-card>
+

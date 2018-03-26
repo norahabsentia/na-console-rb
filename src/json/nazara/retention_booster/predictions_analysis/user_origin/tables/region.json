@@ -1,0 +1,322 @@
+{
+  "region": [
+    {
+      "value": "Maharashtra",
+      "churned": 1824,
+      "retained": 1926
+    },
+    {
+      "value": "Delhi",
+      "churned": 1154,
+      "retained": 1124
+
+    },
+    {
+      "value": "Uttar Pradesh",
+      "churned": 1115,
+      "retained": 1050
+
+    },
+    {
+      "value": "Gujarat",
+      "churned": 1021,
+      "retained": 1132
+
+    },
+    {
+      "value": "Karnataka",
+      "churned": 827,
+      "retained": 927
+    },
+    {
+      "value": "Telangana",
+      "churned": 801,
+      "retained": 811
+    },
+    {
+      "value": "Tamil Nadu",
+      "churned": 755,
+      "retained": 820
+    },
+    {
+      "value": "Madhya Pradesh",
+      "churned": 717,
+      "retained": 676
+    },
+    {
+      "value": "Bihar",
+      "churned": 700,
+      "retained": 566
+    },
+    {
+      "value": "Rajasthan",
+      "churned": 654,
+      "retained": 567
+    },
+    {
+      "value": "West Bengal",
+      "churned": 469,
+      "retained": 532
+    },
+    {
+      "value": "Chandigarh",
+      "churned": 392,
+      "retained": 373
+    },
+    {
+      "value": "Haryana",
+      "churned": 241,
+      "retained": 213
+    },
+    {
+      "value": "Odisha",
+      "churned": 207,
+      "retained": 171
+    },
+    {
+      "value": "Kerala",
+      "churned": 111,
+      "retained": 155
+    },
+    {
+      "value": "Assam",
+      "churned": 108,
+      "retained": 123
+    },
+    {
+      "value": "Jammu and Kashmir",
+      "churned": 94,
+      "retained": 76
+    },
+    {
+      "value": "Punjab",
+      "churned": 55,
+      "retained": 49
+    },
+    {
+      "value": "Himachal Pradesh",
+      "churned": 63,
+      "retained": 37
+    },
+    {
+      "value": "Andhra Pradesh",
+      "churned": 50,
+      "retained": 43
+    },
+    {
+      "value": "Uttarakhand",
+      "churned": 8,
+      "retained": 14
+    },
+    {
+      "value": "Jharkhand",
+      "churned": 10,
+      "retained": 2
+    },
+    {
+      "value": "Chhattisgarh",
+      "churned": 4,
+      "retained": 6
+    },
+    {
+      "value": "Goa",
+      "churned": 4,
+      "retained": 5
+    },
+    {
+      "value": "Puducherry",
+      "churned": 4,
+      "retained": 5
+    },
+    {
+      "value": "Doha",
+      "churned": 0,
+      "retained": 7
+    },
+    {
+      "value": "Dubai",
+      "churned": 1,
+      "retained": 6
+    },
+    {
+      "value": "Central Development Region",
+      "churned": 3,
+      "retained": 2
+    },
+    {
+      "value": "Dhaka Division",
+      "churned": 2,
+      "retained": 1
+    },
+    {
+      "value": "Muscat Governorate",
+      "churned": 0,
+      "retained": 3
+    },
+    {
+      "value": "England",
+      "churned": 3,
+      "retained": 0
+    },
+    {
+      "value": "Sindh",
+      "churned": 0,
+      "retained": 2
+    },
+    {
+      "value": "Al Asimah Governate",
+      "churned": 1,
+      "retained": 1
+    },
+    {
+      "value": "Western Province",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "Ontario",
+      "churned": 1,
+      "retained": 1
+    },
+    {
+      "value": "Abu Dhabi",
+      "churned": 0,
+      "retained": 2
+    },
+    {
+      "value": "Bangkok",
+      "churned": 0,
+      "retained": 2
+    },
+    {
+      "value": "Guangdong",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Riyadh Province",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Auckland",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Osh Region",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Ajman",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Manipur",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Bavaria",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Heilongjiang",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Yangon Region",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Khyber Pakhtunkhwa",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Hawalli Governorate",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Hauts-de-France",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Jiangxi",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Zurich",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Chon Buri",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Johor",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Eastern Province",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Georgia",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Rangpur Division",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Sikkim",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Makkah Province",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Port Louis District",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Osaka Prefecture",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Indiana",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Ile-de-France",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "New York",
+      "churned": 1,
+      "retained": 0
+    }
+  ]
+}

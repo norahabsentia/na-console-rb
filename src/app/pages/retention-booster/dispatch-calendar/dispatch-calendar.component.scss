@@ -1,0 +1,98 @@
+
+.header-top{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: black;
+    cursor: pointer;
+    width: fit-content;
+}
+.arrow-left{
+    font-size: 27px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+}
+.calendar-wrap{
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
+}
+.table-bot{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(221, 221, 221);
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+  }
+  .row-table-bot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: stretch;
+  }
+  .row-table-bot > div{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: none;
+    padding: 5px;
+    position: relative;
+    padding-left: 20px;
+    color: rgba(119, 119, 119, 1);
+    font-weight: 500;
+    min-height: 40px;
+  }
+  .header{
+  }
+  .header > div{
+    border-top: none;
+    color: rgba(117, 117, 117, 1);
+    font-weight: 600;
+  }
+.title{
+    color: rgb(38, 38, 38);
+    font-size: 12px;
+    font-weight: 500;
+}
+.button-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-wrap > div{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: rgb(87, 87, 87);
+    font-size: 8px;
+    padding: 1px;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    color: white;
+}
+.body{
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    color: rgb(154, 154, 154);    
+}
+.alarm-wrap{
+    display: flex;
+    align-items: center;
+}
+.alarm-wrap > i{
+    margin-right: 5px;
+}
+div.container > div > div > div.odd:nth-child(odd){
+    background: rgb(242, 242, 242);
+}
+div.row-table-bot > div:nth-child(5){
+    padding-left: 50px;
+}

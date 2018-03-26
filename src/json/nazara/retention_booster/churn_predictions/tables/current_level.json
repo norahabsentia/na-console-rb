@@ -1,0 +1,313 @@
+{
+  "current_level": [
+
+    {
+      "value": "1",
+      "Low_Risk": 11,
+      "Medium_Risk": 16,
+      "High_Risk": 45
+    },
+    {
+      "value": "2",
+      "Low_Risk": 59,
+      "Medium_Risk": 82,
+      "High_Risk": 134
+    },
+
+    {
+      "value": "3",
+      "Low_Risk": 21,
+      "Medium_Risk": 57,
+      "High_Risk": 93
+    },
+    {
+      "value": "4",
+      "Low_Risk": 28,
+      "Medium_Risk": 45,
+      "High_Risk": 76
+    },
+    {
+      "value": "5",
+      "Low_Risk": 21,
+      "Medium_Risk": 28,
+      "High_Risk": 63
+    },
+    {
+      "value": "6",
+      "Low_Risk": 35,
+      "Medium_Risk": 63,
+      "High_Risk": 92
+    },
+    {
+      "value": "7",
+      "Low_Risk": 30,
+      "Medium_Risk": 26,
+      "High_Risk": 60
+    },
+
+    {
+      "value": "8",
+      "Low_Risk": 30,
+      "Medium_Risk": 40,
+      "High_Risk": 56
+    },
+    {
+      "value": "9",
+      "Low_Risk": 26,
+      "Medium_Risk": 44,
+      "High_Risk": 73
+    },
+    {
+      "value": "10",
+      "Low_Risk": 17,
+      "Medium_Risk": 34,
+      "High_Risk": 51
+    },
+    {
+      "value": "11",
+      "Low_Risk": 6,
+      "Medium_Risk": 12,
+      "High_Risk": 35
+    },
+    {
+      "value": "12",
+      "Low_Risk": 13,
+      "Medium_Risk": 13,
+      "High_Risk": 28
+    },
+    {
+      "value": "13",
+      "Low_Risk": 14,
+      "Medium_Risk": 25,
+      "High_Risk": 33
+    },
+    {
+      "value": "14",
+      "Low_Risk": 8,
+      "Medium_Risk": 20,
+      "High_Risk": 34
+    },
+    {
+      "value": "15",
+      "Low_Risk": 15,
+      "Medium_Risk": 25,
+      "High_Risk": 32
+    },
+    {
+      "value": "16",
+      "Low_Risk": 11,
+      "Medium_Risk": 21,
+      "High_Risk": 46
+    },
+    {
+      "value": "17",
+      "Low_Risk": 17,
+      "Medium_Risk": 28,
+      "High_Risk": 33
+    },
+    {
+      "value": "18",
+      "Low_Risk": 24,
+      "Medium_Risk": 28,
+      "High_Risk": 53
+    },
+    {
+      "value": "19",
+      "Low_Risk": 14,
+      "Medium_Risk": 24,
+      "High_Risk": 33
+    },
+
+
+    {
+      "value": "20",
+      "Low_Risk": 13,
+      "Medium_Risk": 21,
+      "High_Risk": 42
+    },
+
+    {
+      "value": "21",
+      "Low_Risk": 34,
+      "Medium_Risk": 33,
+      "High_Risk": 70
+    },
+    {
+      "value": "22",
+      "Low_Risk": 15,
+      "Medium_Risk": 28,
+      "High_Risk": 27
+    },
+
+    {
+      "value": "23",
+      "Low_Risk": 18,
+      "Medium_Risk": 22,
+      "High_Risk": 22
+    },
+    {
+      "value": "24",
+      "Low_Risk": 26,
+      "Medium_Risk": 26,
+      "High_Risk": 50
+    },
+    {
+      "value": "25",
+      "Low_Risk": 12,
+      "Medium_Risk": 21,
+      "High_Risk": 42
+    },
+    {
+      "value": "26",
+      "Low_Risk": 15,
+      "Medium_Risk": 41,
+      "High_Risk": 60
+    },
+    {
+      "value": "27",
+      "Low_Risk": 19,
+      "Medium_Risk": 21,
+      "High_Risk": 46
+    },
+
+    {
+      "value": "28",
+      "Low_Risk": 13,
+      "Medium_Risk": 24,
+      "High_Risk": 54
+    },
+    {
+      "value": "29",
+      "Low_Risk": 23,
+      "Medium_Risk": 14,
+      "High_Risk": 34
+    },
+    {
+      "value": "30",
+      "Low_Risk": 16,
+      "Medium_Risk": 36,
+      "High_Risk": 58
+    },
+
+    {
+      "value": "31",
+      "Low_Risk": 54,
+      "Medium_Risk": 73,
+      "High_Risk": 128
+    },
+    {
+      "value": "32",
+      "Low_Risk": 34,
+      "Medium_Risk": 71,
+      "High_Risk": 90
+    },
+
+    {
+      "value": "33",
+      "Low_Risk": 25,
+      "Medium_Risk": 43,
+      "High_Risk": 59
+    },
+    {
+      "value": "34",
+      "Low_Risk": 24,
+      "Medium_Risk": 32,
+      "High_Risk": 59
+    },
+    {
+      "value": "35",
+      "Low_Risk": 30,
+      "Medium_Risk": 50,
+      "High_Risk": 94
+    },
+    {
+      "value": "36",
+      "Low_Risk": 27,
+      "Medium_Risk": 51,
+      "High_Risk": 78
+    },
+
+    {
+      "value": "37",
+      "Low_Risk": 22,
+      "Medium_Risk": 34,
+      "High_Risk": 60
+    },
+    {
+      "value": "38",
+      "Low_Risk": 28,
+      "Medium_Risk": 44,
+      "High_Risk": 68
+    },
+    {
+      "value": "39",
+      "Low_Risk": 35,
+      "Medium_Risk": 49,
+      "High_Risk": 109
+    },
+    {
+      "value": "40",
+      "Low_Risk": 18,
+      "Medium_Risk": 32,
+      "High_Risk": 40
+    },
+    {
+      "value": "41",
+      "Low_Risk": 55,
+      "Medium_Risk": 101,
+      "High_Risk": 169
+    },
+    {
+      "value": "42",
+      "Low_Risk": 93,
+      "Medium_Risk": 135,
+      "High_Risk": 244
+    },
+
+    {
+      "value": "43",
+      "Low_Risk": 25,
+      "Medium_Risk": 49,
+      "High_Risk": 79
+    },
+
+    {
+      "value": "44",
+      "Low_Risk": 16,
+      "Medium_Risk": 26,
+      "High_Risk": 44
+    },
+
+    {
+      "value": "45",
+      "Low_Risk": 85,
+      "Medium_Risk": 114,
+      "High_Risk": 185
+    },
+    {
+      "value": "46",
+      "Low_Risk": 26,
+      "Medium_Risk": 24,
+      "High_Risk": 27
+    },
+    {
+      "value": "47",
+      "Low_Risk": 13,
+      "Medium_Risk": 31,
+      "High_Risk": 35
+    },
+    {
+      "value": "48",
+      "Low_Risk": 18,
+      "Medium_Risk": 25,
+      "High_Risk": 27
+    },
+    {
+      "value": "49",
+      "Low_Risk": 23,
+      "Medium_Risk": 37,
+      "High_Risk": 55
+    }
+
+  ]
+}

@@ -1,0 +1,63 @@
+{
+	"current_level": [{
+			"value": "42",
+			"Low_Risk": 93,
+			"Medium_Risk": 135,
+			"High_Risk": 244
+		},
+		{
+			"value": "45",
+			"Low_Risk": 85,
+			"Medium_Risk": 114,
+			"High_Risk": 185
+		},
+		{
+			"value": "41",
+			"Low_Risk": 55,
+			"Medium_Risk": 101,
+			"High_Risk": 169
+		},
+		{
+			"value": "2",
+			"Low_Risk": 59,
+			"Medium_Risk": 82,
+			"High_Risk": 134
+		},
+		{
+			"value": "31",
+			"Low_Risk": 54,
+			"Medium_Risk": 73,
+			"High_Risk": 128
+		},
+		{
+			"value": "32",
+			"Low_Risk": 34,
+			"Medium_Risk": 71,
+			"High_Risk": 90
+		},
+		{
+			"value": "39",
+			"Low_Risk": 35,
+			"Medium_Risk": 49,
+			"High_Risk": 109
+		},
+		{
+			"value": "6",
+			"Low_Risk": 35,
+			"Medium_Risk": 63,
+			"High_Risk": 92
+		},
+		{
+			"value": "35",
+			"Low_Risk": 30,
+			"Medium_Risk": 50,
+			"High_Risk": 94
+		},
+		{
+			"value": "3",
+			"Low_Risk": 21,
+			"Medium_Risk": 57,
+			"High_Risk": 93
+		}
+	]
+}

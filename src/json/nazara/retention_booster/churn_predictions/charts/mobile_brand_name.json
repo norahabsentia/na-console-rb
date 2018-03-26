@@ -1,0 +1,63 @@
+{
+	"mobile_brand_name": [{
+			"value": "Samsung",
+			"Low_Risk": 1256,
+			"Medium_Risk": 2034,
+			"High_Risk": 3374
+		},
+		{
+			"value": "Xiaomi",
+			"Low_Risk": 841,
+			"Medium_Risk": 1317,
+			"High_Risk": 2186
+		},
+		{
+			"value": "Vivo",
+			"Low_Risk": 519,
+			"Medium_Risk": 798,
+			"High_Risk": 1341
+		},
+		{
+			"value": "OPPO",
+			"Low_Risk": 510,
+			"Medium_Risk": 699,
+			"High_Risk": 1185
+		},
+		{
+			"value": "Lenovo",
+			"Low_Risk": 261,
+			"Medium_Risk": 364,
+			"High_Risk": 658
+		},
+		{
+			"value": "Motorola",
+			"Low_Risk": 176,
+			"Medium_Risk": 257,
+			"High_Risk": 405
+		},
+		{
+			"value": "Micromax",
+			"Low_Risk": 131,
+			"Medium_Risk": 192,
+			"High_Risk": 287
+		},
+		{
+			"value": "LYF",
+			"Low_Risk": 106,
+			"Medium_Risk": 183,
+			"High_Risk": 242
+		},
+		{
+			"value": "Gionee",
+			"Low_Risk": 93,
+			"Medium_Risk": 151,
+			"High_Risk": 251
+		},
+		{
+			"value": "OnePlus",
+			"Low_Risk": 65,
+			"Medium_Risk": 84,
+			"High_Risk": 155
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"daily_response":[
+		{"value":"22/02","open":214,"not_opened":3604},
+		{"value":"23/02","open":245,"not_opened":5573},
+		{"value":"24/02","open":229,"not_opened":1589},
+		{"value":"25/02","open":192,"not_opened":2426},
+		{"value":"26/02","open":201,"not_opened":3817},
+		{"value":"27/02","open":211,"not_opened":2789},
+		{"value":"28/02","open":229,"not_opened":4407},
+		{"value":"29/02","open":230,"not_opened":3588},
+		{"value":"01/03","open":186,"not_opened":5632},
+		{"value":"02/03","open":200,"not_opened":1618},
+		{"value":"03/03","open":215,"not_opened":2403},
+		{"value":"04/03","open":222,"not_opened":3796},
+		{"value":"05/03","open":190,"not_opened":2810},
+		{"value":"06/03","open":214,"not_opened":4422}
+	]
+}

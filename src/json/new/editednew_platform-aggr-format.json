@@ -1,0 +1,7 @@
+{
+  "Platform": [
+  {"value": "Android", "pop_churned": 2000, "pop_notChurned": 58000, "pop_predicted": 1500, "pop_notPredicted":58500, "pop_churnedPredicted": 1200, "pop_churnedNotPredicted": 800, "pop_notchurnedNotpredicted": 56600, "pop_notchurnedPredicted": 1400} ,
+  {"value": "IOS", "pop_churned": 1500, "pop_notChurned": 78500, "pop_predicted": 1200, "pop_notPredicted":78800, "pop_churnedPredicted": 1000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 77600, "pop_notchurnedPredicted": 900} ,
+  {"value": "Windows", "pop_churned": 1000, "pop_notChurned": 89000, "pop_predicted": 800, "pop_notPredicted":89200, "pop_churnedPredicted": 600, "pop_churnedNotPredicted": 400, "pop_notchurnedNotpredicted": 88100, "pop_notchurnedPredicted": 900}
+  ]
+}

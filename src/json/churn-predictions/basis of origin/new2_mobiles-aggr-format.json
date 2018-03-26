@@ -1,0 +1,17 @@
+{
+  "Mobile": [
+    {"value": "Samsung", "High_Risk": 787, "Medium_Risk": 8961, "Low_Risk": 9161} ,
+{"value": "Apple", "High_Risk": 939, "Medium_Risk": 7611, "Low_Risk": 9993} ,
+{"value": "Nokia", "High_Risk": 825, "Medium_Risk": 8126, "Low_Risk": 9278} ,
+{"value": "HTC", "High_Risk": 951, "Medium_Risk": 6381, "Low_Risk": 9468} ,
+{"value": "Sony ", "High_Risk": 948, "Medium_Risk": 7725, "Low_Risk": 9222} ,
+{"value": "Acer", "High_Risk": 631, "Medium_Risk": 7903, "Low_Risk": 9127} ,
+{"value": "Motorola", "High_Risk": 653, "Medium_Risk": 8678, "Low_Risk": 9402} ,
+{"value": "Oneplus", "High_Risk": 798, "Medium_Risk": 8037, "Low_Risk": 9735} ,
+{"value": "Lenovo", "High_Risk": 899, "Medium_Risk": 6929, "Low_Risk": 9187} ,
+{"value": "Mi", "High_Risk": 830, "Medium_Risk": 8538, "Low_Risk": 9553} ,
+{"value": ">10%", "High_Risk": 843, "Medium_Risk": 7754, "Low_Risk": 9892} ,
+{"value": "5%-10%", "High_Risk": 736, "Medium_Risk": 7415, "Low_Risk": 9315} ,
+{"value": "<5%", "High_Risk": 879, "Medium_Risk": 8728, "Low_Risk": 9671}
+  ]
+}

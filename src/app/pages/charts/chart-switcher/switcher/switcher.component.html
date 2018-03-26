@@ -1,0 +1,13 @@
+<div class="select-items-wrap">
+  <div>
+    <div *ngFor="let item of charts">
+      <i class="fa fa {{ item.icon }} item-icon" *ngIf="item.show" (click)="change()"></i>
+    </div>
+  </div>
+  <div class="select-items" *ngIf="showSelectItems">
+    <div class="select-item" *ngFor="let item of charts" (click)="select(item)">
+      <i class="fa fa {{ item.icon }}"></i>
+      <span>{{item.label}}</span>
+    </div>
+  </div>
+</div>

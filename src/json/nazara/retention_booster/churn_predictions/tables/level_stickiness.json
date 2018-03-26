@@ -1,0 +1,23 @@
+{
+  "stuck_at_a_level": [
+    
+    {
+      "value": "low",
+      "Low_Risk": 760,
+      "Medium_Risk": 1193,
+      "High_Risk": 1999
+    },
+    {
+      "value": "medium",
+      "Low_Risk": 13,
+      "Medium_Risk": 15,
+      "High_Risk": 37
+    },
+    {
+      "value": "high",
+      "Low_Risk": 3719,
+      "Medium_Risk": 5731,
+      "High_Risk": 9405
+  }
+  ]
+}

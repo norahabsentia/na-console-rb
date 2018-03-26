@@ -1,0 +1,20 @@
+{
+	"engagement": [{
+			"value": "low",
+			"churned": 6536,
+			"retained": 5734
+
+		},
+		{
+			"value": "medium",
+			"churned": 1809,
+			"retained": 2624
+
+		},
+		{
+			"value": "high",
+			"churned": 773,
+			"retained": 2390
+		}
+	]
+}

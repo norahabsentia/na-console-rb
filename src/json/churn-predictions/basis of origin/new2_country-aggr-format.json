@@ -1,0 +1,17 @@
+{
+  "country": [
+    {"value": "India", "High_Risk": 587, "Medium_Risk": 8335, "Low_Risk": 9230} ,
+{"value": "USA", "High_Risk": 782, "Medium_Risk": 8790, "Low_Risk": 9254} ,
+{"value": "Russia", "High_Risk": 955, "Medium_Risk": 6148, "Low_Risk": 9103} ,
+{"value": "China", "High_Risk": 976, "Medium_Risk": 6426, "Low_Risk": 9891} ,
+{"value": "Japan", "High_Risk": 733, "Medium_Risk": 8319, "Low_Risk": 9487} ,
+{"value": "Australia", "High_Risk": 614, "Medium_Risk": 7209, "Low_Risk": 9506} ,
+{"value": "Canada", "High_Risk": 522, "Medium_Risk": 8394, "Low_Risk": 9625} ,
+{"value": "Italy", "High_Risk": 515, "Medium_Risk": 8287, "Low_Risk": 9801} ,
+{"value": "Brazil", "High_Risk": 714, "Medium_Risk": 8662, "Low_Risk": 9245} ,
+{"value": "Spain", "High_Risk": 623, "Medium_Risk": 8931, "Low_Risk": 9067} ,
+{"value": ">10%", "High_Risk": 697, "Medium_Risk": 8743, "Low_Risk": 9998} ,
+{"value": "5%-10%", "High_Risk": 955, "Medium_Risk": 8273, "Low_Risk": 9629} ,
+{"value": "<5%", "High_Risk": 722, "Medium_Risk": 8312, "Low_Risk": 9672}
+  ]
+}

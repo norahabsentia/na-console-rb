@@ -1,0 +1,17 @@
+{
+  "Region": [
+    {"value": "Tripura", "percentage": 45.99901458, "pop": 199703, "pop_churned": 69896, "pop_predicted": 75887, "pop_predicted_churned": 50294, "pop_predicted_notchurned": 19602, "pop_notpredicted_churned": 25593} ,
+{"value": "Uttar Pradesh", "percentage": 33.99935069, "pop": 198585, "pop_churned": 65533, "pop_predicted": 63547, "pop_predicted_churned": 51632, "pop_predicted_notchurned": 13901, "pop_notpredicted_churned": 11915} ,
+{"value": "Meghalaya", "percentage": 44.99892727, "pop": 198367, "pop_churned": 75379, "pop_predicted": 77363, "pop_predicted_churned": 56514, "pop_predicted_notchurned": 18865, "pop_notpredicted_churned": 20849} ,
+{"value": "Nagaland", "percentage": 31.9994713, "pop": 186896, "pop_churned": 76627, "pop_predicted": 84103, "pop_predicted_churned": 58666, "pop_predicted_notchurned": 17961, "pop_notpredicted_churned": 25437} ,
+{"value": "Gujarat", "percentage": 32.99994406, "pop": 179966, "pop_churned": 80984, "pop_predicted": 57589, "pop_predicted_churned": 47807, "pop_predicted_notchurned": 33177, "pop_notpredicted_churned": 9782} ,
+{"value": "Mizoram", "percentage": 36.99975885, "pop": 174411, "pop_churned": 81973, "pop_predicted": 87205, "pop_predicted_churned": 62595, "pop_predicted_notchurned": 19378, "pop_notpredicted_churned": 24610} ,
+{"value": "Goa", "percentage": 44.99961104, "pop": 174166, "pop_churned": 64441, "pop_predicted": 73149, "pop_predicted_churned": 44716, "pop_predicted_notchurned": 19725, "pop_notpredicted_churned": 28433} ,
+{"value": "Uttarakhand", "percentage": 36.9998895, "pop": 172794, "pop_churned": 72573, "pop_predicted": 82941, "pop_predicted_churned": 57540, "pop_predicted_notchurned": 15033, "pop_notpredicted_churned": 25401} ,
+{"value": "West Bengal", "percentage": 46.99993554, "pop": 172410, "pop_churned": 67239, "pop_predicted": 72412, "pop_predicted_churned": 46084, "pop_predicted_notchurned": 21155, "pop_notpredicted_churned": 26328} ,
+{"value": "Jharkhand", "percentage": 46.99921091, "pop": 171464, "pop_churned": 54868, "pop_predicted": 82302, "pop_predicted_churned": 50752, "pop_predicted_notchurned": 4116, "pop_notpredicted_churned": 31550} ,
+{"value": ">10%", "percentage": 31.99972006, "pop": 160873, "pop_churned": 53088, "pop_predicted": 54696, "pop_predicted_churned": 33413, "pop_predicted_notchurned": 19675, "pop_notpredicted_churned": 21283} ,
+{"value": "5%-10%", "percentage": 31.99946144, "pop": 155130, "pop_churned": 72911, "pop_predicted": 60500, "pop_predicted_churned": 40690, "pop_predicted_notchurned": 32221, "pop_notpredicted_churned": 19810} ,
+{"value": "<5%", "percentage": 36.99968457, "pop": 153841, "pop_churned": 56921, "pop_predicted": 67690, "pop_predicted_churned": 37383, "pop_predicted_notchurned": 19538, "pop_notpredicted_churned": 30307}
+  ]
+}

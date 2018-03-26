@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="row" style="margin: 0;">
+    <div class="main-caption">
+      USER TRENDS ( In App Purchases )
+    </div>
+    <div class="box-wrapper-top">
+      <div class="user-active">
+        <span>
+          Revenue Overview
+        </span>
+      </div>
+      <div class="container-risk">
+        <div class="box" style="border-radius: 10px 0 0 10px; border-right: none;">
+          <div class="caption-risk" style="">
+            Total Revenue (from 9/8/2012)
+          </div>
+          <span class="users" style="">
+            <!-- <i class="fas fa-rupee-sign"></i> -->
+            ₹ 49,17,6050
+          </span>
+        </div>
+        <div class="box" style="border-right: none;">
+          <div class="caption-risk">
+            Average Daily Revenue this week
+          </div>
+          <span class="users">
+            46,719
+          </span>
+        </div>
+        <div class="box" style="border-right: none;">
+          <div class="caption-risk" style="text-align: center;">
+            Daily Active Users
+          </div>
+          <span class="users">
+            69,147
+          </span>
+        </div>
+        <div class="box" style="border-right: none;">
+          <div class="caption-risk" style="text-align: center;">
+            ARPDAU
+          </div>
+          <span class="users">
+            70.25
+          </span>
+        </div>
+        <div class="box" style="border-radius:0 10px 10px 0;">
+          <div class="caption-risk" style="text-align: center;">
+            Last day Revenue
+          </div>
+          <span class="users">
+
+              ₹ 51,761
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="box-wrapper-top">
+      <div class="user-active">
+          <span>
+            Purchases Overview
+          </span>
+      </div>
+      <div class="container-risk" style="margin-bottom: 30px;">
+        <div class="box" style="border-radius: 10px 0 0 10px;border-right: none;">
+          <div class="caption-risk" style="">
+            Total Purchases (since 9/8/2012)
+          </div>
+          <span class="users">
+              22.918
+            </span>
+        </div>
+        <div class="box" style="border-right: none;">
+          <div class="caption-risk" style="text-align: center;">
+            Average Daily Purchases this week
+          </div>
+          <span class="users">
+              262
+            </span>
+        </div>
+        <div class="box" style="border-radius:0 10px 10px 0;">
+          <div class="caption-risk" style="text-align: center;">
+            Purchases Last Day
+          </div>
+          <span class="users">
+              314
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Revenue Time Series'"></chart-switcher-smart-price>
+      </div>
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="['Table']" [showMap]="1" [title]="'Revenue Geography Distribution'"></chart-switcher-smart-price>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Geogrphy of Revenue'"></chart-switcher-smart-price>
+
+      </div>
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Revenue Visualisation by Level'"></chart-switcher-smart-price>
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Sink and Source for Currency per Level'"></chart-switcher-smart-price>
+
+      </div>
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Level Revenue Visualisation'"></chart-switcher-smart-price>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <chart-switcher-smart-price [chartsValue]="charts" [title]="'Affluence Revenue'"></chart-switcher-smart-price>
+
+      </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,65 @@
+<div class="basic-container md-padding" layout="row">
+	<mat-grid-list cols="4" rowHeight="400px" *ngIf="!this.showFillerLibraryPage" >
+		<mat-grid-tile *ngFor="let notification of notificationList">
+			<mat-card class="example-card cursor_pointer noti-card" rowHeight="400px">
+			  <img mat-card-image src="../../../assets/images/notification_header.png" alt="Photo of a Shiba Inu">
+			  <mat-card-header  (click)="showFillerLibPage(notification)">
+			  	
+			    <!-- <div mat-card-avatar class="example-header-image"></div>
+			    <mat-card-title>Shiba Inu</mat-card-title>
+			    <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+			  </mat-card-header>	  
+			  <mat-card-content  (click)="showFillerLibPage(notification)">
+			  	<div class="card-content-height">
+				  	<h3>{{notification.title}}</h3>
+						<p style="height: 30px; overflow: hidden;">{{notification.body}}</p>
+			    </div>
+			    <div class="fillerSingleRow" *ngIf="notification && notification.Customer_Segment_ID">
+			    		<ng-container	 *ngFor="let custSegIndex of Object.keys(notification.Customer_Segment_ID)">
+							<span class="tagbutton smaller" [ngStyle]="{'background-color': getRandomColor(notification,custSegIndex)}">
+								<!-- <span > -->
+									{{notification.Customer_Segment_ID[custSegIndex].name}}
+									<!-- {{ this.getTagName(notification, custSegIndex) }} -->
+								<!-- </span> -->
+							</span>					
+						</ng-container>
+			    </div>
+				
+			  </mat-card-content>
+			  <mat-card-actions style="text-align: right;">
+			  	 <span class="notification_edit_icon">
+			  	 	<i _ngcontent-c10="" class="nb-edit"></i>
+			  	 </span>
+			  	 <span class="notification_edit_icon">
+			  	 	<i _ngcontent-c10="" class="nb-trash" (click)="onDelete(notification.noti_ID)"></i>
+			  	 </span>
+			  	 <span class="notification_edit_icon">
+			  	 	<i class="nb-paper-plane"></i>
+			  	 </span>
+			  </mat-card-actions>
+			</mat-card>
+		</mat-grid-tile> 
+		
+		<mat-grid-tile (click)="showFillerLibPage({})">
+			<mat-card class="example-card cursor_pointer" rowHeight="200px" style="width:50%">
+			  <!-- <mat-card-header>
+			  	&nbsp;
+			  </mat-card-header>	   -->
+			  <mat-card-content >
+			  	<!-- <br>
+			  	<br> -->
+			  	<div _ngcontent-c10="" class="new_prj_icon_span" style="height: 115px;text-align:center; color: #4aa3df">
+						<i _ngcontent-c10="" class="nb-plus-circled new_prj_icon" style="font-size: 5em;"></i>
+					    <span style="font-size: 1em;">Create new <br>notification template</span>
+				</div>
+			  	 
+			  </mat-card-content>
+			  <!-- <mat-card-actions>
+			    &nbsp; 
+			  </mat-card-actions> -->
+			</mat-card>
+		</mat-grid-tile> 
+	</mat-grid-list>
+	
+	<ngx-filler-library *ngIf="showFillerLibraryPage" [selectedNotification]="selectedNotification" (eventEmitter)="getNotification($event)"></ngx-filler-library>
+</div>  

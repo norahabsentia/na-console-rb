@@ -1,0 +1,54 @@
+{
+  "country": [
+    {
+      "value": "India",
+      "churned": 11388,
+      "retained": 11404
+    },
+    {
+      "value": "United Arab Emirates",
+      "churned": 2,
+      "retained": 8
+    },
+    {
+      "value": "United States",
+      "churned": 3,
+      "retained": 5
+    },
+    {
+      "value": "Qatar",
+      "churned": 0,
+      "retained": 7
+    },
+    {
+      "value": "Nepal",
+      "churned": 3,
+      "retained": 2
+    },
+    {
+      "value": "Bangladesh",
+      "churned": 3,
+      "retained": 1
+    },
+    {
+      "value": "Pakistan",
+      "churned": 2,
+      "retained": 2
+    },
+    {
+      "value": "France",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "China",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "Kuwait",
+      "churned": 1,
+      "retained": 2
+    }
+  ]
+}

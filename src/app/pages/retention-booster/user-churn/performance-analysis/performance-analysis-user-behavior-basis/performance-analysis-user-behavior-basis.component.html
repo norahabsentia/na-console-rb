@@ -1,0 +1,107 @@
+<div class="row">
+
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 stackbar-curent">
+                <chart-switcher *ngIf="currentlevel && currentlevelTable" [title]="'Current Level'" [data]="currentlevel" [dataTable]="currentlevelTable" [optionClass]="'big-chart'"></chart-switcher>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-12">
+                <chart-switcher *ngIf="engagement && engagementTable" [title]="'Engagement'" [data]="engagement" [dataTable]="engagementTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+                <chart-switcher *ngIf="Loyalty_Index && Loyalty_IndexTable" [title]="'Loyalty Index'" [data]="Loyalty_Index" [dataTable]="Loyalty_IndexTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-12">
+                <chart-switcher *ngIf="userSkill && userSkillTable" [title]="'User Skills'" [data]="userSkill" [dataTable]="userSkillTable" [optionClass]="'small-chart-height'"></chart-switcher>
+
+                <!--<chart-switcher *ngIf="userSkill" [title]="'User Skills'" [data]="userSkill"></chart-switcher>-->
+            </div>
+            <div class="col-md-6  col-xs-12 col-sm-12">
+                <chart-switcher *ngIf="totalGame && totalGameTable" [title]="'Total time spent in Game'" [data]="totalGame" [dataTable]="totalGameTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+
+        </div>
+        <br>
+        <!-- <div class="row small-wrap">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <chart-switcher *ngIf="Out_of_Lives" [title]="'Out of Lives'" [data]="Out_of_Lives"></chart-switcher>
+                </div>
+            </div> -->
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 stackbar-curent">
+                <chart-switcher *ngIf="lastAction && lastActionTable" [title]="'Last Action'" [data]="lastAction" [dataTable]="lastActionTable" [optionClass]="'big-chart'"></chart-switcher>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6  col-xs-12 col-sm-12">
+                <chart-switcher *ngIf="LevelStickiness && LevelStickinessTable" [title]="'Stuck at level'" [data]="LevelStickiness" [dataTable]="LevelStickinessTable" [optionClass]="'small-chart-height'"></chart-switcher>
+                <!-- <chart-switcher *ngIf="Out_of_Lives" [title]="'Out of Lives'" [data]="Out_of_Lives"></chart-switcher> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12 stackbar">
+                <chart-switcher *ngIf="currentlevel" [title]="'Current Level'" [data]="currentlevel"></chart-switcher>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 stackbar">
+                <chart-switcher *ngIf="lastAction" [title]="'Last Action'" [data]="lastAction"></chart-switcher>
+            </div>
+        </div>
+
+        <div class="row small-wrap">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="engagement" [title]="'Engagement'" [data]="engagement"></chart-switcher>
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="totalGame" [title]="'Total time spent in Game'" [data]="totalGame"></chart-switcher>
+            </div>
+        </div>
+
+        <div class="row small-wrap">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="userSkill" [title]="'User Skills'" [data]="userSkill"></chart-switcher>
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="Out_of_Lives" [title]="'Out of Lives'" [data]="Out_of_Lives"></chart-switcher>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 stackbar">
+                <chart-switcher *ngIf="LevelStickiness" [title]="'Level Stickiness'" [data]="LevelStickiness"></chart-switcher>
+            </div>
+        </div>
+
+        <div class="row small-wrap">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="Loyalty_Index" [title]="'Loyalty Index'" [data]="Loyalty_Index"></chart-switcher>
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="Out_of_Lives" [title]="'Out of Lives'" [data]="Out_of_Lives"></chart-switcher>
+            </div>
+        </div>
+    </div>
+</div> -->

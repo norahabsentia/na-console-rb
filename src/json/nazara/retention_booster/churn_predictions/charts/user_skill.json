@@ -1,0 +1,23 @@
+{
+	"user_skill": [
+
+		{
+			"value": "low",
+			"Low_Risk": 774,
+			"Medium_Risk": 1207,
+			"High_Risk": 2022
+		},
+		{
+			"value": "medium",
+			"Low_Risk": 6,
+			"Medium_Risk": 9,
+			"High_Risk": 20
+		},
+		{
+			"value": "high",
+			"Low_Risk": 3712,
+			"Medium_Risk": 5723,
+			"High_Risk": 9399
+		}
+	]
+}

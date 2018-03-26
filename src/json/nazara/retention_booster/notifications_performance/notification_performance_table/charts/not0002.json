@@ -1,0 +1,18 @@
+{
+	"daily_response":[
+		{"value":"22/02","open":21,"sent":818},
+		{"value":"23/02","open":45,"sent":818},
+		{"value":"24/02","open":29,"sent":818},
+		{"value":"25/02","open":92,"sent":618},
+		{"value":"26/02","open":21,"sent":408},
+		{"value":"27/02","open":21,"sent":500},
+		{"value":"28/02","open":29,"sent":636},
+		{"value":"29/02","open":30,"sent":818},
+		{"value":"01/03","open":18,"sent":818},
+		{"value":"02/03","open":20,"sent":818},
+		{"value":"03/03","open":15,"sent":618},
+		{"value":"04/03","open":22,"sent":408},
+		{"value":"05/03","open":90,"sent":500},
+		{"value":"06/03","open":14,"sent":636},
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"notification_response":[
+		{"value":"Incentive","open":1949,"not_opened":7755},
+		{"value":"Promotion","open":300,"not_opened":12864},
+		{"value":"Reminder","open":700,"not_opened":10439},
+		{"value":"Interactive","open":1000,"not_opened":18414}
+	]
+}

@@ -1,0 +1,26 @@
+@import '../../../@theme/styles/themes';
+@import '~@nebular/theme/styles/global/bootstrap/hero-buttons';
+@include nb-install-component() {
+    nb-card {
+        border-radius: 0px;
+        /deep/ chart,
+        /deep/ .echart {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        .title {
+            font-size: 1.3rem;
+            font-weight: nb-theme(font-weight-medium);
+            text-transform: none;
+            color: nb-theme(card-fg-heading);
+            text-align: center;
+        }
+        .bb-1 {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    @include nb-for-theme(cosmic) {
+        nb-card {}
+    }
+}

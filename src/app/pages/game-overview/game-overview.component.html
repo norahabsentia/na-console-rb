@@ -1,0 +1,230 @@
+<div class="tab-wrap" (click)="OVERVIEWShow = !OVERVIEWShow">
+    <span>
+    OVERVIEW
+  </span>
+    <div class="horizontal-line"></div>
+    <button *ngIf="!OVERVIEWShow">
+    <i class="ion-chevron-up ion-top"></i>
+    <i class="ion-chevron-up ion-bot"></i>
+  </button>
+    <button *ngIf="OVERVIEWShow">
+    <i class="ion-chevron-down ion-top"></i>
+    <i class="ion-chevron-down ion-bot"></i>
+  </button>
+</div>
+<div class="row" *ngIf="!OVERVIEWShow">
+    <div class="col-sm-12">
+        <ngx-overview-status-card></ngx-overview-status-card>
+    </div>
+</div>
+
+<div class="row" *ngIf="!OVERVIEWShow">
+    <div class="col-sm-6">
+        <ngx-classification></ngx-classification>
+    </div>
+    <div class="col-sm-6">
+        <ngx-classification-diag-chart></ngx-classification-diag-chart>
+    </div>
+</div>
+
+<div class="tab-wrap" (click)="DISTRIBUTIONShow = !DISTRIBUTIONShow">
+    <span style="width: 624px;">
+    USER DISTRIBUTION (Based on Player origin)
+  </span>
+    <div class="horizontal-line"></div>
+    <button *ngIf="!DISTRIBUTIONShow">
+    <i class="ion-chevron-up ion-top"></i>
+    <i class="ion-chevron-up ion-bot"></i>
+  </button>
+    <button *ngIf="DISTRIBUTIONShow">
+    <i class="ion-chevron-down ion-top"></i>
+    <i class="ion-chevron-down ion-bot"></i>
+  </button>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div *ngIf="!DISTRIBUTIONShow" class="row">
+            <div class="col-sm-6">
+                <!--<ngx-country-chart></ngx-country-chart>-->
+                <chart-switcher *ngIf="country" [title]="'Country'" [showMap]="true" [data]="country"></chart-switcher>
+
+            </div>
+            <div class="col-sm-6">
+                <!--<nb-card>-->
+                <!--<nb-card-header>Region</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-region-chart></ngx-region-chart>-->
+                <!--</nb-card-body>-->
+                <chart-switcher *ngIf="region" [title]="'Region'" [data]="region"></chart-switcher>
+
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!DISTRIBUTIONShow" class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="mobile" [title]="'Mobile Brand'" [data]="mobile"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Mobile Brand</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="mobileBrandSeries"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!DISTRIBUTIONShow" class="row small-container">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="affluence" [title]="'Affluence'" [data]="affluence"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Affluence</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="bar" [series]="affluenceSeries"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="country" [title]="'Country'" [data]="country"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Country</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="horizontalBar" [series]="countrySeries"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+
+        <div class="tab-wrap" (click)="ENGAGEMENTShow = !ENGAGEMENTShow">
+            <span style="width: 222px;">
+        USER ENGAGEMENT
+      </span>
+            <div class="horizontal-line"></div>
+            <button *ngIf="!ENGAGEMENTShow">
+        <i class="ion-chevron-up ion-top"></i>
+        <i class="ion-chevron-up ion-bot"></i>
+      </button>
+            <button *ngIf="ENGAGEMENTShow">
+        <i class="ion-chevron-down ion-top"></i>
+        <i class="ion-chevron-down ion-bot"></i>
+      </button>
+        </div>
+
+        <div *ngIf="!ENGAGEMENTShow" class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="currentlevel" [title]="'Current Level'" [data]="currentlevel"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Current Level</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="currentLevelSeries" [options]="currentLevelOptions"></ngx-user-chart>-->
+
+                <!--&lt;!&ndash;<ngx-current-level-chart></ngx-current-level-chart>&ndash;&gt;-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!ENGAGEMENTShow" class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="lastAction" [title]="'Last Action'" [data]="lastAction"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Last Action</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="actionsSeries" [options]="actionsSeriesOptions"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!ENGAGEMENTShow" class="row">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="engagement" [title]="'Engagement'" [data]="engagement"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Engagement</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-engagement-chart></ngx-engagement-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="totalGame" [title]="'Total time spent in Game'" [data]="totalGame"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Total time spent in Game</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-spent-time-chart></ngx-spent-time-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!ENGAGEMENTShow" class="row">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="userSkill" [title]="'User Skills'" [data]="userSkill"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>User Skills</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="skillsSeries" [options]="skillsSeriesOptions"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="Out_of_Lives" [title]="'Out of Lives'" [data]="Out_of_Lives"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Out of Lives</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="outOfLivesSeries"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+
+        <div *ngIf="!ENGAGEMENTShow" class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="LevelStickiness" [title]="'Level Stickiness'" [data]="LevelStickiness"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Level Stickiness</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="sticknessSeries" [options]="sticknessSeriesOptions"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+        <div *ngIf="!ENGAGEMENTShow" class="row small-container">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="Loyalty_Index" [title]="'Loyalty Index'" [data]="Loyalty_Index"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>Loyality Index</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="horizontalBar" [series]="loyaltySeries"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+            <div class="col-sm-6 small-container">
+                <chart-switcher *ngIf="Platform" [title]="'App Version'" [data]="Platform"></chart-switcher>
+
+                <!--<nb-card>-->
+                <!--<nb-card-header>App Version</nb-card-header>-->
+                <!--<nb-card-body>-->
+                <!--<ngx-user-chart type="line" [series]="appVersionSeries" [options]="appVersionOptions"></ngx-user-chart>-->
+                <!--</nb-card-body>-->
+                <!--</nb-card>-->
+            </div>
+        </div>
+
+
+    </div>
+</div>

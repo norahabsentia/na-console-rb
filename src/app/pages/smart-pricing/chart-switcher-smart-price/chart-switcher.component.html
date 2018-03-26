@@ -1,0 +1,183 @@
+<nb-card>
+  <nb-card-header>
+    <div>
+          <span *ngFor="let item of charts" [hidden]="!item.show || title">
+            {{item.type}}
+          </span>
+      <span *ngIf="title">
+            {{title}}
+          </span>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <div id="class" class="wrapper">
+        <div *ngFor="let item of charts">
+            <div *ngIf="item.show && (item.type === 'Pie' || item.type === 'Histogram' || item.type === 'eBar' || item.type === 'ePie')" class="dropdawn-wrap-outer">
+                <div class="right-content-select" style="">
+                    <div class="lable">
+                      Basic:
+                    </div>
+                    <div class="select-wrap">
+                      <button class="select" (click)="showLocation = !showLocation">
+                          {{selectedLocation}}
+                          <i class="ion-arrow-down-b"></i>
+                      </button>
+                      <div *ngIf="showLocation" class="dropdawn dropdawn-location">
+                        <ul class="list-location">
+                          <li *ngFor="let item of dataLocation">
+                            <a (click)="clickLocation(item)">{{item}}</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div *ngFor="let item of charts">
+            <!--<ngx-chartjs-pie></ngx-chartjs-pie>-->
+            <!--<ngx-echarts-pie *ngIf="item.show && item.type === 'Pie'"></ngx-echarts-pie>-->
+            <!--<ngx-echarts-bar *ngIf="item.show && item.type === 'Histogram'"></ngx-echarts-bar>-->
+
+            <ngx-chartjs-bar-smart-pricing *ngIf="item.show && item.type === 'Bar'"></ngx-chartjs-bar-smart-pricing>
+            <!--&lt;!&ndash;<ngx-chartjs-line *ngIf="item.show && item.type === 'Line'"></ngx-chartjs-line>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ngx-chartjs-multiple-xaxis *ngIf="item.show && item.type === 'Area'"></ngx-chartjs-multiple-xaxis>&ndash;&gt;-->
+            <ngx-echarts-line-smart-pricing *ngIf="item.show && item.type === 'Line'"></ngx-echarts-line-smart-pricing>
+            <!--&lt;!&ndash;<div *ngIf="item.show && item.type === 'Map'" echarts [options]="options" class="echarts"></div>&ndash;&gt;-->
+            <ngx-country-chart-smart-pricing *ngIf="item.show && item.type === 'Map'"></ngx-country-chart-smart-pricing>
+            <ngx-echarts-bar-smart-price *ngIf="item.show && item.type === 'eBar'"></ngx-echarts-bar-smart-price>
+            <ngx-echarts-pie-smart-price *ngIf="item.show && item.type === 'ePie' && pieData" [data]="pieData" [legend]="legend"></ngx-echarts-pie-smart-price>
+            <div *ngIf="item.show && item.type === 'Table'">
+
+              <!--<ng2-smart-table *ngIf="item.show && item.type === 'Table'" [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)" reset></ng2-smart-table>-->
+              <div class="table-smart">
+                <!-- <div class="header-table-smart">
+                  <div class="column center-alingh" style="border-left: 0;">
+                    <div>
+                      Product ID
+                    </div>
+                  </div>
+                  <div class="column center-alingh small-cell">
+                    <div>
+                      Base Price
+                    </div>
+                  </div>
+                  <div class="column column-range big-cell-range">
+                    <div class="range-header ">
+                      Recommendet Prise Range
+                    </div>
+                    <div class="prise-range">
+                      <div class="min-range">
+                        Min
+                      </div>
+                      <div class="max-range">
+                        Max
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-range big-cell-range">
+                    <div class="range-header">
+                      Custom Prise Range
+                    </div>
+                    <div class="prise-range">
+                      <div class="min-range">
+                        Min
+                      </div>
+                      <div class="max-range">
+                        Max
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column center-alingh small-cell-icon">
+                    <div>
+                      Actions
+                    </div>
+                  </div>
+                </div> -->
+                <div class="header-table-smart">
+                  <div class="column center-alingh" style="border-left: 0; height: 50px; width: calc(100% / 3);">
+                    <div>
+                      Product name
+                    </div>
+                  </div>
+                  <div class="column center-alingh" style="height: 50px; width: calc(100% / 3);">
+                    <div>
+                      Buy
+                    </div>
+                  </div>
+                  <div class="column center-alingh" style="height: 50px; width: calc(100% / 3);">
+                    <div>
+                      Not buy
+                    </div>
+                  </div>
+                </div>
+                <div class="tbody-smart">
+                    <div class="header-table-smart" *ngFor="let item of chartsInput; let i = index">
+                        <div class="column center-alingh" style="border-left: 0; height: 40px; width: calc(100% / 3); border-top: 0;">
+                          <div>
+                              {{item}}
+                          </div>
+                        </div>
+                        <div class="column center-alingh" style="height: 40px; width: calc(100% / 3); border-top: 0;">
+                          <div>
+                              {{data[item][0].value}}
+                          </div>
+                        </div>
+                        <div class="column center-alingh" style="height: 40px; width: calc(100% / 3); border-top: 0;">
+                          <div>
+                              {{data[item][1].value}}
+                          </div>
+                        </div>
+                      </div>
+                  <div  class="row-table-smart">
+                   
+                    <!--<div class="row-table-item" style="border-left: 0;">-->
+                      <!--<div class="row-table-item-iside text-hiden">-->
+                        <!--{{item.ProductID}}-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="row-table-item small-cell">-->
+                      <!--<div class="row-table-item-iside text-hiden">{{item.BasePrice}}</div>-->
+                    <!--</div>-->
+                    <!--<div class="row-table-item big-cell-range" style="border:0;">-->
+                      <!--<div class="row-table-item"  style="width: calc(50% - -1px);">-->
+                        <!--<div class="row-table-item-iside text-hiden">{{item.RPRMin}}</div>-->
+                      <!--</div>-->
+                      <!--<div class="row-table-item" style="width: calc(50% + 1px);">-->
+                        <!--<div class="row-table-item-iside text-hiden">{{item.RPRMax}}</div>-->
+                        <!--<i (click)="showModal = true" class="ion-stats-bars icon-position"></i>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="row-table-item big-cell-range" style="border:0;">-->
+                      <!--<div class="row-table-item" style="width: calc(50%);">-->
+                        <!--<div *ngIf="!option[i]" class="row-table-item-iside text-hiden">{{item.CPRMin}}</div>-->
+                        <!--<input *ngIf="option[i]" class="input-smart-table" type="text" [(ngModel)]="item.CPRMin" placeholder="">-->
+                      <!--</div>-->
+                      <!--<div class="row-table-item" style="width: calc(50%);">-->
+                        <!--<div *ngIf="!option[i]" class="row-table-item-iside text-hiden">{{item.CPRMax}}</div>-->
+                        <!--<input *ngIf="option[i]" class="input-smart-table" type="text" [(ngModel)]="item.CPRMax" placeholder="">-->
+                        <!--<i (click)="showModal = true" class="ion-stats-bars icon-position"></i>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="select-items-wrap">
+      <div>
+        <div *ngFor="let item of charts">
+          <i class="fa fa {{ item.icon }} item-icon" *ngIf="item.show" (click)="change()"></i>
+        </div>
+      </div>
+      <div class="select-items" *ngIf="showSelectItems">
+        <div class="select-item" *ngFor="let item of charts" (click)="select(item)">
+          <i class="fa fa {{ item.icon }}"></i>
+          <span>{{item.label}}</span>
+        </div>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>

@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-lg-9" style="    padding: 0;">
+    <notification [selectedNotification]="selectedNotification" (eventEmitter)="getNotification($event)"></notification>
+  </div>
+  <div class="col-3">
+    <notification-list [selectedNotification]="selectedNotification"></notification-list>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="row" >
+  <div class="col-sm-12">
+    <ngx-overview-status-card [data]="data"></ngx-overview-status-card>
+  </div>
+</div>
+
+<div class="row" style="padding-left: 3px; padding-right: 3px;">
+  <div class="col-sm-6">
+    <ngx-classification [data]="data"></ngx-classification>
+  </div>
+  <div class="col-sm-6">
+    <ngx-classification-diag-chart *ngIf="data" [data]="data"></ngx-classification-diag-chart>
+  </div>
+</div>

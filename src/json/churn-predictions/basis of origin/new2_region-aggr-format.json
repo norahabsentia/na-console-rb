@@ -1,0 +1,17 @@
+{
+  "Region": [
+    {"value": "Andhrapradesh", "High_Risk": 591, "Medium_Risk": 8126, "Low_Risk": 9656} ,
+{"value": "Maharastra", "High_Risk": 910, "Medium_Risk": 6857, "Low_Risk": 9233} ,
+{"value": "Karnataka", "High_Risk": 656, "Medium_Risk": 6453, "Low_Risk": 9285} ,
+{"value": "Tamilnadu", "High_Risk": 554, "Medium_Risk": 7348, "Low_Risk": 9920} ,
+{"value": "Gujarat", "High_Risk": 566, "Medium_Risk": 6888, "Low_Risk": 9705} ,
+{"value": "Telangana", "High_Risk": 696, "Medium_Risk": 8556, "Low_Risk": 9623} ,
+{"value": "Kerala", "High_Risk": 722, "Medium_Risk": 8863, "Low_Risk": 9787} ,
+{"value": "WestBengal", "High_Risk": 762, "Medium_Risk": 8903, "Low_Risk": 9734} ,
+{"value": "Uttar Pradesh", "High_Risk": 835, "Medium_Risk": 7721, "Low_Risk": 9718} ,
+{"value": "Madhyapradesh", "High_Risk": 844, "Medium_Risk": 6225, "Low_Risk": 9671} ,
+{"value": ">10%", "High_Risk": 763, "Medium_Risk": 7081, "Low_Risk": 9239} ,
+{"value": "5%-10%", "High_Risk": 617, "Medium_Risk": 6932, "Low_Risk": 9182} ,
+{"value": "<5%", "High_Risk": 894, "Medium_Risk": 7199, "Low_Risk": 9714}
+  ]
+}

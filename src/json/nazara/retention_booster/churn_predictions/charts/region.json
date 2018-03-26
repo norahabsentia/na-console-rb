@@ -1,0 +1,63 @@
+{
+	"region": [{
+			"value": "Maharashtra",
+			"Low_Risk": 758,
+			"Medium_Risk": 1094,
+			"High_Risk": 1898
+		},
+		{
+			"value": "Delhi",
+			"Low_Risk": 456,
+			"Medium_Risk": 688,
+			"High_Risk": 1134
+		},
+		{
+			"value": "Uttar Pradesh",
+			"Low_Risk": 410,
+			"Medium_Risk": 686,
+			"High_Risk": 1069
+		},
+		{
+			"value": "Gujarat",
+			"Low_Risk": 438,
+			"Medium_Risk": 685,
+			"High_Risk": 1030
+		},
+		{
+			"value": "Karnataka",
+			"Low_Risk": 337,
+			"Medium_Risk": 538,
+			"High_Risk": 879
+		},
+		{
+			"value": "Telangana",
+			"Low_Risk": 308,
+			"Medium_Risk": 467,
+			"High_Risk": 837
+		},
+		{
+			"value": "Tamil Nadu",
+			"Low_Risk": 333,
+			"Medium_Risk": 454,
+			"High_Risk": 788
+		},
+		{
+			"value": "Madhya Pradesh",
+			"Low_Risk": 243,
+			"Medium_Risk": 463,
+			"High_Risk": 687
+		},
+		{
+			"value": "Bihar",
+			"Low_Risk": 248,
+			"Medium_Risk": 371,
+			"High_Risk": 647
+		},
+		{
+			"value": "Rajasthan",
+			"Low_Risk": 259,
+			"Medium_Risk": 381,
+			"High_Risk": 581
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+  "Engagement": [
+  {"value": "-0.16", "percentage": 30.99931405, "pop": 55398, "pop_churned": 17173, "pop_predicted": 24375, "pop_predicted_churned": 13503, "pop_predicted_notchurned": 3670, "pop_notpredicted_churned": 10872},
+{"value": "-0.05", "percentage": 37.99914493, "pop": 81865, "pop_churned": 31108, "pop_predicted": 36839, "pop_predicted_churned": 23781, "pop_predicted_notchurned": 7327, "pop_notpredicted_churned": 13058},
+{"value": "0.13", "percentage": 34.99949344, "pop": 78964, "pop_churned": 27637, "pop_predicted": 30006, "pop_predicted_churned": 19886, "pop_predicted_notchurned": 7751, "pop_notpredicted_churned": 10120},
+{"value": "-0.15", "percentage": 48.99991208, "pop": 136488, "pop_churned": 66879, "pop_predicted": 58689, "pop_predicted_churned": 40809, "pop_predicted_notchurned": 26070, "pop_notpredicted_churned": 17880},
+{"value": "0.25", "percentage": 41.99972411, "pop": 159482, "pop_churned": 66982, "pop_predicted": 52629, "pop_predicted_churned": 43059, "pop_predicted_notchurned": 23923, "pop_notpredicted_churned": 9570},
+{"value": "0.16", "percentage": 37.99955371, "pop": 183739, "pop_churned": 69820, "pop_predicted": 67983, "pop_predicted_churned": 54431, "pop_predicted_notchurned": 15389, "pop_notpredicted_churned": 13552},
+{"value": "0.01", "percentage": 42.99970491, "pop": 149108, "pop_churned": 64116, "pop_predicted": 68589, "pop_predicted_churned": 53081, "pop_predicted_notchurned": 11035, "pop_notpredicted_churned": 15508},
+{"value": "-0.43", "percentage": 34.9994745, "pop": 114176, "pop_churned": 39961, "pop_predicted": 54804, "pop_predicted_churned": 35062, "pop_predicted_notchurned": 4899, "pop_notpredicted_churned": 19742},
+{"value": "0.05", "percentage": 45.99925103, "pop": 64088, "pop_churned": 29480, "pop_predicted": 29480, "pop_predicted_churned": 20636, "pop_predicted_notchurned": 8844, "pop_notpredicted_churned": 8844},
+{"value": "0.03", "percentage": 39.99972364, "pop": 144741, "pop_churned": 57896, "pop_predicted": 49211, "pop_predicted_churned": 40164, "pop_predicted_notchurned": 17732, "pop_notpredicted_churned": 9047},
+{"value": "-0.19", "percentage": 30.99973452, "pop": 177037, "pop_churned": 54881, "pop_predicted": 58422, "pop_predicted_churned": 35123, "pop_predicted_notchurned": 19758, "pop_notpredicted_churned": 23299},
+{"value": "0.2", "percentage": 37.99932528, "pop": 80033, "pop_churned": 30412, "pop_predicted": 38415, "pop_predicted_churned": 22712, "pop_predicted_notchurned": 7700, "pop_notpredicted_churned": 15703},
+{"value": "-0.24", "percentage": 33.99884662, "pop": 50287, "pop_churned": 17097, "pop_predicted": 24137, "pop_predicted_churned": 14225, "pop_predicted_notchurned": 2872, "pop_notpredicted_churned": 9912},
+{"value": "0.32", "percentage": 38.9996332, "pop": 141768, "pop_churned": 55289, "pop_predicted": 68048, "pop_predicted_churned": 49334, "pop_predicted_notchurned": 5955, "pop_notpredicted_churned": 18714},
+{"value": "0.33", "percentage": 29.99989085, "pop": 183234, "pop_churned": 54970, "pop_predicted": 82455, "pop_predicted_churned": 51534, "pop_predicted_notchurned": 3436, "pop_notpredicted_churned": 30921},
+{"value": "-0.15", "percentage": 42.9997844, "pop": 148424, "pop_churned": 63822, "pop_predicted": 74212, "pop_predicted_churned": 44861, "pop_predicted_notchurned": 18961, "pop_notpredicted_churned": 29351},
+{"value": "-0.07", "percentage": 32.0, "pop": 163100, "pop_churned": 52192, "pop_predicted": 58716, "pop_predicted_churned": 34936, "pop_predicted_notchurned": 17256, "pop_notpredicted_churned": 23780},
+{"value": "-0.11", "percentage": 42.99827843, "pop": 51116, "pop_churned": 21979, "pop_predicted": 19935, "pop_predicted_churned": 14460, "pop_predicted_notchurned": 7519, "pop_notpredicted_churned": 5475},
+{"value": "0.17", "percentage": 46.99992681, "pop": 136630, "pop_churned": 64216, "pop_predicted": 40989, "pop_predicted_churned": 37347, "pop_predicted_notchurned": 26869, "pop_notpredicted_churned": 3642},
+{"value": "0.13", "percentage": 29.99965734, "pop": 87551, "pop_churned": 26265, "pop_predicted": 42899, "pop_predicted_churned": 22132, "pop_predicted_notchurned": 4133, "pop_notpredicted_churned": 20767},
+{"value": "0.2", "percentage": 36.99964359, "pop": 171153, "pop_churned": 63326, "pop_predicted": 53057, "pop_predicted_churned": 38406, "pop_predicted_notchurned": 24920, "pop_notpredicted_churned": 14651},
+{"value": "-0.46", "percentage": 29.99960951, "pop": 153652, "pop_churned": 46095, "pop_predicted": 72216, "pop_predicted_churned": 40816, "pop_predicted_notchurned": 5279, "pop_notpredicted_churned": 31400},
+{"value": "0.2", "percentage": 42.9989281, "pop": 75567, "pop_churned": 32493, "pop_predicted": 27204, "pop_predicted_churned": 23281, "pop_predicted_notchurned": 9212, "pop_notpredicted_churned": 3923},
+{"value": "0.04", "percentage": 47.99975797, "pop": 115686, "pop_churned": 55529, "pop_predicted": 56686, "pop_predicted_churned": 37591, "pop_predicted_notchurned": 17938, "pop_notpredicted_churned": 19095},
+{"value": "0.25", "percentage": 43.99897285, "pop": 89568, "pop_churned": 39409, "pop_predicted": 44784, "pop_predicted_churned": 31572, "pop_predicted_notchurned": 7837, "pop_notpredicted_churned": 13212},
+{"value": "0.11", "percentage": 43.99944364, "pop": 129413, "pop_churned": 56941, "pop_predicted": 38823, "pop_predicted_churned": 34475, "pop_predicted_notchurned": 22466, "pop_notpredicted_churned": 4348},
+{"value": "-0.26", "percentage": 29.99950164, "pop": 160526, "pop_churned": 48157, "pop_predicted": 51368, "pop_predicted_churned": 33340, "pop_predicted_notchurned": 14817, "pop_notpredicted_churned": 18028},
+{"value": "-0.39", "percentage": 38.99951658, "pop": 194446, "pop_churned": 75833, "pop_predicted": 58333, "pop_predicted_churned": 43603, "pop_predicted_notchurned": 32230, "pop_notpredicted_churned": 14730},
+{"value": "0.29", "percentage": 41.99935639, "pop": 105654, "pop_churned": 44374, "pop_predicted": 49657, "pop_predicted_churned": 32910, "pop_predicted_notchurned": 11464, "pop_notpredicted_churned": 16747}
+  ]
+}

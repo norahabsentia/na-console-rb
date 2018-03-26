@@ -1,0 +1,736 @@
+<div class="container" style="padding: 0; padding-bottom: 30px;">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="small-card">
+                <nb-card class="small-card">
+                    <nb-layout-header>
+                        <div class="header-table">
+                            <div class="small-cell-churn-3 active-item  " style="width: 100% !important;">
+                                Chart Prediction Overview
+                            </div>
+                        </div>
+                    </nb-layout-header>
+                    <nb-card-body class="vertical-center">
+                        <div class="row">
+                            <div class="col-md-5 col-xs-12 col-sm-12">
+                                <!--<div class="label-top">-->
+                                <!--Chart Prediction Overview-->
+                                <!--</div>-->
+                                <div>
+                                    <chart *ngIf="data" type="doughnut" [data]="data" [options]="options"></chart>
+                                </div>
+                                <br>
+                                <div class="user-active">
+                                    <span>
+                        Active Users:
+                      </span>
+                                    <span>
+                        {{churn.High_Risk + churn.Medium_Risk + churn.Low_Risk}}
+                      </span>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-xs-12 col-sm-12">
+                                <div>
+
+                                    <div class="container-risk">
+                                        <div class="box" style="border-radius: 10px 0 0 10px;">
+                                            <div class="caption-risk" style="color: #4aa3df;">
+                                                High Risk
+                                            </div>
+                                            <span class="users">
+                          {{churn.High_Risk}}
+                        </span>
+                                        </div>
+                                        <div class="box">
+                                            <div class="caption-risk" style="color: #81b7dc;">
+                                                Medium Risk
+                                            </div>
+                                            <span class="users">
+                          {{churn.Medium_Risk}}
+                        </span>
+                                        </div>
+                                        <div class="box" style="border-radius:0 10px 10px 0;">
+                                            <div class="caption-risk" style="color: #bcbabe;">
+                                                Low Risk
+                                            </div>
+                                            <span class="users">
+                          {{churn.Low_Risk}}
+                        </span>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="container-risk">
+                                        <div class="box" style="border-radius: 10px 0 0 10px;">
+                                            <div class="caption-risk" style="color: #4aa3df;">
+                                                Period
+                                            </div>
+                                            <span class="users">
+                        Observation<br>Churn
+                      </span>
+                                        </div>
+                                        <div class="box">
+                                            <div class="caption-risk" style="color: #4aa3df;">
+                                                Start Date
+                                            </div>
+                                            <span class="users">
+                        {{churn.Observation_Period_Start}} <br> {{churn.Churn_Period_Start}}
+                      </span>
+                                        </div>
+                                        <div class="box" style="border-radius:0 10px 10px 0;">
+                                            <div class="caption-risk" style="color: #4aa3df;">
+                                                <!-- ffwefw  bcbabe -->
+                                                End Date
+                                            </div>
+                                            <span class="users">
+                        {{churn.Observation_Period_End}}<br> {{churn.Churn_Period_End}}
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nb-card-body>
+                </nb-card>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="small-card">
+                <nb-card>
+                    <nb-layout-header>
+                        <div class="header-table">
+                            <div [ngClass]="{'active-item': barSwitch1 === 'platform'}" (click)="clickLocation('platform', 'dataBar1', 'dataTable1','dataTable1keys', 'barSwitch1')" style="border-right: 1px solid #f3f3f3;">
+                                Platform
+                            </div>
+                            <div [ngClass]="{'active-item': barSwitch1 === 'app version'}" (click)="clickLocation('app version', 'dataBar1', 'dataTable1','dataTable1keys', 'barSwitch1')">
+                                App Version
+                            </div>
+                        </div>
+                    </nb-layout-header>
+                    <nb-card-body class="small-chart-height" style="position: relative;">
+                        <div>
+                            <chart *ngIf="dataBar1Options.type === 'Histogram' && dataBar1" type="bar" [data]="dataBar1" [options]="optionsBar"></chart>
+                            <div class="table-wrap-scroll" *ngIf="dataBar1Options.type === 'Table'">
+                                <!--<ng2-smart-table *ngIf="dataBar1Options.type === 'Table'" [settings]="settings" [source]="source" reset></ng2-smart-table>-->
+                                <div *ngIf="dataBar1Options.type === 'Table' && dataTable1" class="tbody-smart">
+                                    <div class="row-table-smart">
+                                        <div *ngFor="let item of dataTable1keys; let i = index" class="row-table-item column-4">
+                                            <div><b>
+                      {{item}}</b>
+                                            </div>
+                                        </div>
+
+                                        <!--div class="row-table-item column-4" style="border-left: 0;">
+                    <div>
+                      {{barSwitch1}}
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      High risk
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      Medium risk
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      Low risk
+                    </div>
+                  </div-->
+                                    </div>
+                                    <div *ngFor="let item of dataTable1" class="row-table-smart">
+                                        <div *ngFor="let key of dataTable1keys" class="row-table-item column-4">
+                                            <div>
+                                                {{item[key]}}
+                                            </div>
+                                        </div>
+
+                                        <!--div class="row-table-item column-4" style="border-left: 0;">
+                    <div>
+                      {{item.value}}
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      {{item.High_Risk}}
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      {{item.Medium_Risk}}
+                    </div>
+                  </div>
+                  <div class="row-table-item column-4">
+                    <div>
+                      {{item.Low_Risk}}
+                    </div>
+                  </div-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nb-card-body>
+                    <div class="switcher-wrap-small-tb">
+                        <switcher [charts]="charts1" (changeEvent)="changeUserDistribution($event)"></switcher>
+                    </div>
+                </nb-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="small-card" style="height: unset">
+    <nb-card style="position: relative;">
+        <nb-layout-header>
+            <div class="header-table">
+                <div [ngClass]="{'active-item': barSwitch2 === 'country'}" (click)="clickLocation('country', 'dataBar2', 'dataTable2','dataTable2keys', 'barSwitch2')" class=" small-cell-churn" style="border-right: 1px solid #f3f3f3;">
+                    Country
+                </div>
+                <div [ngClass]="{'active-item': barSwitch2 === 'region'}" (click)="clickLocation('region', 'dataBar2', 'dataTable2','dataTable2keys', 'barSwitch2')" class="small-cell-churn" style="border-right: 1px solid #f3f3f3;">
+                    Region
+                </div>
+                <div [ngClass]="{'active-item': barSwitch2 === 'affluence'}" (click)="clickLocation('affluence', 'dataBar2', 'dataTable2','dataTable2keys', 'barSwitch2')" class="small-cell-churn" style="border-right: 1px solid #f3f3f3;">
+                    Affluence
+                </div>
+                <div [ngClass]="{'active-item': barSwitch2 === 'mobile brand'}" (click)="clickLocation('mobile brand', 'dataBar2', 'dataTable2','dataTable2keys', 'barSwitch2')" class="small-cell-churn">
+                    Mobile brand
+                </div>
+            </div>
+        </nb-layout-header>
+        <nb-card-body class="big-cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <!-- <div class="label-top">
+                    User Distribution on basis of origin
+                </div> -->
+                        <div>
+                            <chart *ngIf="dataBar2Options.type === 'Histogram' && dataBar2" type="bar" [data]="dataBar2" [options]="optionsBar"></chart>
+                            <div class="table-wrap-scroll" *ngIf="dataBar2Options.type === 'Table'">
+                                <!--<ng2-smart-table *ngIf="dataBar1Options.type === 'Table'" [settings]="settings" [source]="source" reset></ng2-smart-table>-->
+                                <div *ngIf="dataBar2Options.type === 'Table' && dataTable2" class="tbody-smart">
+                                    <div class="row-table-smart">
+                                        <div *ngFor="let item of dataTable2keys; let i = index" class="row-table-item column-4">
+                                            <div><b>
+                           {{item}}</b>
+                                            </div>
+                                        </div>
+
+                                        <!--div class="row-table-item column-4" style="border-left: 0;">
+                          <div>
+                            {{barSwitch2}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            High risk
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            Medium risk
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            Low risk
+                          </div>
+                        </div-->
+                                    </div>
+                                    <div *ngFor="let item of dataTable2" class="row-table-smart">
+                                        <div *ngFor="let key of dataTable2keys" class="row-table-item column-4">
+                                            <div>
+                                                {{item[key]}}
+                                            </div>
+                                        </div>
+
+                                        <!--div class="row-table-item column-4" style="border-left: 0;">
+                          <div>
+                            {{item.value}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.High_Risk}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.Medium_Risk}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.Low_Risk}}
+                          </div>
+                        </div-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4 col-xs-12">
+                <div class="right-content-select" style="margin-top: 27px;">
+                  <div class="lable">
+                    Basic:
+                  </div>
+                  <div class="select-wrap">
+                    <button class="select" (click)="showLocation = !showLocation">
+                        {{selectedLocation}}
+                        <i class="ion-arrow-down-b"></i>
+                    </button>
+                    <div *ngIf="showLocation" class="dropdawn dropdawn-location">
+                      <ul class="list-location">
+                        <li *ngFor="let item of dataLocation">
+                          <a (click)="clickLocation(item)">{{item.name}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+                </div>
+            </div>
+        </nb-card-body>
+        <div class="switcher-wrap-small-tb" style="bottom: 10px;">
+            <switcher [charts]="charts2" (changeEvent)="dataBar2Options = $event"></switcher>
+        </div>
+    </nb-card>
+</div>
+
+<div class="container" style="padding: 0;">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 com-sm-12">
+            <div class="small-card">
+                <nb-card style="position:relative;">
+                    <nb-layout-header>
+                        <div class="header-table">
+                            <div [ngClass]="{'active-item': barSwitch3 === 'engagement'}" (click)="clickLocation('engagement', 'dataBar3', 'dataTable3','dataTable3keys', 'barSwitch3')" class=" small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+                                Engagement
+                            </div>
+                            <div [ngClass]="{'active-item': barSwitch3 === 'loyalty'}" (click)="clickLocation('loyalty', 'dataBar3', 'dataTable3','dataTable3keys', 'barSwitch3')" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+                                Loyality
+                            </div>
+                            <div [ngClass]="{'active-item': barSwitch3 === 'skill'}" (click)="clickLocation('skill', 'dataBar3', 'dataTable3','dataTable3keys', 'barSwitch3')" class="small-cell-churn-3">
+                                Skill
+                            </div>
+                        </div>
+                    </nb-layout-header>
+                    <nb-card-body class="small-chart-height">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12">
+                                    <!-- <div class="label-top">
+                        User Distribution on basis of behaviour
+                      </div> -->
+                                    <div>
+                                        <chart *ngIf="dataBar3Options.type === 'Histogram'" type="bar" [data]="dataBar3" [options]="optionsBar"></chart>
+                                        <div class="table-wrap-scroll" *ngIf="dataBar3Options.type === 'Table'">
+                                            <div *ngIf="dataBar3Options.type === 'Table' && dataTable3" class="tbody-smart">
+                                                <div class="row-table-smart">
+                                                    <div *ngFor="let item of dataTable3keys; let i = index" class="row-table-item column-4">
+                                                        <div><b>
+                                  {{item}}</b>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--div class="row-table-item column-4" style="border-left: 0;">
+                                <div>
+                                  {{barSwitch3}}
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  High risk
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  Medium risk
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  Low risk
+                                </div>
+                              </div-->
+                                                </div>
+                                                <div *ngFor="let item of dataTable3" class="row-table-smart">
+                                                    <div *ngFor="let key of dataTable3keys" class="row-table-item column-4">
+                                                        <div>
+                                                            {{item[key]}}
+                                                        </div>
+                                                    </div>
+
+                                                    <!--div class="row-table-item column-4" style="border-left: 0;">
+                                <div>
+                                  {{item.value}}
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  {{item.High_Risk}}
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  {{item.Medium_Risk}}
+                                </div>
+                              </div>
+                              <div class="row-table-item column-4">
+                                <div>
+                                  {{item.Low_Risk}}
+                                </div>
+                              </div-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-4 col-xs-12">
+                      <div class="right-content-select" style="margin-top: 27px;">
+                        <div class="lable">
+                          Basic:
+                        </div>
+                        <div class="select-wrap">
+                          <button class="select" (click)="showEngagement = !showEngagement">
+                              {{selectedEngagement}}
+                              <i class="ion-arrow-down-b"></i>
+                          </button>
+                          <div *ngIf="showEngagement" class="dropdawn dropdawn-engagament">
+                            <ul class="list-location">
+                              <li *ngFor="let item of dataEngagement">
+                                <a (click)="clickEngagement(item)">{{item.name}}</a>
+                              </li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                            </div>
+                        </div>
+                    </nb-card-body>
+                    <div class="switcher-wrap-small-tb" style="bottom: 10px;">
+                        <switcher [charts]="charts3" (changeEvent)="dataBar3Options = $event"></switcher>
+                    </div>
+                </nb-card>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12 com-sm-12">
+            <div class="small-card">
+                <nb-card style="position:relative;">
+                    <nb-layout-header>
+                        <div class="header-table">
+                            <div [ngClass]="{'active-item': barSwitch4 === 'total time in game'}" (click)="clickLocation('total time in game', 'dataBar4', 'dataTable4','dataTable4keys', 'barSwitch4')" class=" small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+                                Total time
+                            </div>
+                            <div [ngClass]="{'active-item': barSwitch4 === 'out of lives'}" (click)="clickLocation('out of lives', 'dataBar4', 'dataTable4','dataTable4keys', 'barSwitch4')" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+                                Out of lives
+                            </div>
+                            <div [ngClass]="{'active-item': barSwitch4 === 'level stickiness'}" (click)="clickLocation('level stickiness', 'dataBar4', 'dataTable4','dataTable4keys', 'barSwitch4')" class="small-cell-churn-3">
+                                Stuck at level
+                            </div>
+                        </div>
+                    </nb-layout-header>
+                    <nb-card-body class="small-chart-height">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12">
+                                    <!-- <div class="label-top">
+                          User Distribution on basis of behaviour
+                        </div> -->
+                                    <div>
+                                        <chart *ngIf="dataBar4Options.type === 'Histogram'" type="bar" [data]="dataBar4" [options]="optionsBar"></chart>
+                                        <div class="table-wrap-scroll" *ngIf="dataBar4Options.type === 'Table'">
+                                            <div *ngIf="dataBar4Options.type === 'Table' && dataTable4" class="tbody-smart">
+                                                <div class="row-table-smart">
+                                                    <div *ngFor="let item of dataTable4keys; let i = index" class="row-table-item column-4">
+                                                        <div><b>
+                                  {{item}}</b>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--div class="row-table-item column-4" style="border-left: 0;">
+                                  <div>
+                                    {{barSwitch4}}
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    High risk
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    Medium risk
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    Low risk
+                                  </div>
+                                </div-->
+                                                </div>
+                                                <div *ngFor="let item of dataTable4" class="row-table-smart">
+                                                    <div *ngFor="let key of dataTable4keys" class="row-table-item column-4">
+                                                        <div>
+                                                            {{item[key]}}
+                                                        </div>
+                                                    </div>
+
+                                                    <!--div class="row-table-item column-4" style="border-left: 0;">
+                                  <div>
+                                    {{item.value}}
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    {{item.High_Risk}}
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    {{item.Medium_Risk}}
+                                  </div>
+                                </div>
+                                <div class="row-table-item column-4">
+                                  <div>
+                                    {{item.Low_Risk}}
+                                  </div>
+                                </div-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nb-card-body>
+                    <div class="switcher-wrap-small-tb" style="bottom: 10px;">
+                        <switcher [charts]="charts4" (changeEvent)="dataBar4Options = $event"></switcher>
+                    </div>
+                </nb-card>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="small-card" style="height: unset">
+                        <nb-card>
+                            <nb-layout-header>
+                                <div class="header-table">
+                                    <div class="small-cell-churn-3 active-item  " style="width: 100% !important;">
+                                        Level
+                                    </div>
+                                </div>
+                            </nb-layout-header>
+                            <nb-card-body class="big-cart">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <!-- <div class="label-top">
+                        User Distribution on basis of origin
+                    </div> -->
+                                            <div>
+                                                <chart *ngIf="dataBar5Options.type === 'Histogram' && dataBar5" type="bar" [data]="dataBar5" [options]="optionsBar"></chart>
+                                                <div class="table-wrap-scroll" *ngIf="dataBar5Options.type === 'Table'">
+                                                    <!--<ng2-smart-table *ngIf="dataBar1Options.type === 'Table'" [settings]="settings" [source]="source" reset></ng2-smart-table>-->
+                                                    <div *ngIf="dataBar5Options.type === 'Table' && dataTable5" class="tbody-smart">
+                                                        <div class="row-table-smart">
+                                                            <div *ngFor="let item of dataTable5keys; let i = index" class="row-table-item column-4">
+                                                                <div><b>
+                                  {{item}}</b>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--div class="row-table-item column-4" style="border-left: 0;">
+                              <div>
+                                Level
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                High risk
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                Medium risk
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                Low risk
+                              </div>
+                            </div-->
+                                                        </div>
+                                                        <div *ngFor="let item of dataTable5" class="row-table-smart">
+                                                            <div *ngFor="let key of dataTable5keys" class="row-table-item column-4">
+                                                                <div>
+                                                                    {{item[key]}}
+                                                                </div>
+                                                            </div>
+
+                                                            <!--div class="row-table-item column-4" style="border-left: 0;">
+                              <div>
+                                {{item.value}}
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                {{item.High_Risk}}
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                {{item.Medium_Risk}}
+                              </div>
+                            </div>
+                            <div class="row-table-item column-4">
+                              <div>
+                                {{item.Low_Risk}}
+                              </div>
+                            </div-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </nb-card-body>
+                            <div class="switcher-wrap-small-tb" style="left: 15px;">
+                                <switcher [charts]="charts5" (changeEvent)="dataBar5Options = $event"></switcher>
+                            </div>
+                        </nb-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="padding: 0;">
+            <div class="small-card" style="height: unset">
+                <nb-card>
+                    <nb-layout-header>
+                        <div class="header-table">
+                            <div class="small-cell-churn-3 active-item  " style="width: 100% !important;">
+                                USER LIST
+                            </div>
+                        </div>
+                    </nb-layout-header>
+                    <nb-card-body>
+
+                        <ng2-smart-table [settings]="settings" [source]="source" style="text-align:center">
+                        </ng2-smart-table>
+
+                    </nb-card-body>
+
+                    <!--nb-card-body class="big-cart">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-xs-12">
+                  <div>
+                    <div class="table-wrap-scroll">
+                      <div  class="tbody-smart">
+                        <div class="row-table-smart">
+                          <div class="row-table-item column-2" style="border-left: 0;">
+                            <div>
+                              User ID
+                            </div>
+                          </div>
+                          <div class="row-table-item column-2">
+                            <div>
+                              Churn Probability
+                            </div>
+                          </div>
+                        </div>
+                        <div *ngFor="let item of dataTable5" class="row-table-smart">
+                          <div class="row-table-item column-2" style="border-left: 0;">
+                            <div>
+                              {{item.value}}
+                            </div>
+                          </div>
+                          <div class="row-table-item column-2">
+                            <div>
+                              {{item.High_Risk}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </nb-card-body-->
+                </nb-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <nb-card>
+  <nb-card-body>
+    <div class="container">
+      <div class="row">
+          <div class="label-top" style="width: 100%">
+            USER LIST
+          </div>
+        <div style="width: 100%">
+          <ng2-smart-table [settings]="settings" [source]="source" reset></ng2-smart-table>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card> -->
+
+<!--<div class="page-button-wrap" style="margin-top: -15px;">-->
+<!--<button>-->
+<!--&lt;!&ndash; <i _ngcontent-c10="" class="nb-chevron-left-outline"></i> &ndash;&gt;-->
+<!--<span style="margin-right: 5px;">-->
+<!--<-->
+<!--</span>-->
+<!--Prev Page-->
+<!--</button>-->
+<!--<button>-->
+<!--&lt;!&ndash; <i _ngcontent-c10="" class="nb-chevron-right-outline"></i> &ndash;&gt;-->
+<!--Next Page-->
+<!--<span style="margin-left: 5px;">-->
+<!--&gt;-->
+<!--</span>-->
+<!--</button>-->
+<!--</div>-->
+
+<div class="download-wrap">
+    <div class="select-wrap">
+        <button class="select select-download" (click)="showDownload = !showDownload">
+              Download
+              <!-- <span>V</span> -->
+              <i style="color: white;" class="ion-chevron-down"></i>
+          </button>
+
+        <div *ngIf="showDownload" class="dropdawn dropdawn-download">
+            <ul class="list-location list-download">
+                <li><a class="download-button" href="/json/nazara/retention_booster/churn_predictions/tables/user_churn_probability.csv" download="UserChurn.csv" (click)="toggleDownload()">Download .csv</a></li>
+                <li><a class="download-button" href="/json/nazara/retention_booster/churn_predictions/tables/user_churn_probability.json" download="UserChurn.json" (click)="toggleDownload()">Download .json</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

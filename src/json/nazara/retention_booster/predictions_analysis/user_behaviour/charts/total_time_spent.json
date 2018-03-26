@@ -1,0 +1,33 @@
+{
+  "total_time_spent": [
+    {
+      "value": "very low",
+      "churned": 3894,
+      "retained": 2325
+    },
+    {
+      "value": "low",
+      "churned": 4000,
+      "retained": 2000
+
+    },
+    {
+      "value": "medium",
+      "churned": 2298,
+      "retained": 3469
+
+    },
+    {
+      "value": "high",
+      "churned": 1000,
+      "retained": 2000
+
+    },
+    {
+      "value": "very high",
+      "churned": 225,
+      "retained": 1661
+
+    }
+  ]
+}

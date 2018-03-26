@@ -1,0 +1,10 @@
+{
+  "active_users": 22872,
+  "predicted": 11441,
+  "churned": 11417,
+  "accuracy":86.25 ,
+  "predicted_churned": 9357,
+  "predicted_not_churned": 1084,
+  "not_predicted_churned": 1060,
+  "not_predicted_not_churned": 10371
+}

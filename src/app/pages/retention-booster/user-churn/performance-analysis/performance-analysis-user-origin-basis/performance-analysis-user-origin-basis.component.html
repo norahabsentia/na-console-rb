@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="row">
+            <div class="col-md-6 col-xs-12 stackbar">
+                <chart-switcher *ngIf="country && countryTable && countryMapData" [title]="'Country'" [showMap]="true" [data]="country" [dataTable]="countryTable" [optionClass]="'big-chart'" [optionsSettings]="horizontalOptions" [countryMapData]="countryMapData"></chart-switcher>
+            </div>
+            <div class="col-md-6 col-xs-12 stackbar">
+                <chart-switcher *ngIf="region && regionTable" [title]="'Region'" [data]="region" [dataTable]="regionTable" [optionsSettings]="horizontalOptions2" [optionClass]="'big-chart'"></chart-switcher>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 stackbar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 stackbar" id="small-chart-platform">
+                <chart-switcher *ngIf="Platform && PlatformTable" [title]="'Platform'" [data]="Platform" [dataTable]="PlatformTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+            <div class="col-lg-6 stackbar">
+                <chart-switcher *ngIf="mobile && mobileTable" [title]="'Mobile Brand'" [data]="mobile" [dataTable]="mobileTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 stackbar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 stackbar">
+                <chart-switcher *ngIf="AppVersion && AppVersionTable" [title]="'App Version'" [data]="AppVersion" [dataTable]="AppVersionTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+            <div class="col-md-6 col-xs-12 stackbar">
+                <chart-switcher *ngIf="affluence && affluenceTable" [title]="'Affluence'" [data]="affluence" [dataTable]="affluenceTable" [optionClass]="'small-chart-height'"></chart-switcher>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

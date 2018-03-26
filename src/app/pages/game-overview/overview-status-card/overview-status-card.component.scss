@@ -1,0 +1,48 @@
+@import '../../../@theme/styles/themes';
+@import '~@nebular/theme/styles/global/bootstrap/hero-buttons';
+@include nb-install-component() {
+    nb-card {
+        flex-direction: row;
+        align-items: center;
+        height: 6rem;
+        overflow: visible;
+        border-radius: 0px;
+        $bevel: btn-hero-bevel(nb-theme(card-bg));
+        $shadow: nb-theme(btn-hero-shadow);
+        box-shadow: $bevel, $shadow;
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 0.5rem 0 1rem;
+            border-left: 1px solid transparent;
+        }
+        .title {
+            font-family: nb-theme(font-secondary);
+            font-size: 1.25rem;
+            font-weight: nb-theme(font-weight-bold);
+            color: nb-theme(card-fg-heading);
+        }
+        .status {
+            font-size: 1rem;
+            font-weight: nb-theme(font-weight-light);
+            text-transform: none;
+            color: nb-theme(card-fg);
+            margin-bottom: 1rem;
+        }
+    }
+    @include nb-for-theme(cosmic) {
+        nb-card {
+            .details {
+                padding-left: 1.25rem;
+            }
+            .title {
+                font-weight: nb-theme(font-weight-bolder);
+            }
+            .status {
+                font-weight: nb-theme(font-weight-light);
+            }
+        }
+    }
+}

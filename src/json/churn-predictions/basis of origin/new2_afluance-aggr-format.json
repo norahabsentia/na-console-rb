@@ -1,0 +1,10 @@
+{
+  "Affluence": [{"value": "Affluence1", "High_Risk": 823, "Medium_Risk": 6121, "Low_Risk": 9266} ,
+  {"value": "Affluence2", "High_Risk": 813, "Medium_Risk": 6868, "Low_Risk": 9428} ,
+  {"value": "Affluence3", "High_Risk": 952, "Medium_Risk": 7070, "Low_Risk": 9397} ,
+  {"value": "Affluence4", "High_Risk": 854, "Medium_Risk": 8557, "Low_Risk": 9122} ,
+  {"value": "Affluence5", "High_Risk": 505, "Medium_Risk": 7267, "Low_Risk": 9315} ,
+  {"value": "Affluence6", "High_Risk": 596, "Medium_Risk": 6890, "Low_Risk": 9841} ,
+  {"value": "Affluence7", "High_Risk": 944, "Medium_Risk": 7870, "Low_Risk": 9782}
+ ]
+}

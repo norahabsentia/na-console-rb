@@ -1,0 +1,17 @@
+#filler_name{border:none; border-bottom:1px solid #c3c3c3;}
+#filler_description{border: none;overflow: auto;height: 28px;resize: none;border-bottom: 1px solid #c3c3c3;}
+table{border : 1px solid #c3c3c3; border-radius:5px;}
+.table_header{border-bottom: 1px solid #c3c3c3;text-align:center;}
+.table_header th{padding: 5px;}
+.leftborder{border-left:1px solid #c3c3c3;}
+.rightborder{border-right: 1px solid #c3c3c3;}
+.bottomborder{border-bottom:1px solid #c3c3c3}
+.table_row{border-bottom: 1px solid #c3c3c3;height: 40px;} 
+.key_val{text-align:center}
+.segment_span{border: 1px solid #c3c3c3;padding: 6px;border-radius: 25px;margin: 5px;font-size:12px;display:inline-block}
+#table-wrapper {position:relative;}
+#table-scroll {height:400px;overflow:auto;margin-top:20px;}
+.editfillerValue{top: 5px;left: 15px;font-size: 25px;position: relative;font-weight:bold;}
+.addSegmentValue{font-size:26px;font-weight:bold;}
+.leftDiv{float:left}
+.rightDiv{float:right}

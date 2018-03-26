@@ -1,0 +1,9 @@
+{
+    "Low_Risk": 4492,
+    "Medium_Risk": 6939,
+    "High_Risk": 11441,
+    "Observation_Period_Start": "15-02-2018",
+    "Observation_Period_End": "19-02-2018",
+    "Churn_Period_Start": "20-02-2018",
+    "Churn_Period_End": "23-02-2018"
+}

@@ -1,0 +1,7 @@
+{
+  "Platform": [
+    {"value": "Android", "percentage": 40.99980738, "pop": 186896, "pop_churned": 76627, "pop_predicted": 84103, "pop_predicted_churned": 58666, "pop_predicted_notchurned": 17961, "pop_notpredicted_churned": 25437} ,
+{"value": "IOS", "percentage": 35.99983694, "pop": 147184, "pop_churned": 52986, "pop_predicted": 67704, "pop_predicted_churned": 42241, "pop_predicted_notchurned": 10745, "pop_notpredicted_churned": 25463} ,
+{"value": "Windows", "percentage": 43.99878878, "pop": 79259, "pop_churned": 34873, "pop_predicted": 26155, "pop_predicted_churned": 18918, "pop_predicted_notchurned": 15955, "pop_notpredicted_churned": 7237}
+  ]
+}

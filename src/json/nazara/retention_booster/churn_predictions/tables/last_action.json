@@ -1,0 +1,58 @@
+{
+  "last_action": [
+    {
+      "value": "nazara_ads_funnel",
+      "Low_Risk": 2111,
+      "Medium_Risk": 3268,
+      "High_Risk": 5429
+    },
+    {
+      "value": "Game_Save_Me_Screen",
+      "Low_Risk": 627,
+      "Medium_Risk": 906,
+      "High_Risk": 1603
+    },
+    {
+      "value": "Game_End_Session",
+      "Low_Risk": 462,
+      "Medium_Risk": 670,
+      "High_Risk": 1119
+    },
+    {
+      "value": "Game_Over",
+      "Low_Risk": 294,
+      "Medium_Risk": 483,
+      "High_Risk": 788
+    },
+    {
+      "value": "ObjectivesScreenOpened",
+      "Low_Risk": 291,
+      "Medium_Risk": 481,
+      "High_Risk": 777
+    },
+    {
+      "value": "Game_Start_Session",
+      "Low_Risk": 259,
+      "Medium_Risk": 389,
+      "High_Risk": 578
+    },
+    {
+      "value": "Game_Start",
+      "Low_Risk": 183,
+      "Medium_Risk": 283,
+      "High_Risk": 445
+    },
+    {
+      "value": "Game_Pause",
+      "Low_Risk": 151,
+      "Medium_Risk": 267,
+      "High_Risk": 389
+    },
+    {
+      "value": "OutOfResource",
+      "Low_Risk": 114,
+      "Medium_Risk": 192,
+      "High_Risk": 313
+    }
+  ]
+}

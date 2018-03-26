@@ -1,0 +1,63 @@
+{
+	"country": [{
+			"value": "India",
+			"Low_Risk": 4480,
+			"Medium_Risk": 6913,
+			"High_Risk": 11399
+		},
+		{
+			"value": "United Arab Emirates",
+			"Low_Risk": 1,
+			"Medium_Risk": 5,
+			"High_Risk": 4
+		},
+		{
+			"value": "United States",
+			"Low_Risk": 2,
+			"Medium_Risk": 1,
+			"High_Risk": 5
+		},
+		{
+			"value": "Qatar",
+			"Low_Risk": 2,
+			"Medium_Risk": 3,
+			"High_Risk": 2
+		},
+		{
+			"value": "Nepal",
+			"Low_Risk": 0,
+			"Medium_Risk": 3,
+			"High_Risk": 2
+		},
+		{
+			"value": "Bangladesh",
+			"Low_Risk": 2,
+			"Medium_Risk": 1,
+			"High_Risk": 1
+		},
+		{
+			"value": "Pakistan",
+			"Low_Risk": 2,
+			"Medium_Risk": 0,
+			"High_Risk": 2
+		},
+		{
+			"value": "France",
+			"Low_Risk": 1,
+			"Medium_Risk": 0,
+			"High_Risk": 2
+		},
+		{
+			"value": "China",
+			"Low_Risk": 1,
+			"Medium_Risk": 1,
+			"High_Risk": 1
+		},
+		{
+			"value": "Kuwait",
+			"Low_Risk": 0,
+			"Medium_Risk": 2,
+			"High_Risk": 1
+		}
+	]
+}

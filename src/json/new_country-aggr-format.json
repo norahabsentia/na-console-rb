@@ -1,0 +1,17 @@
+{
+  "country": [
+    {"value": "Niue (NZ)", "percentage": 38.99952988, "pop": 199679, "pop_churned": 69887, "pop_predicted": 91852, "pop_predicted_churned": 59703, "pop_predicted_notchurned": 32149, "pop_notpredicted_churned": 10184} ,
+{"value": "Curacao (Netherlands)", "percentage": 41.9993187, "pop": 198367, "pop_churned": 73395, "pop_predicted": 95216, "pop_predicted_churned": 63794, "pop_predicted_notchurned": 31422, "pop_notpredicted_churned": 9601} ,
+{"value": "Barbados", "percentage": 41.99969763, "pop": 197709, "pop_churned": 63266, "pop_predicted": 77106, "pop_predicted_churned": 50889, "pop_predicted_notchurned": 26217, "pop_notpredicted_churned": 12377} ,
+{"value": "Slovenia", "percentage": 29.99966443, "pop": 197239, "pop_churned": 61144, "pop_predicted": 84812, "pop_predicted_churned": 55975, "pop_predicted_notchurned": 28837, "pop_notpredicted_churned": 5169} ,
+{"value": "Bolivia", "percentage": 47.99895498, "pop": 196995, "pop_churned": 88647, "pop_predicted": 80767, "pop_predicted_churned": 51690, "pop_predicted_notchurned": 29077, "pop_notpredicted_churned": 36957} ,
+{"value": "Samoa", "percentage": 31.99905677, "pop": 196413, "pop_churned": 64816, "pop_predicted": 70708, "pop_predicted_churned": 44546, "pop_predicted_notchurned": 26162, "pop_notpredicted_churned": 20270} ,
+{"value": "Central African Republic", "percentage": 42.99990832, "pop": 194001, "pop_churned": 79540, "pop_predicted": 91180, "pop_predicted_churned": 55619, "pop_predicted_notchurned": 35561, "pop_notpredicted_churned": 23921} ,
+{"value": "Chad", "percentage": 45.9992246, "pop": 193619, "pop_churned": 65830, "pop_predicted": 77447, "pop_predicted_churned": 60408, "pop_predicted_notchurned": 17039, "pop_notpredicted_churned": 5422} ,
+{"value": "Angola", "percentage": 44.9999712, "pop": 193406, "pop_churned": 69626, "pop_predicted": 71560, "pop_predicted_churned": 55101, "pop_predicted_notchurned": 16459, "pop_notpredicted_churned": 14525} ,
+{"value": "Guatemala", "percentage": 34.99985704, "pop": 192901, "pop_churned": 73302, "pop_predicted": 84876, "pop_predicted_churned": 51774, "pop_predicted_notchurned": 33102, "pop_notpredicted_churned": 21528} ,
+{"value": ">10%", "percentage": 46.99963363, "pop": 192838, "pop_churned": 92562, "pop_predicted": 75206, "pop_predicted_churned": 54900, "pop_predicted_notchurned": 20306, "pop_notpredicted_churned": 37662} ,
+{"value": "5%-10%", "percentage": 47.99981686, "pop": 192806, "pop_churned": 88690, "pop_predicted": 90618, "pop_predicted_churned": 69775, "pop_predicted_notchurned": 20843, "pop_notpredicted_churned": 18915} ,
+{"value": "<5%", "percentage": 37.99930359, "pop": 192103, "pop_churned": 72999, "pop_predicted": 90288, "pop_predicted_churned": 55075, "pop_predicted_notchurned": 35213, "pop_notpredicted_churned": 17924}
+  ]
+}

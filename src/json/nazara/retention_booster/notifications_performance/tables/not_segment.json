@@ -1,0 +1,15 @@
+{
+	"segment_type":
+	[
+		{"value":"Bored","incentive":451,"promotional":600,"reminder":1000,"interactive":1400},
+		{"value":"Tenacious","incentive":645,"promotional":1000,"reminder":2000,"interactive":4000},
+		{"value":"Fighter","incentive":432,"promotional":800,"reminder":1000,"interactive":4200},
+		{"value":"Disinterested","incentive":657,"promotional":1000,"reminder":2000,"interactive":4000},
+		{"value":"Ordinary","incentive":879,"promotional":2000,"reminder":3000,"interactive":4000},
+		{"value":"Trooper","incentive":542,"promotional":1200,"reminder":2800,"interactive":2000},
+		{"value":"Needs_a_challenge","incentive":341,"promotional":200,"reminder":800,"interactive":1000},
+		{"value":"Successful","incentive":458,"promotional":200,"reminder":300,"interactive":500},
+		{"value":"Achiever","incentive":256,"promotional":800,"reminder":2000,"interactive":6000}
+	]
+}
+

@@ -1,0 +1,9 @@
+{
+	"notification_churned":
+		[ 
+		{"value":"Incentive","churned":6781, "retained":2923},
+		{"value":"Promotion","churned":8115, "retained":5049},
+		{"value":"Reminder","churned":8461, "retained":2678},
+		{"value":"Interactive","churned":10104, "retained":9310}
+	]
+}

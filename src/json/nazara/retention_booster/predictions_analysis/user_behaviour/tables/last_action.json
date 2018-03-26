@@ -1,0 +1,58 @@
+{
+  "last_action": [
+    {
+      "value": "nazara_ads_funnel",
+      "churned": 5662,
+      "retained": 5146
+      
+    },
+    {
+      "value": "Game_Save_Me_Screen",
+      "churned": 1374,
+      "retained": 1762
+     
+    },
+    {
+      "value": "Game_End_Session",
+      "churned": 1069,
+      "retained": 1182
+      
+    },
+    {
+      "value": "Game_Over",
+      "churned": 799,
+      "retained": 766
+     
+    },
+    {
+      "value": "ObjectivesScreenOpened",
+      "churned": 742,
+      "retained": 807
+      
+    },
+    {
+      "value": "Game_Start_Session",
+      "churned": 772,
+      "retained": 454
+      
+    },
+    {
+      "value": "Game_Start",
+      "churned": 381,
+      "retained": 530
+      
+    },
+    {
+      "value": "Game_Pause",
+      "churned": 362,
+      "retained": 445
+     
+    },
+    {
+      "value": "OutOfResource",
+      "churned": 256,
+      "retained": 363
+
+    }
+  ]
+}

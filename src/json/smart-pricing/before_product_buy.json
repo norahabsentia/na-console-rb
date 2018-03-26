@@ -1,0 +1,10 @@
+{
+  "purchase_per_product": [
+    {"value": "Product1", "Buy": 12906, "Not_Buy": 87094} ,
+{"value": "Product2", "Buy": 28015, "Not_Buy": 71985} ,
+{"value": "Product3", "Buy": 16327, "Not_Buy": 83673} ,
+{"value": "Product4", "Buy": 17359, "Not_Buy": 82641} ,
+{"value": "Product5", "Buy": 10692, "Not_Buy": 89308} ,
+{"value": "Product6", "Buy": 17038, "Not_Buy": 82962}
+ ]
+}

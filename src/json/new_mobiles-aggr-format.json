@@ -1,0 +1,17 @@
+{
+  "Mobile": [
+    {"value": "Penta", "percentage": 49.99967745, "pop": 199910, "pop_churned": 81963, "pop_predicted": 81963, "pop_predicted_churned": 49177, "pop_predicted_notchurned": 32786, "pop_notpredicted_churned": 32786} ,
+{"value": "Touchmate", "percentage": 31.99903361, "pop": 199903, "pop_churned": 95953, "pop_predicted": 81960, "pop_predicted_churned": 63158, "pop_predicted_notchurned": 32795, "pop_notpredicted_churned": 18802} ,
+{"value": "Tesco", "percentage": 40.0, "pop": 199746, "pop_churned": 83893, "pop_predicted": 77900, "pop_predicted_churned": 49346, "pop_predicted_notchurned": 34547, "pop_notpredicted_churned": 28554} ,
+{"value": "Quanta", "percentage": 40.99957773, "pop": 198737, "pop_churned": 93406, "pop_predicted": 75520, "pop_predicted_churned": 66725, "pop_predicted_notchurned": 26681, "pop_notpredicted_churned": 8795} ,
+{"value": "myPhone", "percentage": 35.99914191, "pop": 197063, "pop_churned": 65030, "pop_predicted": 63060, "pop_predicted_churned": 46112, "pop_predicted_notchurned": 18918, "pop_notpredicted_churned": 16948} ,
+{"value": "iOcean", "percentage": 50.0, "pop": 192038, "pop_churned": 90257, "pop_predicted": 84496, "pop_predicted_churned": 65532, "pop_predicted_notchurned": 24725, "pop_notpredicted_churned": 18964} ,
+{"value": "Ellipsis", "percentage": 31.99965679, "pop": 190257, "pop_churned": 66589, "pop_predicted": 70395, "pop_predicted_churned": 50684, "pop_predicted_notchurned": 15905, "pop_notpredicted_churned": 19711} ,
+{"value": "Barnes", "percentage": 44.99900577, "pop": 185939, "pop_churned": 91110, "pop_predicted": 59500, "pop_predicted_churned": 46689, "pop_predicted_notchurned": 44421, "pop_notpredicted_churned": 12811} ,
+{"value": "Dell", "percentage": 41.99917917, "pop": 185193, "pop_churned": 70373, "pop_predicted": 83336, "pop_predicted_churned": 49955, "pop_predicted_notchurned": 20418, "pop_notpredicted_churned": 33381} ,
+{"value": "Mifanstech", "percentage": 48.99987631, "pop": 185133, "pop_churned": 70350, "pop_predicted": 70350, "pop_predicted_churned": 53466, "pop_predicted_notchurned": 16884, "pop_notpredicted_churned": 16884} ,
+{"value": ">10%", "percentage": 38.9999834, "pop": 184020, "pop_churned": 69927, "pop_predicted": 55206, "pop_predicted_churned": 38165, "pop_predicted_notchurned": 31762, "pop_notpredicted_churned": 17041} ,
+{"value": "5%-10%", "percentage": 45.99964948, "pop": 183287, "pop_churned": 67816, "pop_predicted": 71481, "pop_predicted_churned": 49450, "pop_predicted_notchurned": 18366, "pop_notpredicted_churned": 22031} ,
+{"value": "<5%", "percentage": 38.99965293, "pop": 181516, "pop_churned": 83497, "pop_predicted": 54454, "pop_predicted_churned": 55180, "pop_predicted_notchurned": 28317, "pop_notpredicted_churned": -726}
+  ]
+}

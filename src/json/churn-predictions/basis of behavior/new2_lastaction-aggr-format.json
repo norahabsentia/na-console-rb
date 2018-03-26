@@ -1,0 +1,17 @@
+{
+  "LastAction": [
+    {"value": "game_start", "High_Risk": 651, "Medium_Risk": 8948, "Low_Risk": 9612} ,
+{"value": "game_pause", "High_Risk": 547, "Medium_Risk": 7629, "Low_Risk": 9761} ,
+{"value": "no_internet_connection", "High_Risk": 637, "Medium_Risk": 7409, "Low_Risk": 9184} ,
+{"value": "ad_opened", "High_Risk": 512, "Medium_Risk": 6594, "Low_Risk": 9663} ,
+{"value": "ad_closed", "High_Risk": 905, "Medium_Risk": 8549, "Low_Risk": 9733} ,
+{"value": "game_end", "High_Risk": 940, "Medium_Risk": 6772, "Low_Risk": 9821} ,
+{"value": "connection_timedout", "High_Risk": 736, "Medium_Risk": 6944, "Low_Risk": 9761} ,
+{"value": "connection_failed", "High_Risk": 743, "Medium_Risk": 8223, "Low_Risk": 9010} ,
+{"value": "game_over", "High_Risk": 728, "Medium_Risk": 8051, "Low_Risk": 9022} ,
+{"value": "connection_interupted", "High_Risk": 885, "Medium_Risk": 6911, "Low_Risk": 9251} ,
+{"value": ">10%", "High_Risk": 669, "Medium_Risk": 8913, "Low_Risk": 9426} ,
+{"value": "5%-10%", "High_Risk": 580, "Medium_Risk": 7733, "Low_Risk": 9222} ,
+{"value": "<5%", "High_Risk": 722, "Medium_Risk": 7489, "Low_Risk": 9417}
+ ]
+}

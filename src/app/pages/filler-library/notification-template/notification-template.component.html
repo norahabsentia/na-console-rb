@@ -1,0 +1,17 @@
+    	<div class="notificationTemplate" *ngFor = "let templateList of templateList">
+    	<a class="clickable" (click)=useTemplate(templateList)>
+    		<div><span>{{templateList.title}}</span></div>
+    		<div><span>{{templateList.body}}</span></div>
+    		<div *ngIf="templateList.filler">
+			<span 
+				class="tagbutton" 
+				[ngStyle]="{'background-color': fillArray.color}"   
+				*ngFor="let fillArray of templateList.filler">
+				 
+					<span>{{fillArray.tag_name}}</span> 
+					<span>{{fillArray.count}}</span>
+				
+			</span> 
+		</div>
+		</a>
+    	</div>

@@ -1,0 +1,235 @@
+<nb-card>
+    <div *ngFor="let item of charts">
+        <div *ngIf="item.show && (item.type === 'Pie' || item.type === 'Histogram')" class="dropdawn-wrap-outer">
+            <div class="right-content-select" style="">
+                <div class="lable">
+                  Basic:
+                </div>
+                <div class="select-wrap">
+                  <button class="select" (click)="showLocation = !showLocation">
+                      {{selectedLocation}}
+                      <i class="ion-arrow-down-b"></i>
+                  </button>
+                  <div *ngIf="showLocation" class="dropdawn dropdawn-location">
+                    <ul class="list-location">
+                      <li *ngFor="let item of dataLocation">
+                        <a (click)="clickLocation(item)">{{item}}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+  <nb-card-header>
+    <div>
+          <span *ngFor="let item of charts" [hidden]="!item.show || title">
+            {{item.type}}
+          </span>
+      <span *ngIf="title">
+            {{title}}
+          </span>
+    </div>
+  </nb-card-header>
+  <nb-card-body class="{{optionClass}}">
+    <div id="class" class="wrapper">
+
+          <div *ngFor="let item of charts">
+            <!--<ngx-chartjs-pie></ngx-chartjs-pie>-->
+            <ngx-echarts-pie *ngIf="item.show && item.type === 'Pie' && dataEPie && reload" [data]="dataEPie"></ngx-echarts-pie>
+            <ngx-echarts-bar *ngIf="item.show && item.type === 'Histogram' && dataEBar && reload" [data]="dataEBar"></ngx-echarts-bar>
+
+            <chart class="" id="stackbar" *ngIf="item.show && item.type === 'StackBar' && dataBar1 && reload" type="bar" [data]="dataBar1" [options]="optionsBar"></chart>
+            <!--<chart class="" id="stackbar" *ngIf="item.show && item.type === 'StackBarHorizontal' && dataStackBarHorizontal && reload" type="bar" [data]="dataStackBarHorizontal" [options]="optionsBarHorizontal"></chart>-->
+
+            <ngx-charts-bar-horizontal-stacked *ngIf="item.show && item.type === 'StackBarHorizontal' && dataStackBarHorizontal && reload"
+              [view]="view"
+              [scheme]="colorScheme"
+              [results]="dataStackBarHorizontal"
+              [gradient]="gradient"
+              [xAxis]="showXAxis"
+              [yAxis]="showYAxis"
+            >
+            </ngx-charts-bar-horizontal-stacked>
+
+            <ngx-chartjs-bar *ngIf="item.show && item.type === 'Bar' && dataBar" [data]="dataBar"></ngx-chartjs-bar>
+
+            <!--<ngx-chartjs-line *ngIf="item.show && item.type === 'Line'"></ngx-chartjs-line>-->
+            <!--<ngx-chartjs-multiple-xaxis *ngIf="item.show && item.type === 'Area'"></ngx-chartjs-multiple-xaxis>-->
+            <ngx-echarts-line *ngIf="item.show && item.type === 'Line' && dataLine" [data]="dataLine"></ngx-echarts-line>
+            <!--<div *ngIf="item.show && item.type === 'Map'" echarts [options]="options" class="echarts"></div>-->
+            <ngx-country-chart *ngIf="item.show && item.type === 'Map'" [countryMapData]="countryMapData"></ngx-country-chart>
+            <div *ngIf="item.show && item.type === 'Table'">
+              <!--<ngx-chart-switcher-table></ngx-chart-switcher-table>-->
+
+              <!-- <div class="table-smart">
+                <div class="header-table-smart">
+                  <div class="column column-data center-alingh" style="border-left: 0; border-bottom: 0;">
+                    <div>
+
+                    </div>
+                  </div>
+                  <div class="column column-data center-alingh" style="width: 80%;">
+                    <div>
+                      Total users
+                    </div>
+                  </div>
+                </div>
+                <div class="header-table-smart">
+                  <div class="column column-data center-alingh" style="border: 0;">
+                    <div>
+                      {{title}}
+                    </div>
+                  </div>
+                  <div class="column column-data center-alingh" style="width: 40%; border-top: 0;">
+                    <div>
+                      Churned
+                    </div>
+                  </div>
+                  <div class="column column-data center-alingh" style="width: 40%; border-top: 0;">
+                    <div>
+                      Not churned users
+                    </div>
+                  </div>
+                </div>
+                <div class="tbody-smart">
+                  <div class="row-table-smart row-height">
+                    <div class="row-table-item" style="border-left: 0;">
+                      <div>
+
+                      </div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class=" ">Predicted to churn</div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class=""  style="">
+                        <div class=" ">Not predicted to churn</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class="">
+                        <div class=" ">Predicted to churn</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item">
+                      <div class="">
+                        <div class=" " >Not predicted to churn</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div *ngFor="let item of data; let i = index" class="row-table-smart row-height">
+                    <div class="row-table-item" style="border-left: 0;">
+                      <div>
+                        {{item.value}}
+                      </div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class=" ">{{item.pop_churnedPredicted}}</div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class=""  style="">
+                        <div class=" ">{{item.pop_churnedNotPredicted}}</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class="">
+                        <div class=" ">{{item.pop_notchurnedPredicted}}</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item">
+                      <div class="">
+                        <div class=" " >{{item.pop_notchurnedNotpredicted}}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="table-smart">
+                <div class="header-table-smart" >
+                  <div *ngFor="let item of dataTablekeys; let i = index" class="column column-data center-alingh" style="width: 40%">
+                    <div><b>
+                      {{item}}</b>
+                    </div>
+                  </div>
+
+
+                  <!--div class="column column-data center-alingh" style="border-left: 0;">
+                    <div>
+                      {{title}}
+                    </div>
+                  </div>
+                  <div class="column column-data center-alingh" style="width: 40%;">
+                    <div>
+                      Churned
+                    </div>
+                  </div>
+                  <div class="column column-data center-alingh" style="width: 40%;">
+                    <div>
+                      Not churned users
+                    </div>
+                  </div-->
+                </div>
+                <div class="tbody-smart">
+                  <div *ngFor="let item of dataTable; let i = index" class="row-table-smart row-height">
+                    <div *ngFor="let key of dataTablekeys" class="row-table-item " style="width: 40%;">
+                      <div class=" ">{{item[key]}}</div>
+                    </div>
+
+                    <!--div class="row-table-item" style="border-left: 0;">
+                      <div>
+                        {{item.value}}
+                      </div>
+                    </div>
+                    <div class="row-table-item " style="width: 40%;">
+                      <div class=" ">{{item.pop_churnedPredicted + item.pop_churnedNotPredicted}}</div>
+                    </div>
+
+                    <div class="row-table-item " style="width: 40%;">
+                      <div class="">
+                        <div class=" ">{{item.pop_notchurnedPredicted + item.pop_notchurnedNotpredicted}}</div>
+                      </div>
+                    </div-->
+
+                    <!-- <div class="row-table-item ">
+                      <div class=" ">{{item.pop_churnedPredicted}}</div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class=""  style="">
+                        <div class=" ">{{item.pop_churnedNotPredicted}}</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item ">
+                      <div class="">
+                        <div class=" ">{{item.pop_notchurnedPredicted}}</div>
+                      </div>
+                    </div>
+                    <div class="row-table-item">
+                      <div class="">
+                        <div class=" " >{{item.pop_notchurnedNotpredicted}}</div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <!--<ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)" reset></ng2-smart-table>-->
+            </div>
+          </div>
+    </div>
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="select-items-wrap">
+      <div *ngIf="charts.length > 1">
+        <div *ngFor="let item of charts">
+          <i class="fa fa {{ item.icon }} item-icon" *ngIf="item.show" (click)="change()"></i>
+        </div>
+      </div>
+      <div class="select-items" *ngIf="showSelectItems">
+        <div class="select-item" *ngFor="let item of charts" (click)="select(item)">
+          <i class="fa fa {{ item.icon }}"></i>
+          <span>{{item.label}}</span>
+        </div>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>

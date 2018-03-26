@@ -1,0 +1,15 @@
+{
+	"segment_type":
+	[
+		{"value":"Bored","open":421,"not_opened":3030},
+		{"value":"Tenacious","open":311,"not_opened":7334},
+		{"value":"Fighter","open":234,"not_opened":5198},
+		{"value":"Disinterested","open":231,"not_opened":7426},
+		{"value":"Ordinary","open":874,"not_opened":9005},
+		{"value":"Trooper","open":231,"not_opened":6311},
+		{"value":"Needs_a_challenge","open":132,"not_opened":2209},
+		{"value":"Successful","open":56,"not_opened":1402},
+		{"value":"Achiever","open":459,"not_opened":8597}
+	]
+}
+

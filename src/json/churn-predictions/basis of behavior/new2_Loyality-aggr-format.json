@@ -1,0 +1,7 @@
+{
+  "Loyality": [
+  {"value": "High", "High_Risk": 549, "Medium_Risk": 8647, "Low_Risk": 9549} ,
+  {"value": "Medium", "High_Risk": 747, "Medium_Risk": 7101, "Low_Risk": 9258} ,
+  {"value": "Low", "High_Risk": 604, "Medium_Risk": 8955, "Low_Risk": 9690}
+ ]
+}

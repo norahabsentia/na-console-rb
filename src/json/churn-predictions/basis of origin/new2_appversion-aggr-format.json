@@ -1,0 +1,12 @@
+{
+  "AppVersion": [
+    {"value": "1.0.1", "High_Risk": 984, "Medium_Risk": 6990, "Low_Risk": 9712} ,
+    {"value": "1.0.2", "High_Risk": 540, "Medium_Risk": 7360, "Low_Risk": 9970} ,
+    {"value": "1.0.3", "High_Risk": 500, "Medium_Risk": 7337, "Low_Risk": 9715} ,
+    {"value": "1.0.5", "High_Risk": 696, "Medium_Risk": 6590, "Low_Risk": 9027} ,
+    {"value": "1.0.7", "High_Risk": 719, "Medium_Risk": 7751, "Low_Risk": 9879} ,
+    {"value": ">10%", "High_Risk": 771, "Medium_Risk": 8979, "Low_Risk": 9304} ,
+    {"value": "5%-10%", "High_Risk": 651, "Medium_Risk": 7263, "Low_Risk": 9578} ,
+    {"value": "<5%", "High_Risk": 696, "Medium_Risk": 8064, "Low_Risk": 9514}    
+  ]
+}

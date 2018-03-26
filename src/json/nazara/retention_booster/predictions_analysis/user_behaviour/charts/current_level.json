@@ -1,0 +1,61 @@
+{
+  "current_level": [
+    {
+      "value": "42",
+      "churned": 125,
+      "retained": 347
+    },
+    {
+      "value": "45",
+      "churned": 158,
+      "retained": 226
+      
+    },
+    {
+      "value": "41",
+      "churned": 108,
+      "retained": 217
+      
+    },
+    {
+      "value": "2",
+      "churned": 236,
+      "retained": 39
+      
+    },
+    {
+      "value": "31",
+      "churned": 94,
+      "retained": 161      
+    },
+    {
+      "value": "32",
+      "churned": 68,
+      "retained": 127
+      
+    },
+    {
+      "value": "39",
+      "churned": 61,
+      "retained": 132
+      
+    },
+    {
+      "value": "6",
+      "churned": 144,
+      "retained": 46
+      
+    },
+    {
+      "value": "35",
+      "churned": 52,
+      "retained": 122
+      
+    },
+    {
+      "value": "3",
+      "churned": 141,
+      "retained": 30
+    }
+  ]
+}

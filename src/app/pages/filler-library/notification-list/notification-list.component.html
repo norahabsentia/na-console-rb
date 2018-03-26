@@ -1,0 +1,30 @@
+<nb-card size="small" style="margin-bottom: 0;text-align: center;    height: 300px;">
+  <nb-card-header style="color: white;background: #4aa3df;    padding: 0.7em;"> 
+    <p style="    font-size: 0.7em;margin: 0;">NOTIFICATION PREVIEW</p>      
+  </nb-card-header>     
+  <nb-card-body style="overflow: hidden;">
+    <div>
+      <img src="../../../assets/images/phone.png" alt=""> 
+    </div>     
+  </nb-card-body>
+</nb-card>
+<nb-card size="medium" class="headings-card" style="height: 21.8em;">
+<nb-card-header style="   padding: 0.7em;">
+  <p  style="    font-size: 0.7em;margin: 0;text-align:center;">NOTIFICATIONS LIST</p>    
+</nb-card-header>
+<nb-card-body>
+        <div  *ngFor="let noti of noti_List"  style="border: solid 2px #dadfe6;
+        border-radius: 10px;margin-bottom:1em;">
+          <a  (click)="onEdit(noti)" style="width: 100%;padding: 0;cursor:pointer;">
+              <div  class="noti_list_title" style="border:0px;    padding-bottom: 0;">
+                  <p style="font-weight: bold;  margin-bottom: 5px;word-wrap: break-word;">{{noti.title}}</p>
+                  <span style="font-size: 11px;word-wrap: break-word;">{{noti.body}}</span>
+              </div>
+          </a>
+          <a class="btn" (click)="onDelete(noti.noti_ID)" style="padding-top: 0; width:100%; text-align: right">
+              <i class="fa fa-trash-o"></i>
+          </a>
+        </div> 
+
+</nb-card-body>
+</nb-card>

@@ -1,0 +1,228 @@
+<div class="container"  style="padding: 0; padding-bottom: 30px;">
+ <div class="row">
+  <div class="col-md-12">
+    <div class="small-card">
+      <nb-card class="small-card">
+        <nb-layout-header>
+          <div class="header-table">
+            <div class="small-cell-churn-3 active-item  " style="width: 100% !important;">
+              Chart Prediction Overview
+            </div>
+          </div>
+        </nb-layout-header>
+        <nb-card-body class="vertical-center" >
+          <div class="row" style="width:100%; position: relative;">
+            <div class="col-md-5 col-xs-12 col-sm-12" style="height: 235px;">
+              <!--<div class="label-top">-->
+                  <!--Chart Prediction Overview-->
+              <!--</div>-->
+              <div style="height: 100%;">
+                <chart style="height: 100%;" *ngIf="data" type="doughnut" [data]="data" [options]="options"></chart>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12">
+                <div class="box-wrap">
+                    <div class="header-box"> 
+                      <div style="border-bottom: 0; border-radius: 10px 0 0 0; color: rgb(144, 199, 255);">
+                        BUY
+                      </div>
+                      <div style="border-left: 0; border-bottom: 0; border-radius: 0 10px 0 0; color: rgb(223, 96, 86);">
+                        NOT BUY
+                      </div>
+                    </div>
+                    <div>
+                        <div style="border-right: 0; border-radius: 0 0 0 10px;">
+                          40%
+                        </div>
+                        <div style="border-radius: 0 0 10px 0;">
+                          60%
+                        </div>
+                      </div>
+                </div>
+              <!-- <div>
+                  <div class="user-active">
+                      <span>
+                        Active Users:
+                      </span>
+                      <span>
+                        {{churn.high_risk + churn.med_risk + churn.low_risk}}
+                      </span>
+                    </div>
+                    <div class="container-risk">
+                      <div class="box" style="border-radius: 10px 0 0 10px;">
+                        <div class="caption-risk" style="color: #4aa3df;">
+                          High Risk
+                        </div>
+                        <span class="users">
+                          {{churn.high_risk}}
+                        </span>
+                      </div>
+                      <div class="box">
+                        <div class="caption-risk" style="color: #81b7dc;">
+                          Medium Risk
+                        </div>
+                        <span class="users">
+                          {{churn.med_risk}}
+                        </span>
+                      </div>
+                      <div class="box" style="border-radius:0 10px 10px 0;">
+                        <div class="caption-risk" style="color: #bcbabe;">
+                          Low Risk
+                        </div>
+                        <span class="users">
+                          {{churn.low_risk}}
+                        </span>
+                      </div>
+                    </div>
+              </div> -->
+            </div>
+            <div class="dropdawn-wrap">
+                <button (click)="showDropdawn = !showDropdawn" class="btn-left-sidebar" [ngClass] = "{'active-btn': showDropdawn}">
+                   <span>
+                     Product 6
+                   </span>
+                   <i class="fa fa-caret-down"></i>
+                 </button>
+                 <div *ngIf = "showDropdawn" class="dropdawn-btn">
+                     <ul>
+                       <li><a>some item</a></li>
+                       <li><a>some item</a></li>
+                       <li><a>some item</a></li>
+                       <li><a>some item</a></li>
+                       <li><a>some item</a></li>
+                     </ul>
+                 </div>
+             </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="small-card" style="height: unset">
+    <nb-card style="position: relative;">
+        <nb-layout-header>
+              <div class="header-table">
+                <div [ngClass]="{'active-item': barSwitch2 === 'country'}" (click)="clickLocation('country', 'dataBar2', 'dataTable2', 'barSwitch2')" class="" style="border-right: 1px solid #f3f3f3;">
+                  Price recommendation
+                </div>
+                <div [ngClass]="{'active-item': barSwitch2 === 'region'}" (click)="clickLocation('region', 'dataBar2', 'dataTable2', 'barSwitch2')" class="" style="border-right: 1px solid #f3f3f3;">
+                  Response to price recommendation
+                </div>
+                <div [ngClass]="{'active-item': barSwitch2 === 'affluence'}" (click)="clickLocation('affluence', 'dataBar2', 'dataTable2', 'barSwitch2')" class="" style="border-right: 1px solid #f3f3f3;">
+                  Impact
+                </div>
+              </div>
+        </nb-layout-header>
+        <nb-card-body class="big-cart">
+          <div class="container" style="height: 100%">
+            <div class="row" style="height: 100%">
+                <div class="dropdawn-wrap dropdawn-wrap-chart">
+                    <button (click)="showDropdawn = !showDropdawn" class="btn-left-sidebar" [ngClass] = "{'active-btn': showDropdawn}">
+                       <span>
+                         Product 6
+                       </span>
+                       <i class="fa fa-caret-down"></i>
+                     </button>
+                     <div *ngIf = "showDropdawn" class="dropdawn-btn">
+                         <ul>
+                           <li><a>some item</a></li>
+                           <li><a>some item</a></li>
+                           <li><a>some item</a></li>
+                           <li><a>some item</a></li>
+                           <li><a>some item</a></li>
+                         </ul>
+                     </div>
+                 </div>
+              <div class="col-md-8 col-xs-12">
+                <!-- <div class="label-top">
+                    User Distribution on basis of origin
+                </div> -->
+                
+                <div style="height: 100%">
+                  <chart style="display: flex; align-items: center; height: 100%;" *ngIf="dataBar2Options.type === 'Histogram' && dataBar2 && barSwitch2 === 'country'" type="bar" [data]="dataBar2" [options]="optionsBar"></chart>
+                  <chart style="display: flex; align-items: center; height: 100%;" *ngIf="dataBar2Options.type === 'Histogram' && dataBar && barSwitch2 !== 'country'" type="bar" [data]="dataBar" [options]="optionsBars"></chart>
+
+                  <div class="table-wrap-scroll" *ngIf="dataBar2Options.type === 'Table'">
+                      <!--<ng2-smart-table *ngIf="dataBar1Options.type === 'Table'" [settings]="settings" [source]="source" reset></ng2-smart-table>-->
+                    <div  *ngIf="dataBar2Options.type === 'Table' && dataTable2" class="tbody-smart">
+                      <div class="row-table-smart">
+                        <div class="row-table-item column-4" style="border-left: 0;">
+                          <div>
+                            {{barSwitch2}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            High risk
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            Medium risk
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            Low risk
+                          </div>
+                        </div>
+                      </div>
+                      <div *ngFor="let item of dataTable2" class="row-table-smart">
+                        <div class="row-table-item column-4" style="border-left: 0;">
+                          <div>
+                            {{item.value}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.High_Risk}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.Medium_Risk}}
+                          </div>
+                        </div>
+                        <div class="row-table-item column-4">
+                          <div>
+                            {{item.Low_Risk}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- <div class="col-md-4 col-xs-12">
+                <div class="right-content-select" style="margin-top: 27px;">
+                  <div class="lable">
+                    Basic:
+                  </div>
+                  <div class="select-wrap">
+                    <button class="select" (click)="showLocation = !showLocation">
+                        {{selectedLocation}}
+                        <i class="ion-arrow-down-b"></i>
+                    </button>
+                    <div *ngIf="showLocation" class="dropdawn dropdawn-location">
+                      <ul class="list-location">
+                        <li *ngFor="let item of dataLocation">
+                          <a (click)="clickLocation(item)">{{item.name}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </nb-card-body>
+        <div class="switcher-wrap-small-tb" style="bottom: 10px;">
+          <switcher [charts]="charts" (changeEvent)="dataBar2Options = $event"></switcher>
+        </div>
+      </nb-card>
+</div>
+

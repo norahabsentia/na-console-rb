@@ -1,0 +1,166 @@
+{
+  "country": [
+    {
+      "value": "India",
+      "Low_Risk": 4480,
+      "Medium_Risk": 6913,
+      "High_Risk": 11399
+    },
+    {
+      "value": "United Arab Emirates",
+      "Low_Risk": 1,
+      "Medium_Risk": 5,
+      "High_Risk": 4
+    },
+    {
+      "value": "United States",
+      "Low_Risk": 2,
+      "Medium_Risk": 1,
+      "High_Risk": 5
+    },
+    {
+      "value": "Qatar",
+      "Low_Risk": 2,
+      "Medium_Risk": 3,
+      "High_Risk": 2
+    },
+    {
+      "value": "Nepal",
+      "Low_Risk": 0,
+      "Medium_Risk": 3,
+      "High_Risk": 2
+    },
+    {
+      "value": "Bangladesh",
+      "Low_Risk": 2,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Pakistan",
+      "Low_Risk": 2,
+      "Medium_Risk": 0,
+      "High_Risk": 2
+    },
+    {
+      "value": "France",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 2
+    },
+    {
+      "value": "China",
+      "Low_Risk": 1,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Kuwait",
+      "Low_Risk": 0,
+      "Medium_Risk": 2,
+      "High_Risk": 1
+    },
+    {
+      "value": "Thailand",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 2
+    },
+    {
+      "value": "Oman",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 3
+    },
+    {
+      "value": "Saudi Arabia",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 2
+    },
+    {
+      "value": "United Kingdom",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 3
+    },
+    {
+      "value": "Sri Lanka",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 1
+    },
+    {
+      "value": "Canada",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 2
+    },
+    {
+      "value": "Singapore",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Malaysia",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Germany",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Afghanistan",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Finland",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Myanmar (Burma)",
+      "Low_Risk": 1,
+      "Medium_Risk": 0,
+      "High_Risk": 0
+    },
+    {
+      "value": "Switzerland",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Kyrgyzstan",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    },
+    {
+      "value": "Japan",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "New Zealand",
+      "Low_Risk": 0,
+      "Medium_Risk": 0,
+      "High_Risk": 1
+    },
+    {
+      "value": "Mauritius",
+      "Low_Risk": 0,
+      "Medium_Risk": 1,
+      "High_Risk": 0
+    }
+  ]
+}

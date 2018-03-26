@@ -1,0 +1,17 @@
+{
+  "currentlevel": [
+    {"value": "36", "High_Risk": 795, "Medium_Risk": 6484, "Low_Risk": 9106} ,
+{"value": "50", "High_Risk": 854, "Medium_Risk": 6011, "Low_Risk": 9234} ,
+{"value": "19", "High_Risk": 816, "Medium_Risk": 6736, "Low_Risk": 9871} ,
+{"value": "8", "High_Risk": 973, "Medium_Risk": 8593, "Low_Risk": 9516} ,
+{"value": "34", "High_Risk": 896, "Medium_Risk": 6807, "Low_Risk": 9844} ,
+{"value": "35", "High_Risk": 990, "Medium_Risk": 8245, "Low_Risk": 9603} ,
+{"value": "9", "High_Risk": 800, "Medium_Risk": 7615, "Low_Risk": 9467} ,
+{"value": "37", "High_Risk": 983, "Medium_Risk": 6306, "Low_Risk": 9903} ,
+{"value": "41", "High_Risk": 560, "Medium_Risk": 8771, "Low_Risk": 9843} ,
+{"value": "24", "High_Risk": 935, "Medium_Risk": 8646, "Low_Risk": 9997} ,
+{"value": ">10%", "High_Risk": 709, "Medium_Risk": 7520, "Low_Risk": 9350} ,
+{"value": "5%-10%", "High_Risk": 888, "Medium_Risk": 8954, "Low_Risk": 9139} ,
+{"value": "<5%", "High_Risk": 720, "Medium_Risk": 8619, "Low_Risk": 9328}
+  ]
+}

@@ -1,0 +1,3 @@
+{
+    "Out of lives": [{ "value": "low", "pop_churned": 570, "pop_notChurned": 2450, "pop_predicted": 585, "pop_notPredicted": 2435, "pop_churnedPredicted": 540, "pop_churnedNotPredicted": 30, "pop_notchurnedNotpredicted": 2405, "pop_notchurnedPredicted": 65 }, { "value": "medium", "pop_churned": 33116, "pop_notChurned": 19736, "pop_predicted": 33454, "pop_notPredicted": 19398, "pop_churnedPredicted": 32180, "pop_churnedNotPredicted": 936, "pop_notchurnedNotpredicted": 18462, "pop_notchurnedPredicted": 1652 }, { "value": "high", "pop_churned": 30, "pop_notChurned": 230, "pop_predicted": 38, "pop_notPredicted": 222, "pop_churnedPredicted": 15, "pop_churnedNotPredicted": 15, "pop_notchurnedNotpredicted": 209, "pop_notchurnedPredicted": 23 }]
+}

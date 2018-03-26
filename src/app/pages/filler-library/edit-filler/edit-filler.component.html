@@ -1,0 +1,108 @@
+<div class="edit_filler" *ngIf="curfiller">
+  <input type="text" value="" placeholder="Filler Name" id="filler_name" value="{{curfiller.tag_name}}" />
+  <br>
+  <textarea placeholder="Filler Description" id="filler_description" class="col-lg-6" value="{{curfiller.filler_description}}"></textarea>
+  <div id="table-wrapper">
+    <div id="table-scroll">
+      <table class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        <thead>
+          <tr class="table_header">
+            <th class="rightborder" width=100> values </th>
+            <th *ngIf="this.notificationService.editValue == 0"> Customer tags </th>
+            <th *ngIf="this.notificationService.editValue == 1">Segments</th>
+          </tr>
+        </thead>
+        <tbody *ngIf="this.notificationService.editValue == 0">
+          <tr class="table_row" *ngFor="let key of getCurrentFillerKeys()">
+            <td width=100 class="rightborder key_val">
+              <span>{{key}}</span>
+              <a class="editfillerValue" (click)="editfillerValue(key)">
+                <i class="menu-icon nb-edit"></i>
+              </a>
+            </td>
+            <td>
+              <span class="segment_span" *ngFor="let value of this.curfiller['value_segments'][key]">{{value}}</span>
+            </td>
+          </tr>
+          <tr>
+            <td width=100 class="rightborder key_val">
+              <input type="text" name="addValue" [(ngModel)]="addValue" (change)="createFillerValue(addValue)" *ngIf="notificationService.addFillerTextbox==1"
+                style="width: 100%;" />
+              <a class="addSegmentValue" (click)="addValueFiller()">
+                <i class="menu-icon nb-plus"></i>
+              </a>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tbody *ngIf="this.notificationService.editValue == 1">
+          <tr class="table_row">
+            <td class="rightborder key_val" width="100" style="vertical-align: text-top;">
+              <div class="bottomborder" (click)="editfillerValue(key)" *ngFor="let key of curfillerKey" [ngStyle]="editSegmentKey==key ?{'background-color':'#4aa3df'}:{} ">
+                <span>{{key}}</span>
+              </div>
+              <input type="text" name="addValue" [(ngModel)]="addValue" (change)="createFillerValue(addValue)" *ngIf="notificationService.addFillerTextbox==1"
+                style="width: 100%;" />
+              <div>
+                <a class="addSegmentValue" (click)="addValueFiller()">
+                  <i class="menu-icon nb-plus"></i>
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="col-lg-5 leftDiv">
+                <nb-card size="small" style="height: 10em;">
+                  <nb-card-header class="noti_nb_card_header3">
+                    <span style="color:#4aa3df">Selected</span>
+                  </nb-card-header>
+                  <nb-card-body class="noti_nb_body2">
+                    <select multiple class="form-control noti_nb_select" *ngIf="this.curfiller['value_segments']">
+                      <option *ngFor="let value of this.curfiller['value_segments'][editSegmentKey]" [value]="value" (click)="backFiller(value)">{{value}}</option>
+                    </select>
+                  </nb-card-body>
+                </nb-card>
+                <nb-card size="small" style="height: 8em;">
+                  <nb-card-header class="noti_nb_card_header3">
+                    <span>Presets</span>
+                  </nb-card-header>
+                  <nb-card-body class="noti_nb_body2">
+                    <!-- {{ this.curfiller | json }} -->
+                    <!-- <select  multiple class="form-control noti_nb_select" *ngIf="this.curfiller['value_segments_presets']">
+                                            <option *ngFor="let value of this.curfiller['value_segments'][editSegmentKey]"  [value]="value">{{value}}</option>
+                                        </select> -->
+
+                    <select multiple class="form-control noti_nb_select" *ngIf="this.notificationService.curPreset.length">
+                      <option *ngFor="let value of this.notificationService.curPreset" (click)="onPresetSelectionClick(value)" [value]="value">{{value.fillername}}:{{value.valuename}}</option>
+                    </select>
+                  </nb-card-body>
+                </nb-card>
+              </div>
+              <div class="col-lg-7 rightDiv">
+                <div class="col-lg-9 leftDiv">
+                  <nb-card size="small" style="height: 17em;">
+                    <nb-card-header class="noti_nb_card_header3">
+                    </nb-card-header>
+                    <nb-card-body class="noti_nb_body2">
+                      <select multiple class="form-control noti_nb_select">
+                        <option *ngFor="let item of this.editFillerItemArray | orderBy: orderId" (click)="addSegmentFiller(item.name)" [value]="item?item.name:''">{{item?item.name:''}}</option>
+                      </select>
+
+                    </nb-card-body>
+                  </nb-card>
+                </div>
+                <div class="col-lg-2 rightDiv leftborder" style="height: 336px;">
+                  <button class="btn btn-default noti_nb_button2" type="submit" style="margin-bottom: 1em">
+                    <img style="padding-right: 1em;" src="../../../assets/images/save1.png" alt="" (click)="showEditFillerTemplate(0)">
+                  </button>
+                  <img style="padding-right: 1em;padding-bottom: 1em" src="../../../assets/images/cancel1.png" alt="" (click)="showEditFillerTemplate(0)">
+                  <img style="padding-right: 1em;padding-bottom: 1em" src="../../../assets/images/reset	1.png" alt="" (click)="reset()">
+                  <img src="../../../assets/images/enter1.png" alt="" (click)="saveAsPreset()">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

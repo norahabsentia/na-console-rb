@@ -1,0 +1,12 @@
+{
+  "AppVersion": [
+  {"value": "1.0.1", "pop_churned": 1500, "pop_notChurned": 18500, "pop_predicted": 1200, "pop_notPredicted":18800, "pop_churnedPredicted": 1000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 17600, "pop_notchurnedPredicted": 900} ,
+  {"value": "1.0.3", "pop_churned": 2500, "pop_notChurned": 37500, "pop_predicted": 2200, "pop_notPredicted":37800, "pop_churnedPredicted": 2000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 36700, "pop_notchurnedPredicted": 800} ,
+  {"value": "1.0.4", "pop_churned": 3500, "pop_notChurned": 46500, "pop_predicted": 3200, "pop_notPredicted":46800, "pop_churnedPredicted": 3000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 45600, "pop_notchurnedPredicted": 900} ,
+  {"value": "1.0.5", "pop_churned": 2000, "pop_notChurned": 58000, "pop_predicted": 1500, "pop_notPredicted":58500, "pop_churnedPredicted": 1200, "pop_churnedNotPredicted": 800, "pop_notchurnedNotpredicted": 56600, "pop_notchurnedPredicted": 1400} ,
+  {"value": "1.0.7", "pop_churned": 1500, "pop_notChurned": 28500, "pop_predicted": 1200, "pop_notPredicted":28800, "pop_churnedPredicted": 1000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 27600, "pop_notchurnedPredicted": 900} ,
+  {"value": ">10%", "pop_churned": 2500, "pop_notChurned": 67500, "pop_predicted": 2200, "pop_notPredicted":67800, "pop_churnedPredicted": 2000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 66700, "pop_notchurnedPredicted": 800} ,
+  {"value": "5%-10%", "pop_churned": 1000, "pop_notChurned": 89000, "pop_predicted": 800, "pop_notPredicted":89200, "pop_churnedPredicted": 600, "pop_churnedNotPredicted": 400, "pop_notchurnedNotpredicted": 88100, "pop_notchurnedPredicted": 900},
+  {"value": "<5%", "pop_churned": 1500, "pop_notChurned": 78500, "pop_predicted": 1200, "pop_notPredicted":78800, "pop_churnedPredicted": 1000, "pop_churnedNotPredicted": 500, "pop_notchurnedNotpredicted": 77600, "pop_notchurnedPredicted": 900}
+  ]
+}

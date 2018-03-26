@@ -1,0 +1,399 @@
+{
+  "mobile_brand_name": [
+    {
+      "value": "Samsung",
+      "churned": 3469,
+      "retained": 3195
+    },
+    {
+      "value": "Xiaomi",
+      "churned": 2041,
+      "retained": 2303
+    },
+    {
+      "value": "Vivo",
+      "churned": 1234,
+      "retained": 1424
+    },
+    {
+      "value": "OPPO",
+      "churned": 1166,
+      "retained": 1228
+    },
+    {
+      "value": "Lenovo",
+      "churned": 652,
+      "retained": 631
+    },
+    {
+      "value": "Motorola",
+      "churned": 425,
+      "retained": 413
+    },
+    {
+      "value": "Micromax",
+      "churned": 350,
+      "retained": 260
+    },
+    {
+      "value": "LYF",
+      "churned": 302,
+      "retained": 229
+    },
+    {
+      "value": "Gionee",
+      "churned": 239,
+      "retained": 256
+    },
+    {
+      "value": "OnePlus",
+      "churned": 146,
+      "retained": 158
+    },
+    {
+      "value": "HTC",
+      "churned": 102,
+      "retained": 131
+    },
+    {
+      "value": "Lava",
+      "churned": 134,
+      "retained": 93
+    },
+    {
+      "value": "Asus",
+      "churned": 110,
+      "retained": 116
+    },
+    {
+      "value": "Huawei",
+      "churned": 119,
+      "retained": 97
+    },
+    {
+      "value": "Coolpad",
+      "churned": 88,
+      "retained": 125
+    },
+    {
+      "value": "Intex",
+      "churned": 103,
+      "retained": 93
+    },
+    {
+      "value": "Panasonic",
+      "churned": 73,
+      "retained": 84
+    },
+    {
+      "value": "LeTV",
+      "churned": 63,
+      "retained": 76
+    },
+    {
+      "value": "Sony",
+      "churned": 65,
+      "retained": 67
+    },
+    {
+      "value": "Karbonn",
+      "churned": 54,
+      "retained": 41
+    },
+    {
+      "value": "LG",
+      "churned": 44,
+      "retained": 48
+    },
+    {
+      "value": "YU",
+      "churned": 41,
+      "retained": 36
+    },
+    {
+      "value": "itel",
+      "churned": 41,
+      "retained": 33
+    },
+    {
+      "value": "iZoom",
+      "churned": 34,
+      "retained": 39
+    },
+    {
+      "value": "Nokia",
+      "churned": 34,
+      "retained": 32
+    },
+    {
+      "value": "LeEco",
+      "churned": 25,
+      "retained": 40
+    },
+    {
+      "value": "Xolo",
+      "churned": 32,
+      "retained": 28
+    },
+    {
+      "value": "Tecno",
+      "churned": 32,
+      "retained": 23
+    },
+    {
+      "value": "InFocus",
+      "churned": 18,
+      "retained": 18
+    },
+    {
+      "value": "iBall",
+      "churned": 19,
+      "retained": 12
+    },
+    {
+      "value": "Ampe",
+      "churned": 20,
+      "retained": 6
+    },
+    {
+      "value": "Infinix",
+      "churned": 12,
+      "retained": 12
+    },
+    {
+      "value": "Lephone",
+      "churned": 13,
+      "retained": 11
+    },
+    {
+      "value": "Google",
+      "churned": 9,
+      "retained": 8
+    },
+    {
+      "value": "Videocon",
+      "churned": 5,
+      "retained": 10
+    },
+    {
+      "value": "Cubot",
+      "churned": 8,
+      "retained": 6
+    },
+    {
+      "value": "Magicon",
+      "churned": 7,
+      "retained": 7
+    },
+    {
+      "value": "Ziox",
+      "churned": 6,
+      "retained": 4
+    },
+    {
+      "value": "Alcatel",
+      "churned": 7,
+      "retained": 3
+    },
+    {
+      "value": "Celkon",
+      "churned": 7,
+      "retained": 3
+    },
+    {
+      "value": "ZXD",
+      "churned": 7,
+      "retained": 3
+    },
+    {
+      "value": "Reliance",
+      "churned": 5,
+      "retained": 3
+    },
+    {
+      "value": "SonyEricsson",
+      "churned": 4,
+      "retained": 3
+    },
+    {
+      "value": "Swipe",
+      "churned": 2,
+      "retained": 5
+    },
+    {
+      "value": "Acer",
+      "churned": 3,
+      "retained": 4
+    },
+    {
+      "value": "BlackBerry",
+      "churned": 2,
+      "retained": 4
+    },
+    {
+      "value": "Zen",
+      "churned": 4,
+      "retained": 2
+    },
+    {
+      "value": "Spice",
+      "churned": 4,
+      "retained": 2
+    },
+    {
+      "value": "Sansui",
+      "churned": 1,
+      "retained": 4
+    },
+    {
+      "value": "PiPO",
+      "churned": 3,
+      "retained": 2
+    },
+    {
+      "value": "Jiayu",
+      "churned": 2,
+      "retained": 2
+    },
+    {
+      "value": "BLU",
+      "churned": 3,
+      "retained": 1
+    },
+    {
+      "value": "Allview",
+      "churned": 2,
+      "retained": 2
+    },
+    {
+      "value": "Meitu",
+      "churned": 1,
+      "retained": 3
+    },
+    {
+      "value": "ZTE",
+      "churned": 3,
+      "retained": 1
+    },
+    {
+      "value": "M-tech",
+      "churned": 2,
+      "retained": 1
+    },
+    {
+      "value": "Wiko",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "i-mobile",
+      "churned": 2,
+      "retained": 1
+    },
+    {
+      "value": "Eurostar",
+      "churned": 1,
+      "retained": 2
+    },
+    {
+      "value": "HP",
+      "churned": 0,
+      "retained": 2
+    },
+    {
+      "value": "iOcean",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "iNew",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "Meizu",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "Nvidia",
+      "churned": 2,
+      "retained": 0
+    },
+    {
+      "value": "DOOGEE",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Dragon Touch",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Symphony",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Xtron",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Phicomm",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Rivo",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "LGG",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Oukitel",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "CAT",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Intel",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Onida",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "HTM",
+      "churned": 1,
+      "retained": 0
+    },
+    {
+      "value": "Reach",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Pioneer",
+      "churned": 0,
+      "retained": 1
+    },
+    {
+      "value": "Omes",
+      "churned": 0,
+      "retained": 1
+    }
+  ]
+}

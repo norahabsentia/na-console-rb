@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "6.11.3"
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install
+  - npm install -g firebase-tools
+  - npm install fullcalendar@3.6.1
+
+script:
+  - travis_wait 30 ng build --prod
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change

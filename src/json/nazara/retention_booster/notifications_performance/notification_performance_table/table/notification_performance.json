@@ -1,0 +1,17 @@
+{
+	"notification_table": [{
+			"noification_id": "not0001",
+			"notification_text": "WOW!!! You are this close to beating Australia, accept this reward and show them what you are made of",
+			"segments_targeted": ["Whales", "Unskilled"],
+			"open_rate": 0.22,
+			"reach_per_week": 17984
+		},
+		{
+			"noification_id": "not0002",
+			"notification_text": "INDIA is in desperate need of your expertise , Take this gift and boost your energy and chances of beating Australia.",
+			"segments_targeted": ["Great Player"],
+			"open_rate": 0.12,
+			"reach_per_week": 13456
+		}
+	]
+}

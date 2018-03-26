@@ -1,0 +1,15 @@
+{
+	"top_stats":{
+		"active_users":100000,
+	    "predicted_to_churn":22032,
+	    "churned":18450,
+        "accuracy":94.82
+	},
+	
+	"confusion_matrix":{
+		"predicted_churn":17650, 
+		"predicted_notChurn":4382, 
+		"notPredicted_churn":800,
+	    "notPredicted_notChurned":77168
+	}	
+}

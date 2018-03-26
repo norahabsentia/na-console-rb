@@ -1,0 +1,251 @@
+<div class="container">
+    <div class="row" style="margin: 0; padding-left: 15px; padding-right: 15px;">
+        <div class="main-caption">
+            NOTIFICATIONS PEFORMACE
+        </div>
+
+        <div class="box-wrapper-top">
+
+
+            <!-- <div class="user-active">
+        <span>
+          Revenue Overview
+        </span>
+      </div> -->
+            <div class="container-risk">
+                <div class="box" style="border-radius: 10px 0 0 10px; border-right: none;">
+                    <div class="caption-risk" style="">
+                        Total Notifications Sent
+                    </div>
+                    <span class="users" style="">
+            <!-- <i class="fas fa-rupee-sign"></i> -->
+            <!-- ₹  -->
+            <!--49,17,6050-->
+            {{stats.total_notifications_sent}}
+          </span>
+                </div>
+                <div class="box" style="border-right: none;">
+                    <div class="caption-risk">
+                        Total Notifications Opened
+                    </div>
+                    <span class="users">
+            {{stats.total_notifications_open}}
+          </span>
+                </div>
+                <div class="box" style="border-right: none;">
+                    <div class="caption-risk" style="text-align: center;">
+                        Total Number of Users Notifications were sent to:
+                    </div>
+                    <span class="users">
+            {{stats.total_users}}
+          </span>
+                </div>
+                <div class="box" style="border-radius: 0 10px 10px 0;">
+                    <div class="caption-risk" style="text-align: center;">
+                        Total Number of Users who opened Notifications:
+                    </div>
+                    <span class="users">
+            {{stats.users_opened}}
+        </span>
+                </div>
+            </div>
+            <div class="box-wrapper-top">
+                <!-- <div class="user-active">
+          <span>
+            Purchases Overview
+          </span>
+      </div> -->
+                <div class="container-risk" style="margin-bottom: 30px;">
+                    <div class="box" style="border-radius: 10px 0 0 10px;border-right: none;">
+                        <div class="caption-risk" style="">
+                            Avg number of notifications opened per user
+                        </div>
+                        <span class="users">
+            {{stats.average_notifications_open_per_user}}
+            </span>
+                    </div>
+                    <div class="box" style="border-right: none;">
+                        <div class="caption-risk" style="text-align: center;">
+                            Avg number of notifications sent per user
+                        </div>
+                        <span class="users">
+            {{stats.average_notifications_sent_per_user}}
+              262
+            </span>
+                    </div>
+                    <div class="box" style="border-right: 0;">
+                        <div class="caption-risk" style="text-align: center;">
+                            Avg number of notifications opened per churner
+                        </div>
+                        <span class="users">
+            {{stats.average_notifications_open_per_churner}}
+            </span>
+                    </div>
+                    <div class="box" style="border-radius:0 10px 10px 0;">
+                        <div class="caption-risk" style="text-align: center;">
+                            Avg number of notifications sent per churner
+                        </div>
+                        <span class="users">
+              <!-- ₹  -->
+            {{stats.average_notifications_sent_per_churner}}
+          </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="notChurn && notChurnTable" [title]="'Notification to Churning Users'" [data]="notChurn" [dataTable]="notChurnTable"></chart-switcher>
+            </div>
+            <div class="col-sm-6">
+                <chart-switcher *ngIf="notResponse && notResponseTable" [title]="'Response Distribution'" [data]="notResponse" [dataTable]="notResponseTable"></chart-switcher>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="notficationDaily && notficationDailyTable" [title]="'Daily Response Trend'" [optionsSettings]="lineOption" [data]="notficationDaily" [dataTable]="notficationDailyTable"></chart-switcher>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="notSegment && notSegmentTable" [title]="'User Segment and Notification Category Distribution'" [data]="notSegment" [dataTable]="notSegmentTable"></chart-switcher>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <chart-switcher *ngIf="segResponse && segResponseTable" [title]="'User Segment Response to Notifications'" [data]="segResponse" [dataTable]="segResponseTable"></chart-switcher>
+            </div>
+        </div>
+        <!--User Response to notifications over churn period-->
+        <!--Distribution of Notifications Sent per user category-->
+        <!--Open vs Not Opened per segment-->
+        <!--<div class="row">-->
+        <!--<div class="col-sm-6">-->
+        <!--<chart-switcher-smart-price [chartsValue]="charts" [title]="'Geogrphy of Revenue'"></chart-switcher-smart-price>-->
+
+        <!--</div>-->
+        <!--<div class="col-sm-6">-->
+        <!--<chart-switcher-smart-price [chartsValue]="charts" [title]="'Revenue Visualisation by Level'"></chart-switcher-smart-price>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
+
+
+        <!--<div class="row">-->
+        <!--<div class="col-sm-6">-->
+        <!--<chart-switcher-smart-price [chartsValue]="charts" [title]="'Sink and Source for Currency per Level'"></chart-switcher-smart-price>-->
+
+        <!--</div>-->
+        <!--<div class="col-sm-6">-->
+        <!--<chart-switcher-smart-price [chartsValue]="charts" [title]="'Level Revenue Visualisation'"></chart-switcher-smart-price>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+        <!--<div class="col-sm-6">-->
+        <!--<chart-switcher-smart-price [chartsValue]="charts" [title]="'Affluence Revenue'"></chart-switcher-smart-price>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
+
+    </div>
+
+    <div class="container">
+        <div class="row" style="flex-flow:column; margin: 0;">
+            <div class="table-bot">
+                <div class="header row-table-bot">
+                    <div style="width: 17%; border-left: none;">
+                        <div>
+                            Notification Title
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            Notification Template ID
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            Segments Targeted
+                        </div>
+                    </div>
+                    <div style="width: 11%;">
+                        <div>
+                            Open Rate
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            Reach per Week
+                        </div>
+                    </div>
+                </div>
+                <div class="row-table-bot">
+                    <div style="width: 17%; border-left: none;">
+                        <div>
+                            Good Morning
+                        </div>
+
+                        <!--i (click)="showModal = true" class="ion-stats-bars icon-position"></i-->
+
+                        <i _ngcontent-c13="" class="ion-stats-bars icon-position"></i>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            not_00005
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            High loylity
+                        </div>
+                    </div>
+                    <div style="width: 11%;">
+                        <div>
+                            60%
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            125492
+                        </div>
+                    </div>
+                </div>
+                <div class="row-table-bot">
+                    <div style="width: 17%; border-left: none;">
+                        <div>
+                            We miss you
+                        </div>
+                        <i _ngcontent-c13="" class="ion-stats-bars icon-position"></i>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            not_00005
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            Low loylity
+                        </div>
+                    </div>
+                    <div style="width: 11%;">
+                        <div>
+                            60%
+                        </div>
+                    </div>
+                    <div style="width: 24%;">
+                        <div>
+                            222112
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
