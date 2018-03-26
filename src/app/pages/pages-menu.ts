@@ -18,26 +18,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-compose',
     children: [
       {
-        title: 'Overview',
+        title: 'Predictions Analysis',
         link: '/pages/retention-booster/churn-predictions'
-      },
-      {
-        title: 'Notification Manager',
-        link: '/pages/notification-manager',
       },
       {
         title: 'Churn Predictions',
         link: '/pages/churn-predictions',
       },
       {
+        title: 'Notification Manager',
+        link: '/pages/notification-manager',
+      },
+      {
         title: 'Notifications Performance',
         link: '/pages/retention-booster/Notifications-Performance',
-      },
-
-      {
-        title: 'Dispatch Calendar',
-        link: '/pages/retention-booste/dispatch-calendar',
-      },
+      }
     ]
   },
 //   {

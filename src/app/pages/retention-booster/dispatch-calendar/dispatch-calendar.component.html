@@ -4,240 +4,239 @@
         <!-- <i class="fa fa-arrow-left"></i> -->
     </span>
     <span class="header-text">
-      NOTIFICATION SCHEDULER
+      Notification Scheduler
     </span>
 </div>
 <div class="calendar-wrap" *ngIf="calendarOptions">
-  <ng-fullcalendar #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)"
-                   (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
+    <ng-fullcalendar #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)" (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
 </div>
 
 <div class="container" style="padding: 0; margin: 0; width: 100%; max-width: 100%;">
     <div class="row" style="flex-flow:column; margin: 0;">
-     <div class="table-bot">
-      <div class="header row-table-bot">
-        <div style="width: 29%; border-left: none;">
-          <div>
-            Messege
-          </div>
-        </div>
-        <div style="width: 15%;">
-          <div>
-            Status            
-          </div>
-        </div>
-        <div style="width: 14%;">
-          <div>
-            Delivery Date
-          </div>
-        </div>
-        <div style="width: 21%;">
-          <div>
-            Target Estimate
-          </div>
-        </div>
-        <div style="width: 21%;">
-          <div>
-            Open Rate
-          </div>
-        </div>
-      </div>
-      <div class="row-table-bot odd">
-          <div style="width: 29%; border-left: none;">
-            <div>
-              <div class="title">
-                Title
-              </div>
-              <div class="body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
-              </div>
-              <div class="button-wrap">
-                <div style="background: rgb(147, 34, 76);">
-                  High Loyalty
-                </div>
-                <div style="background: rgb(7, 102, 177);">
-                  Less days engaged
-                </div>
-                <div  style="background: rgb(138, 138, 138);"> 
-                  Low Progress
-                </div>
-                <div  style="background: rgb(237, 161, 53);">
-                  Low Skill
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="width: 15%;">
-            <div class="alarm-wrap">
-              <i class="material-icons">alarm</i>
-              <span>
-                Scheduled
-              </span>
-            </div>
-          </div>
-          <div style="width: 14%;">
-            <div>
-              3 Feb 2018, 6:00
-            </div>
-          </div>
-          <div style="width: 21%;">
-            <div>
-              15K users 23%
-            </div>
-          </div>
-          <div style="width: 21%;">
-            <div>
-              --
-            </div>
-          </div>
-        </div>
-        <div class="row-table-bot odd">
-            <div style="width: 29%; border-left: none;">
-              <div>
-                <div class="title">
-                  Title
-                </div>
-                <div class="body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
-                </div>
-                <div class="button-wrap">
-                  <div style="background: rgb(147, 34, 76);">
-                    High Loyalty
-                  </div>
-                  <div style="background: rgb(7, 102, 177);">
-                    Less days engaged
-                  </div>
-                  <div  style="background: rgb(138, 138, 138);"> 
-                    Low Progress
-                  </div>
-                  <div  style="background: rgb(237, 161, 53);">
-                    Low Skill
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="width: 15%;">
-              <div class="alarm-wrap">
-                <i class="material-icons">alarm</i>
-                <span>
-                  Scheduled
-                </span>
-              </div>
-            </div>
-            <div style="width: 14%;">
-              <div>
-                3 Feb 2018, 6:00
-              </div>
-            </div>
-            <div style="width: 21%;">
-              <div>
-                15K users 23%
-              </div>
-            </div>
-            <div style="width: 21%;">
-              <div>
-                --
-              </div>
-            </div>
-          </div>
-          <div class="row-table-bot odd">
-              <div style="width: 29%; border-left: none;">
-                <div>
-                  <div class="title">
-                    Title
-                  </div>
-                  <div class="body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
-                  </div>
-                  <div class="button-wrap">
-                    <div style="background: rgb(147, 34, 76);">
-                      High Loyalty
+        <div class="table-bot">
+            <div class="header row-table-bot">
+                <div style="width: 29%; border-left: none;">
+                    <div>
+                        Message
                     </div>
-                    <div style="background: rgb(7, 102, 177);">
-                      Less days engaged
+                </div>
+                <div style="width: 15%;">
+                    <div>
+                        Status
                     </div>
-                    <div  style="background: rgb(138, 138, 138);"> 
-                      Low Progress
+                </div>
+                <div style="width: 14%;">
+                    <div>
+                        Delivery Date
                     </div>
-                    <div  style="background: rgb(237, 161, 53);">
-                      Low Skill
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        Target Estimate
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div style="width: 15%;">
-                <div class="alarm-wrap">
-                  <i class="material-icons">alarm</i>
-                  <span>
-                    Scheduled
-                  </span>
+                <div style="width: 21%;">
+                    <div>
+                        Open Rate
+                    </div>
                 </div>
-              </div>
-              <div style="width: 14%;">
-                <div>
-                  3 Feb 2018, 6:00
-                </div>
-              </div>
-              <div style="width: 21%;">
-                <div>
-                  15K users 23%
-                </div>
-              </div>
-              <div style="width: 21%;">
-                <div>
-                  --
-                </div>
-              </div>
             </div>
             <div class="row-table-bot odd">
                 <div style="width: 29%; border-left: none;">
-                  <div>
-                    <div class="title">
-                      Title
+                    <div>
+                        <div class="title">
+                            Title
+                        </div>
+                        <div class="body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
+                        </div>
+                        <div class="button-wrap">
+                            <div style="background: rgb(147, 34, 76);">
+                                High Loyalty
+                            </div>
+                            <div style="background: rgb(7, 102, 177);">
+                                Less days engaged
+                            </div>
+                            <div style="background: rgb(138, 138, 138);">
+                                Low Progress
+                            </div>
+                            <div style="background: rgb(237, 161, 53);">
+                                Low Skill
+                            </div>
+                        </div>
                     </div>
-                    <div class="body">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
-                    </div>
-                    <div class="button-wrap">
-                      <div style="background: rgb(147, 34, 76);">
-                        High Loyalty
-                      </div>
-                      <div style="background: rgb(7, 102, 177);">
-                        Less days engaged
-                      </div>
-                      <div  style="background: rgb(138, 138, 138);"> 
-                        Low Progress
-                      </div>
-                      <div  style="background: rgb(237, 161, 53);">
-                        Low Skill
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div style="width: 15%;">
-                  <div class="alarm-wrap">
-                    <i class="material-icons">alarm</i>
-                    <span>
-                      Scheduled
-                    </span>
-                  </div>
+                    <div class="alarm-wrap">
+                        <i class="material-icons">alarm</i>
+                        <span>
+                Scheduled
+              </span>
+                    </div>
                 </div>
                 <div style="width: 14%;">
-                  <div>
-                    3 Feb 2018, 6:00
-                  </div>
+                    <div>
+                        3 Feb 2018, 6:00
+                    </div>
                 </div>
                 <div style="width: 21%;">
-                  <div>
-                    15K users 23%
-                  </div>
+                    <div>
+                        15K users 23%
+                    </div>
                 </div>
                 <div style="width: 21%;">
-                  <div>
-                    --
-                  </div>
+                    <div>
+                        --
+                    </div>
                 </div>
-              </div>
-     </div>
+            </div>
+            <div class="row-table-bot odd">
+                <div style="width: 29%; border-left: none;">
+                    <div>
+                        <div class="title">
+                            Title
+                        </div>
+                        <div class="body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
+                        </div>
+                        <div class="button-wrap">
+                            <div style="background: rgb(147, 34, 76);">
+                                High Loyalty
+                            </div>
+                            <div style="background: rgb(7, 102, 177);">
+                                Less days engaged
+                            </div>
+                            <div style="background: rgb(138, 138, 138);">
+                                Low Progress
+                            </div>
+                            <div style="background: rgb(237, 161, 53);">
+                                Low Skill
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 15%;">
+                    <div class="alarm-wrap">
+                        <i class="material-icons">alarm</i>
+                        <span>
+                  Scheduled
+                </span>
+                    </div>
+                </div>
+                <div style="width: 14%;">
+                    <div>
+                        3 Feb 2018, 6:00
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        15K users 23%
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        --
+                    </div>
+                </div>
+            </div>
+            <div class="row-table-bot odd">
+                <div style="width: 29%; border-left: none;">
+                    <div>
+                        <div class="title">
+                            Title
+                        </div>
+                        <div class="body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
+                        </div>
+                        <div class="button-wrap">
+                            <div style="background: rgb(147, 34, 76);">
+                                High Loyalty
+                            </div>
+                            <div style="background: rgb(7, 102, 177);">
+                                Less days engaged
+                            </div>
+                            <div style="background: rgb(138, 138, 138);">
+                                Low Progress
+                            </div>
+                            <div style="background: rgb(237, 161, 53);">
+                                Low Skill
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 15%;">
+                    <div class="alarm-wrap">
+                        <i class="material-icons">alarm</i>
+                        <span>
+                    Scheduled
+                  </span>
+                    </div>
+                </div>
+                <div style="width: 14%;">
+                    <div>
+                        3 Feb 2018, 6:00
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        15K users 23%
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        --
+                    </div>
+                </div>
+            </div>
+            <div class="row-table-bot odd">
+                <div style="width: 29%; border-left: none;">
+                    <div>
+                        <div class="title">
+                            Title
+                        </div>
+                        <div class="body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque magni itaque vitae nemo rem eaque magnam cum
+                        </div>
+                        <div class="button-wrap">
+                            <div style="background: rgb(147, 34, 76);">
+                                High Loyalty
+                            </div>
+                            <div style="background: rgb(7, 102, 177);">
+                                Less days engaged
+                            </div>
+                            <div style="background: rgb(138, 138, 138);">
+                                Low Progress
+                            </div>
+                            <div style="background: rgb(237, 161, 53);">
+                                Low Skill
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 15%;">
+                    <div class="alarm-wrap">
+                        <i class="material-icons">alarm</i>
+                        <span>
+                      Scheduled
+                    </span>
+                    </div>
+                </div>
+                <div style="width: 14%;">
+                    <div>
+                        3 Feb 2018, 6:00
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        15K users 23%
+                    </div>
+                </div>
+                <div style="width: 21%;">
+                    <div>
+                        --
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>

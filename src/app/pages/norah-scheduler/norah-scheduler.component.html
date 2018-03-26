@@ -1,117 +1,122 @@
-
 <div class="main_wapper">
-  <!--Table Start-->
-  <div class="notification-scheduler">
-     <div class="container">
-       <div class="col-md-8 col-md-offset-2">
-           <div class="nf-detail" style="margin:0px;border-radius: 0.5em;
+    <!--Table Start-->
+    <div class="notification-scheduler">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="nf-detail" style="margin:0px;border-radius: 0.5em;
            height: 46em;position: relative;left: -15px;width: 1112px;">
-             <form  #norahForm="ngForm" (ngSubmit)="onSubmit(norahForm)">
-                 <input type="hidden" name="norah_ID" #norah_ID="ngModel" [(ngModel)]="norahService.selectedNorah.norah_ID">
-              <div class="page-title" style="    height: 72px;">
+                    <form #norahForm="ngForm" (ngSubmit)="onSubmit(norahForm)">
+                        <input type="hidden" name="norah_ID" #norah_ID="ngModel" [(ngModel)]="norahService.selectedNorah.norah_ID">
+                        <div class="page-title" style="    height: 72px;">
 
-                 <!-- <a href="#"><img style="padding-right: 1em;" src="../../assets/images/Arrow.png" alt=""></a> -->
-                 <img style="padding-right: 1em;" src="../../assets/images/Arrow.png" alt="">
-                 <h1 style="float: left;    font-size: 20px;">notification scheduler</h1>
-                 <div style="    clear: both;float: right;position: relative;top: -1.7em;">
+                            <!-- <a href="#"><img style="padding-right: 1em;" src="../../assets/images/Arrow.png" alt=""></a> -->
+                            <img style="padding-right: 1em;" src="../../assets/images/Arrow.png" alt="">
+                            <h1 style="float: left;    font-size: 20px;">Notification Scheduler</h1>
+                            <div style="    clear: both;float: right;position: relative;top: -1.7em;">
 
-                   <button class="btn btn-info buttonSave"  type="submit">Save Changes</button>
-                   <a style="color: white;" class="btn btn-info buttonSave" (click)="onDiscard()" >Discard Changes</a>
-                   <a style="color: white;" class="btn btn-info buttonReset" (click)="onReset()">Reset</a>
-                 </div>
-              </div>
-              <div class="table-responsive" style="    position: relative;
+                                <button class="btn btn-info buttonSave" type="submit">Save Changes</button>
+                                <a style="color: white;" class="btn btn-info buttonSave" (click)="onDiscard()">Discard Changes</a>
+                                <a style="color: white;" class="btn btn-info buttonReset" (click)="onReset()">Reset</a>
+                            </div>
+                        </div>
+                        <div class="table-responsive" style="    position: relative;
               top: -1.2em;    height: 43em;">
-              
-              <div style="border-top: solid 1px lightgray;padding: 1em;    padding-left: 2em;">
-                <span style="font-size: 19px;">Minimum gap between notifications</span>
-                <span class="spanN">
+
+                            <div style="border-top: solid 1px lightgray;padding: 1em;    padding-left: 2em;">
+                                <span style="font-size: 19px;">Minimum gap between notifications</span>
+                                <span class="spanN">
                   <select  name="top_entry" #top_entry="ngModel"  [(ngModel)]="norahService.scheduleTop_entry" class="selectN"   required>
                    <option  *ngFor='let top_entry of top_entries' [value]="top_entry.id">{{top_entry.name}}</option>
                    </select><span>hrs</span>
-                 </span>
-               </div>
+                                </span>
+                            </div>
 
-               
-              
-                 <table data-toggle="table" data-cache="false" data-height="300" class="table table-bordered table-striped">
-                    <thead>
-                       <tr>
-                          <th style="    padding-left: 2em;">
-                            <div class="divTdN">Customer Segments</div>
-                           </th>
-                          <th _ngcontent-c10="" colspan="2" class="tCN">
-                            <table style="width:  100%;">
-                              <thead>
-                                <tr>
-                                  <th colspan="2" style="font-size: 19px;">Scheduling</th>
-                               </tr>
-                             </thead>
-                             <tbody><tr style="background: none;"><td class="tbodyN1">Times a week</td><td class="tbodyN1td">Times a day</td></tr>
-                             </tbody>
-                           </table>
-                         </th>
-                          
-                       </tr>
-                    </thead>
-                    
-                    <tbody>
-                       <tr height=10 *ngFor="let item of norahService.scheduleArray; let i = index"  [attr.data-index]="i">
-                          <td style="padding-left: 2em;width: 42%;">{{item.customer}}</td>
-                          <td style="    width: 29%;">
-                             <div class="rail-select">
-                                <div class="select-side" style="top: 7px;height: 80%;right:42px;">
-                                  <i class="fa fa-caret-down fa-1x" style="margin: 5px;padding-left: 11px;"></i>
-                                </div>
 
-                          
-                                
-                              <select class="form-control" style="    margin-top: 7px;width:52%;height: 1.8em; text-align:center;font-size: 14px;color: #8c8c8c;    margin-left: 43px;"  name="week{{i}}" #week="ngModel"  [(ngModel)]="norahService.scheduleArray[i].week" (change)="onChangeLeft(item,$event.target.value)"  required >
+
+                            <table data-toggle="table" data-cache="false" data-height="300" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="    padding-left: 2em;">
+                                            <div class="divTdN">Customer Segments</div>
+                                        </th>
+                                        <th _ngcontent-c10="" colspan="2" class="tCN">
+                                            <table style="width:  100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2" style="font-size: 19px;">Scheduling</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr style="background: none;">
+                                                        <td class="tbodyN1">Times a week</td>
+                                                        <td class="tbodyN1td">Times a day</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr height=10 *ngFor="let item of norahService.scheduleArray; let i = index" [attr.data-index]="i">
+                                        <td style="padding-left: 2em;width: 42%;">{{item.customer}}</td>
+                                        <td style="    width: 29%;">
+                                            <div class="rail-select">
+                                                <div class="select-side" style="top: 7px;height: 80%;right:42px;">
+                                                    <i class="fa fa-caret-down fa-1x" style="margin: 5px;padding-left: 11px;"></i>
+                                                </div>
+
+
+
+                                                <select class="form-control" style="    margin-top: 7px;width:52%;height: 1.8em; text-align:center;font-size: 14px;color: #8c8c8c;    margin-left: 43px;" name="week{{i}}" #week="ngModel" [(ngModel)]="norahService.scheduleArray[i].week" (change)="onChangeLeft(item,$event.target.value)"
+                                                    required>
                                  <option class='it' *ngFor='let option_week of options_week' [value]="option_week.option_id">{{option_week.name}}</option>
                                </select>
-                             </div>
-                             <div class="message"  style="margin-top: 0;"><img style="margin-top: -2px;margin-left: 74px;" [src]="norahService.scheduleArray[i].week==5 ? '../../assets/images/blue_ok.png' : '../../assets/images/yellow_no.png'" alt=""></div>
-                          </td>
-                          <td>
-                             <div class="rail-select">
-                                <div class="select-side" style="top: 7px;height: 80%;right:41px;">
-                                  <i class="fa fa-caret-down fa-1x" style="margin: 5px;padding-left: 11px;"></i>
-                                </div>
-                                
-                                <select class="form-control" style="    margin-top: 7px;width:52%;height: 1.8em; text-align:center;font-size: 14px;color: #8c8c8c;    margin-left: 43px;"name="day{{i}}" #day="ngModel"  [(ngModel)]="norahService.scheduleArray[i].day"   (change)="onChangeRight(item,$event.target.value)"  required >
+                                            </div>
+                                            <div class="message" style="margin-top: 0;"><img style="margin-top: -2px;margin-left: 74px;" [src]="norahService.scheduleArray[i].week==5 ? '../../assets/images/blue_ok.png' : '../../assets/images/yellow_no.png'" alt=""></div>
+                                        </td>
+                                        <td>
+                                            <div class="rail-select">
+                                                <div class="select-side" style="top: 7px;height: 80%;right:41px;">
+                                                    <i class="fa fa-caret-down fa-1x" style="margin: 5px;padding-left: 11px;"></i>
+                                                </div>
+
+                                                <select class="form-control" style="    margin-top: 7px;width:52%;height: 1.8em; text-align:center;font-size: 14px;color: #8c8c8c;    margin-left: 43px;" name="day{{i}}" #day="ngModel" [(ngModel)]="norahService.scheduleArray[i].day" (change)="onChangeRight(item,$event.target.value)"
+                                                    required>
                                  <option class='it' *ngFor='let option_day of options_day' [value]="option_day.option_id">{{option_day.name}}</option>
                                </select>
-                             </div>
-                             <div class="message" style="margin-top: 0;"><img style="margin-top: -2px;margin-left: 74px;" [src]="norahService.scheduleArray[i].day==5 ? '../../assets/images/blue_ok.png' : '../../assets/images/yellow_no.png'" alt=""></div>
-                          </td>
-                          
-                       </tr>
-                       
-                    </tbody>
-                 </table>
-                  <!-- <div class="action-btn">
+                                            </div>
+                                            <div class="message" style="margin-top: 0;"><img style="margin-top: -2px;margin-left: 74px;" [src]="norahService.scheduleArray[i].day==5 ? '../../assets/images/blue_ok.png' : '../../assets/images/yellow_no.png'" alt=""></div>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- <div class="action-btn">
                      <a href="javascript:void(0);" (click)="onTransfer(fmTransfer)"><img src="assets/images/check.png" alt=""></a>
                      <a href="#" (click)="reset()"><img src="assets/images/close.png" alt=""></a>
                      <a href="javascript:void(0);" (click)="reset()"><img src="assets/images/refresh.png" alt=""></a>
                  </div> -->
-             
-                
-              </div>
-             </form>
-              <!-- <div class="page-title">
+
+
+                        </div>
+                    </form>
+                    <!-- <div class="page-title">
                  <a href="#"><img style="padding-right: 1em;" src="../../assets/images/Arrow.png" alt=""></a>
                <h1>notification scheduler</h1>
             </div> -->
-           </div>
+                </div>
+            </div>
         </div>
-     </div>
-  </div>
-  <!--Table Start-->
+    </div>
+    <!--Table Start-->
 </div>
 <script src="http://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
 <script src="http://rawgithub.com/rochal/jQuery-slimScroll/master/jquery.slimscroll.js"></script>
 <script>
- $(document).ready(function () {
-$('.fixed-table-body').slimScroll({});
-});
+    $(document).ready(function() {
+        $('.fixed-table-body').slimScroll({});
+    });
 </script>

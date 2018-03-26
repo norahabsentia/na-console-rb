@@ -1,13 +1,13 @@
 <div class="header-table">
-  <div (click)="showTab = 'SCHEDULER'" [ngClass]="{'active-item' : showTab === 'SCHEDULER'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
-    NOTIFICATION SCHEDULER
-  </div>
-  <div (click)="showTab = 'LIST'" [ngClass]="{'active-item' : showTab === 'LIST'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
-    NOTIFICATION LIST
-  </div>
-  <div (click)="showTab = 'CALENDAR'" [ngClass]="{'active-item' : showTab === 'CALENDAR'}" class="small-cell-churn-3">
-    DISPATCH CALENDAR
-  </div>
+    <div (click)="showTab = 'SCHEDULER'" [ngClass]="{'active-item' : showTab === 'SCHEDULER'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+        Notification Scheduler
+    </div>
+    <div (click)="showTab = 'LIST'" [ngClass]="{'active-item' : showTab === 'LIST'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+        Notification List
+    </div>
+    <div (click)="showTab = 'CALENDAR'" [ngClass]="{'active-item' : showTab === 'CALENDAR'}" class="small-cell-churn-3">
+        Dispatch Calendar
+    </div>
 </div>
 
 <norah-scheduler *ngIf="showTab === 'SCHEDULER'"></norah-scheduler>
