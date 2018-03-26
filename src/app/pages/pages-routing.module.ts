@@ -21,7 +21,7 @@ const routes: Routes = [{
   canActivate: [AuthGuard],
   children: [{
     path: 'dashboard',
-    component: DashboardComponent,
+    component: PerformanceAnalysisBoosterComponent,
   }, {
     path: 'filler-library',
     loadChildren: './filler-library/filler-library.module#FillerLibraryModule',
@@ -42,10 +42,12 @@ const routes: Routes = [{
   }, {
     path: 'maps',
     loadChildren: './maps/maps.module#MapsModule',
-  },{
-    path: 'smart-pricing',
-    loadChildren: './smart-pricing/smart-pricing.module#SmartPricingModule',
-  }, {
+  },
+  // {
+  //   path: 'smart-pricing',
+  //   loadChildren: './smart-pricing/smart-pricing.module#SmartPricingModule',
+  // }
+   {
     path: 'charts',
     loadChildren: './charts/charts.module#ChartsModule',
   }, {
@@ -85,7 +87,7 @@ const routes: Routes = [{
     },
     {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'retention-booster/user-churn/performance-analysis/performance-analysis-overview',
     pathMatch: 'full',
   }, {
     path: 'game-overview',

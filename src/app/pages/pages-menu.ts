@@ -40,52 +40,52 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ]
   },
-  {
-    title: 'Smart Pricing',
-    icon: 'nb-location',
-    children: [
-      {
-        title: 'User Trends',
-        link: '/pages/smart-pricing/user-trends',
-      },
-      // {
-      //   title: 'Predictions',
-      //   link: '/pages/smart-pricing/predictions',
-      // },
-      // {
-      //   title: 'Performance Analysis',
-      //   link: '/pages/smart-pricing/performance-analysis',
-      // },
-      {
-        title: 'Revenue recommendations & Analysis',
-        link: '/pages/smart-pricing/Revenue-analysis'
-      },
-      {
-        title: 'Pricing Console',
-        link: '/pages/tables/smart-table',
-      },
-],
-  },
-  {
-    title: 'Dashboard',
-    icon: 'nb-home',
-    link: '/pages/dashboard',
-    home: true,
-  },
-  {
-    title: 'Filler Library',
-    icon: 'nb-edit',
-    link: '/pages/filler-library',
-  },
-  {
-    title: 'Norah-Scheduler',
-    icon: 'nb-edit',
-    link: '/pages/norah-scheduler',
-  },
-  {
-    title: 'FEATURES',
-    group: true,
-  },
+//   {
+//     title: 'Smart Pricing',
+//     icon: 'nb-location',
+//     children: [
+//       {
+//         title: 'User Trends',
+//         link: '/pages/smart-pricing/user-trends',
+//       },
+//       // {
+//       //   title: 'Predictions',
+//       //   link: '/pages/smart-pricing/predictions',
+//       // },
+//       // {
+//       //   title: 'Performance Analysis',
+//       //   link: '/pages/smart-pricing/performance-analysis',
+//       // },
+//       {
+//         title: 'Revenue recommendations & Analysis',
+//         link: '/pages/smart-pricing/Revenue-analysis'
+//       },
+//       {
+//         title: 'Pricing Console',
+//         link: '/pages/tables/smart-table',
+//       },
+// ],
+//   },
+//   {
+//     title: 'Dashboard',
+//     icon: 'nb-home',
+//     link: '/pages/dashboard',
+//     home: true,
+//   },
+//   {
+//     title: 'Filler Library',
+//     icon: 'nb-edit',
+//     link: '/pages/filler-library',
+//   },
+//   {
+//     title: 'Norah-Scheduler',
+//     icon: 'nb-edit',
+//     link: '/pages/norah-scheduler',
+//   },
+//   {
+//     title: 'FEATURES',
+//     group: true,
+//   },
   // {
   //   title: 'UI Features',
   //   icon: 'nb-keypad',
@@ -200,16 +200,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //     },
   //   ],
   // },
-  {
-    title: 'Tables',
-    icon: 'nb-tables',
-    children: [
-      {
-        title: 'Smart Table',
-        link: '/pages/tables/smart-table',
-      },
-    ],
-  },
+  // {
+  //   title: 'Tables',
+  //   icon: 'nb-tables',
+  //   children: [
+  //     {
+  //       title: 'Smart Table',
+  //       link: '/pages/tables/smart-table',
+  //     },
+  //   ],
+  // },
   // {
   //   title: 'Auth',
   //   icon: 'nb-locked',
