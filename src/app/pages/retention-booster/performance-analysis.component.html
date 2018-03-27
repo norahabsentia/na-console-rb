@@ -1,16 +1,27 @@
-<div class="header-table">
-    <div (click)="showTab = 'overview'" [ngClass]="{'active-item' : showTab === 'overview'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
-        Overview
+<nb-layout fixed>
+    <div class="header-table">
+        <div class="small-cell-churn-6" style="border-radius: 8px; border-right: 1px solid #f3f3f3;">
+            Obsevation Period
+        </div>
+        <div class="small-cell-churn-6" style="border-radius: 8px; border-right: 1px solid #f3f3f3;">
+            Churn Period
+        </div>
     </div>
-    <div (click)="showTab = 'ORIGIN'" [ngClass]="{'active-item' : showTab === 'ORIGIN'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
-        User Origin
-    </div>
-    <div (click)="showTab = 'BEHAVIOR'" [ngClass]="{'active-item' : showTab === 'BEHAVIOR'}" class="small-cell-churn-3">
-        User Behavior
-    </div>
-</div>
+    </nb-layout-header>
 
-<performance-analysis-overview *ngIf="showTab === 'overview'"></performance-analysis-overview>
+    <div class="header-table">
+        <div (click)="showTab = 'overview'" [ngClass]="{'active-item' : showTab === 'overview'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+            Overview
+        </div>
+        <div (click)="showTab = 'ORIGIN'" [ngClass]="{'active-item' : showTab === 'ORIGIN'}" class="small-cell-churn-3" style="border-right: 1px solid #f3f3f3;">
+            User Origin
+        </div>
+        <div (click)="showTab = 'BEHAVIOR'" [ngClass]="{'active-item' : showTab === 'BEHAVIOR'}" class="small-cell-churn-3">
+            User Behaviour
+        </div>
+    </div>
 
-<performance-analysis-user-origin-basis *ngIf="showTab === 'ORIGIN'"></performance-analysis-user-origin-basis>
-<performance-analysis-user-behavior-basis *ngIf="showTab === 'BEHAVIOR'"></performance-analysis-user-behavior-basis>
+    <performance-analysis-overview *ngIf="showTab === 'overview'"></performance-analysis-overview>
+
+    <performance-analysis-user-origin-basis *ngIf="showTab === 'ORIGIN'"></performance-analysis-user-origin-basis>
+    <performance-analysis-user-behavior-basis *ngIf="showTab === 'BEHAVIOR'"></performance-analysis-user-behavior-basis>
