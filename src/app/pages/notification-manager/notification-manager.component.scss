@@ -1,19 +1,21 @@
-.header-table{
+.header-table {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
-  }
-  .header-table > div{
-  width: 50%;
-  text-align: center;
-  padding: 1.25rem;
-  cursor: pointer;
-  border: 1px solid #f3f3f3;
-  background: white;
-  color: #2a2a2a;
-  font-size: 18px;
-  }
-  .active-item{
+}
+
+.header-table>div {
+    width: 50%;
+    text-align: center;
+    padding: 1.25rem;
+    cursor: pointer;
+    border: 1px solid #f3f3f3;
+    background: white;
+    //color: rgba(102, 102, 102, 1);
+    font-size: 18px;
+}
+
+.active-item {
     font-weight: bold;
-  }
+}
