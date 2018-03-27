@@ -1,5 +1,4 @@
-
-.header-top{
+.header-top {
     display: flex;
     align-items: center;
     font-size: 19px;
@@ -8,19 +7,22 @@
     cursor: pointer;
     width: fit-content;
 }
-.arrow-left{
+
+.arrow-left {
     font-size: 27px;
     margin-right: 10px;
     padding-bottom: 2px;
 }
-.calendar-wrap{
+
+.calendar-wrap {
     background: white;
     border-radius: 13px;
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.75);
 }
-.table-bot{
+
+.table-bot {
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -28,14 +30,16 @@
     -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
     margin-top: 25px;
-  }
-  .row-table-bot{
+}
+
+.row-table-bot {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     align-items: stretch;
-  }
-  .row-table-bot > div{
+}
+
+.row-table-bot>div {
     display: flex;
     align-items: center;
     border-top: 1px solid rgb(221, 221, 221);
@@ -47,24 +51,28 @@
     color: rgba(119, 119, 119, 1);
     font-weight: 500;
     min-height: 40px;
-  }
-  .header{
-  }
-  .header > div{
+}
+
+.header {}
+
+.header>div {
     border-top: none;
     color: rgba(117, 117, 117, 1);
     font-weight: 600;
-  }
-.title{
+}
+
+.title {
     color: rgb(38, 38, 38);
     font-size: 12px;
     font-weight: 500;
 }
-.button-wrap{
+
+.button-wrap {
     display: flex;
     flex-wrap: wrap;
 }
-.button-wrap > div{
+
+.button-wrap>div {
     margin-right: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
@@ -77,22 +85,45 @@
     padding-bottom: 2px;
     color: white;
 }
-.body{
+
+.body {
     font-size: 10px;
     margin-bottom: 5px;
     margin-top: 3px;
-    color: rgb(154, 154, 154);    
+    color: rgb(154, 154, 154);
 }
-.alarm-wrap{
+
+.alarm-wrap {
     display: flex;
     align-items: center;
 }
-.alarm-wrap > i{
+
+.alarm-wrap>i {
     margin-right: 5px;
 }
-div.container > div > div > div.odd:nth-child(odd){
+
+div.container>div>div>div.odd:nth-child(odd) {
     background: rgb(242, 242, 242);
 }
-div.row-table-bot > div:nth-child(5){
+
+div.row-table-bot>div:nth-child(5) {
     padding-left: 50px;
+}
+
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header-table>div {
+    width: 50%;
+    text-align: center;
+    padding: 1.25rem;
+    cursor: pointer;
+    border: 1px solid #f3f3f3;
+    background: white;
+    //color: #2a2a2a;
+    font-size: 18px;
 }
