@@ -132,7 +132,7 @@
                             Avg number of notifications sent per churner
                         </div>
                         <span class="users">
-              <!-- ₹  -->
+              <!-- ₹   -->
             {{stats.average_notifications_sent_per_churner}}
           </span>
                     </div>
@@ -150,7 +150,7 @@
                 <chart-switcher *ngIf="notResponse && notResponseTable" [title]="'Response Distribution'" [data]="notResponse" [dataTable]="notResponseTable"></chart-switcher>
             </div>
         </div>
-
+        <br>
         <div class="row">
             <div class="col-sm-12">
                 <chart-switcher *ngIf="notficationDaily && notficationDailyTable" [title]="'Daily Response Trend'" [optionsSettings]="lineOption" [data]="notficationDaily" [dataTable]="notficationDailyTable"></chart-switcher>
@@ -166,6 +166,8 @@
                 <chart-switcher *ngIf="segResponse && segResponseTable" [title]="'User Segment Response to Notifications'" [data]="segResponse" [dataTable]="segResponseTable"></chart-switcher>
             </div>
         </div>
+        <div class="row"></div>
+        <br>
         <!--User Response to notifications over churn period-->
         <!--Distribution of Notifications Sent per user category-->
         <!--Open vs Not Opened per segment-->
