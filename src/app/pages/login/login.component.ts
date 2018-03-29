@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   login(form: NgForm) {
     this.afAuth.auth.signInWithEmailAndPassword(form.value.email, form.value.password)
       .then( (user) => {
-        this.router.navigate(['/pages/dashboard']);
+        this.router.navigate(['/page/retention-booster/churn-predictions']);
       })
       .catch(
         (err) => alert(err.message)

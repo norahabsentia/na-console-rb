@@ -17,7 +17,7 @@ export class NotificationService {
   showHide = 0;
   curPreset = [];
   editValue  = 0;
-  editFillerSection = 0;
+  editFillerSection = 0;  
   addFillerTextbox = 0;
   itemsInit = [
     { id: 1, name: 'Bored' },
@@ -32,32 +32,33 @@ export class NotificationService {
   ];
   fillerArray = [
     {
-      filler_id: '1', tag_name: 'Discount', count: 4, "value_segments":
-        {
-          "10": ["High loyalty", "Low skill", "High loyalty", "Low skill", "High loyalty", "Low skill"],
-          "20": ["Low Loyalty", "High Skill"],
-          "30": ["High loyalty", "Low skill", "High loyalty", "Low skill", "High loyalty", "Low skill"],
-          "40": ["Low Loyalty", "High Skill"],
-          "50": ["Low Loyalty", "High Skill"],
-          "60": ["Low Loyalty", "High Skill"],
-          "70": ["Low Loyalty", "High Skill"],
-          "80": ["Low Loyalty", "High Skill"],
-          "90": ["Low Loyalty", "High Skill"],
-          "100": ["Low Loyalty", "High Skill"]
-        }
-    },
-    {
-      filler_id: '2', tag_name: 'Promotion game', count: 1, "value_segments":
-        { "10": ["High loyalty", "Low skill"], "20": ["Low Loyalty", "High Skill"] }
-    },
-    { filler_id: '3', tag_name: 'Coin pack', count: 2 },
- 
-  ];
-  notificationTemplate = [
-    { templateId: '1', title: 'Hello `Username`. Today is `Month`', body: 'Hello `brave`. Today is `test4`' },
-    { templateId: '2', title: 'test `Country` . Today is `test1`', body: '`Time`. Today is `Day`' },
-    { templateId: '3', title: 'test `brave` . Today is `test1`', body: '`Time`. Today is `Day`' }
-  ];
+       filler_id: '1', tag_name: 'Discount', count: 4, "value_segments":
+         {
+           "10": ["Ordinary", "Fighter"],
+           "20": ["Tenacius"],
+           "30": ["Bored"]
+         }
+     },
+     {
+       filler_id: '2', tag_name: 'Promotion_Game', count: 1, "value_segments":
+         {
+           "Game_1": ["Successful"], 
+           "Game_2": ["Achiever"],
+           "Game_3": ["Needs a challenge"]
+         }
+     },
+     { filler_id: '3', tag_name: 'Coin Pack', count: 2 } 
+   ];
+   notificationTemplate = [
+     { templateId: '1', title: 'Help Virat', body: 'Help! Virat’s Team seems to be losing nd it is up to you to him to save them. Are you up for the challenge?' },
+     { templateId: '2', title: 'World Cup', body: 'Oh no! India is on edge in the cricket world cup. It’s your job to carry Virat through.' },
+     { templateId: '3', title: 'Make Virat Proud', body: 'The fate of Virat Kohli lies in your hands. Make him the pride of Indian Cricket Team.' },
+     { templateId: '4', title: 'Tip for improving game', body: 'Try to tap the screen on the left or right to align the bat with the ball!' },
+     { templateId: '5', title: 'Virat Fun Fact 1', body: 'In a league of their own: Virat Kohli is the third batsman to score two ODI hundreds before his 22nd birthday – the other two being Sachin Tendulkar and Suresh Raina!' },
+     { templateId: '6', title: 'Virat Fun Fact 2', body: 'Catchy Chikku! Virat’s teammates call him Chikku affectionately.' },
+     { templateId: '7', title: 'Incentive Energy Gift.', body: 'INDIA is in desperate need of your expertise , Take this gift and boost your energy and chances of beating Sri Lanka.' },
+     { templateId: '8', title: 'Game Promotion 1', body: 'You just beat Sri Lanka, Are you up for another challenge. Here is another game for achievers like you.' }
+   ];
   colorArray = [
     "#0f6277",
     "#106d8c",
@@ -146,9 +147,11 @@ export class NotificationService {
     let fillers = []
     let str = this.getConcateString(notificationObj.title, notificationObj.body);
     let splittext = str.match(/`(.*?)`/g);
+    if(splittext){
     for (var j = 0; j < splittext.length; j++) {
       fillers.push(this.getFillerByName(splittext[j].slice(1, -1)));
     }
+  }
 
     return fillers;
   }
