@@ -772,7 +772,7 @@ this.countryName = {
      }*/
       var percentColors = [
         { pct: 0.0, color: { r: 0xc8, g: 0xbf, b: 0xe7 } },
-        { pct: 1.0, color: { r: 0xe4, g: 0xf0, b: 0x23 } } ];
+        { pct: 1.0, color: { r: 0x4a, g: 0xa3, b: 0xdf } } ];
      // '#4aa3df', '#81b7dc' , '#bcbabe', '#dddde0'
       /*for (var i = 1; i < percentColors.length - 1; i++) {
         if (pct < percentColors[i].pct) {
